@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">everywash</string>
+
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="login_step_1">지친 하루, 하지만\n끝나지 않은 집안일</string>
+    <string name="login_step_2">수북한 빨랫감, 몰려오는 피로.\n누가 빨래 좀 대신해 줄 수 없나요?</string>
+    <string name="login_step_3">걱정마세요, 모두의세탁이 있어요!\n이웃에게 빨래를 맡겨 보세요.</string>
+
+    <string name="kakao_text">카카오톡으로 로그인</string>
+    <string name="facebook_text">페이스북으로 로그인</string>
+
+    <string name="kakao_app_key">68eef828831b6e0f88e2b80c92d23735</string>
+    <string name="facebook_app_id">580843672076295</string>
+    <string name="google_map_key">AIzaSyANZK5fzLNE0IlLSNunN54z0jZNxdL-TwE</string>
+    <string name="title_activity_seller_detail">seller_detail</string>
+</resources>

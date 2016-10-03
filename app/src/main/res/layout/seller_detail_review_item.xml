@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/review_item_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/temp_icon"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/review_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="도윤"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/information_text_size"
+                    fontPath="fonts/NotoSansKR-Regular-Hestia.otf"
+                    />
+                <TextView
+                    android:id="@+id/review_item_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="16년 9월"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/information_text_size"
+                    fontPath="fonts/NotoSansKR-DemiLight-Hestia.otf"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/review_item_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="@dimen/information_text_size"
+            android:text="속옷이 누런 색이었는데 맡기고 나니 흰색으로 변해 있었어요. 세탁도 완전 빨리해서 주시네요."
+            fontPath="fonts/NotoSansKR-Regular-Hestia.otf"
+            />
+    </LinearLayout>
+</LinearLayout>

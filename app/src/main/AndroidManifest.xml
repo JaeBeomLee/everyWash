@@ -36,11 +36,7 @@
         <activity
             android:name=".main.MainActivity"
             android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".pre.SplashActivity"
@@ -63,9 +59,19 @@
         <activity
             android:name=".seller.SellerDetail"
             android:label="@string/title_activity_seller_detail"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
         <activity android:name=".seller.SellerOrderList" />
-        <activity android:name=".seller.SellerManageActivity"></activity>
+        <activity
+            android:name=".OrderActivity"
+            android:label="@string/title_activity_order"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".OrderItemList"/>
     </application>
 
 </manifest>

@@ -4,29 +4,29 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.0"
-    timestamp="35356529251877"
+    timestamp="74443011655487"
     token="-6595544127926227983"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="2448" />
+        duration="1364" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="2176" />
+        duration="983" />
     <task
         name="verifier"
-        duration="187" />
+        duration="168" />
 
     <artifact
         location="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/outputs/apk/app-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="35356529251877"
+        timestamp="74443011655487"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/outputs/apk/app-debug.apk"

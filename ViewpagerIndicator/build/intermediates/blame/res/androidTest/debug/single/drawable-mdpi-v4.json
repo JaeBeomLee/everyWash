@@ -1,13 +1,5 @@
 [
     {
-        "merged": "/Users/leejaebeom/Dropbox/Developer/모두의 세탁/everywash/ViewpagerIndicator/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/vpi__tab_unselected_holo.9.png",
-        "source": "/Users/leejaebeom/Dropbox/Developer/모두의 세탁/everywash/ViewpagerIndicator/build/intermediates/bundles/debug/res/drawable-mdpi-v4/vpi__tab_unselected_holo.9.png"
-    },
-    {
-        "merged": "/Users/leejaebeom/Dropbox/Developer/모두의 세탁/everywash/ViewpagerIndicator/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/vpi__tab_selected_holo.9.png",
-        "source": "/Users/leejaebeom/Dropbox/Developer/모두의 세탁/everywash/ViewpagerIndicator/build/intermediates/bundles/debug/res/drawable-mdpi-v4/vpi__tab_selected_holo.9.png"
-    },
-    {
         "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/ViewpagerIndicator/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/vpi__tab_selected_focused_holo.9.png",
         "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/ViewpagerIndicator/build/intermediates/bundles/debug/res/drawable-mdpi-v4/vpi__tab_selected_focused_holo.9.png"
     },
@@ -20,20 +12,8 @@
         "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/ViewpagerIndicator/build/intermediates/bundles/debug/res/drawable-mdpi-v4/vpi__tab_selected_holo.9.png"
     },
     {
-        "merged": "/Users/leejaebeom/Dropbox/Developer/모두의 세탁/everywash/ViewpagerIndicator/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/vpi__tab_selected_pressed_holo.9.png",
-        "source": "/Users/leejaebeom/Dropbox/Developer/모두의 세탁/everywash/ViewpagerIndicator/build/intermediates/bundles/debug/res/drawable-mdpi-v4/vpi__tab_selected_pressed_holo.9.png"
-    },
-    {
-        "merged": "/Users/leejaebeom/Dropbox/Developer/모두의 세탁/everywash/ViewpagerIndicator/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/vpi__tab_unselected_pressed_holo.9.png",
-        "source": "/Users/leejaebeom/Dropbox/Developer/모두의 세탁/everywash/ViewpagerIndicator/build/intermediates/bundles/debug/res/drawable-mdpi-v4/vpi__tab_unselected_pressed_holo.9.png"
-    },
-    {
         "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/ViewpagerIndicator/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/vpi__tab_unselected_holo.9.png",
         "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/ViewpagerIndicator/build/intermediates/bundles/debug/res/drawable-mdpi-v4/vpi__tab_unselected_holo.9.png"
-    },
-    {
-        "merged": "/Users/leejaebeom/Dropbox/Developer/모두의 세탁/everywash/ViewpagerIndicator/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/vpi__tab_selected_focused_holo.9.png",
-        "source": "/Users/leejaebeom/Dropbox/Developer/모두의 세탁/everywash/ViewpagerIndicator/build/intermediates/bundles/debug/res/drawable-mdpi-v4/vpi__tab_selected_focused_holo.9.png"
     },
     {
         "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/ViewpagerIndicator/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/vpi__tab_selected_pressed_holo.9.png",
@@ -42,9 +22,5 @@
     {
         "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/ViewpagerIndicator/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/vpi__tab_unselected_pressed_holo.9.png",
         "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/ViewpagerIndicator/build/intermediates/bundles/debug/res/drawable-mdpi-v4/vpi__tab_unselected_pressed_holo.9.png"
-    },
-    {
-        "merged": "/Users/leejaebeom/Dropbox/Developer/모두의 세탁/everywash/ViewpagerIndicator/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/vpi__tab_unselected_focused_holo.9.png",
-        "source": "/Users/leejaebeom/Dropbox/Developer/모두의 세탁/everywash/ViewpagerIndicator/build/intermediates/bundles/debug/res/drawable-mdpi-v4/vpi__tab_unselected_focused_holo.9.png"
     }
 ]

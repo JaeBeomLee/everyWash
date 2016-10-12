@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="셔츠 (일반)"
+            fontPath="fonts/NotoSansKR-Regular-Hestia.otf"
+            />
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="1500원"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="4dp"
+            android:textColor="@android:color/black"
+            fontPath="fonts/NotoSansKR-Medium-Hestia.otf"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            >
+            <ImageButton
+                android:id="@+id/minus"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_minus"
+                />
+            <TextView
+                android:id="@+id/count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="0"
+                android:textColor="@android:color/black"
+                fontPath="fonts/NotoSansKR-Medium-Hestia.otf"
+                />
+            <ImageButton
+                android:id="@+id/plus"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_plus"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

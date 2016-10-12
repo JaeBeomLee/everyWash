@@ -1,13 +1,5 @@
 [
     {
-        "merged": "/Users/leejaebeom/Dropbox/Developer/모두의 세탁/everywash/ViewpagerIndicator/build/intermediates/res/merged/androidTest/debug/color/vpi__dark_theme.xml",
-        "source": "/Users/leejaebeom/Dropbox/Developer/모두의 세탁/everywash/ViewpagerIndicator/build/intermediates/bundles/debug/res/color/vpi__dark_theme.xml"
-    },
-    {
-        "merged": "/Users/leejaebeom/Dropbox/Developer/모두의 세탁/everywash/ViewpagerIndicator/build/intermediates/res/merged/androidTest/debug/color/vpi__light_theme.xml",
-        "source": "/Users/leejaebeom/Dropbox/Developer/모두의 세탁/everywash/ViewpagerIndicator/build/intermediates/bundles/debug/res/color/vpi__light_theme.xml"
-    },
-    {
         "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/ViewpagerIndicator/build/intermediates/res/merged/androidTest/debug/color/vpi__light_theme.xml",
         "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/ViewpagerIndicator/build/intermediates/bundles/debug/res/color/vpi__light_theme.xml"
     },

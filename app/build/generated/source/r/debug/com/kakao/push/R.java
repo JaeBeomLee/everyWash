@@ -11,9 +11,9 @@ public final class R {
 		public static final int com_kakao_accounts_array = 0x7f0c0000;
 	}
 	public static final class attr {
-		public static final int circleCrop = 0x7f010135;
-		public static final int imageAspectRatio = 0x7f010134;
-		public static final int imageAspectRatioAdjust = 0x7f010133;
+		public static final int circleCrop = 0x7f010159;
+		public static final int imageAspectRatio = 0x7f010158;
+		public static final int imageAspectRatioAdjust = 0x7f010157;
 	}
 	public static final class color {
 		public static final int com_kakao_account_button_background = 0x7f0f0031;
@@ -30,32 +30,32 @@ public final class R {
 	public static final class drawable {
 		public static final int common_full_open_on_phone = 0x7f020098;
 		public static final int common_ic_googleplayservices = 0x7f0200ad;
-		public static final int kakao_account_button_background = 0x7f02015a;
-		public static final int kakao_account_logo = 0x7f02015b;
-		public static final int kakao_cancel_button_background = 0x7f02015c;
-		public static final int kakao_close_button = 0x7f02015d;
-		public static final int kakao_default_profile_image = 0x7f02015e;
-		public static final int kakao_editable_profile = 0x7f02015f;
-		public static final int kakao_login_bar = 0x7f020160;
-		public static final int kakao_login_button_background = 0x7f020161;
-		public static final int kakao_login_symbol = 0x7f020163;
-		public static final int kakao_profile_boxbg = 0x7f020165;
-		public static final int kakaoaccount_icon = 0x7f020166;
-		public static final int kakaostory_icon = 0x7f020167;
-		public static final int kakaotalk_icon = 0x7f020168;
+		public static final int kakao_account_button_background = 0x7f02015c;
+		public static final int kakao_account_logo = 0x7f02015d;
+		public static final int kakao_cancel_button_background = 0x7f02015e;
+		public static final int kakao_close_button = 0x7f02015f;
+		public static final int kakao_default_profile_image = 0x7f020160;
+		public static final int kakao_editable_profile = 0x7f020161;
+		public static final int kakao_login_bar = 0x7f020162;
+		public static final int kakao_login_button_background = 0x7f020163;
+		public static final int kakao_login_symbol = 0x7f020165;
+		public static final int kakao_profile_boxbg = 0x7f020167;
+		public static final int kakaoaccount_icon = 0x7f020168;
+		public static final int kakaostory_icon = 0x7f020169;
+		public static final int kakaotalk_icon = 0x7f02016a;
 	}
 	public static final class id {
-		public static final int adjust_height = 0x7f100058;
-		public static final int adjust_width = 0x7f100059;
-		public static final int kakao_login_activity_progress_bar = 0x7f100139;
-		public static final int none = 0x7f10001f;
+		public static final int adjust_height = 0x7f100059;
+		public static final int adjust_width = 0x7f10005a;
+		public static final int kakao_login_activity_progress_bar = 0x7f100143;
+		public static final int none = 0x7f100020;
 	}
 	public static final class integer {
 		public static final int google_play_services_version = 0x7f0e000c;
 	}
 	public static final class layout {
-		public static final int kakao_internal_login_activity = 0x7f040048;
-		public static final int kakao_login_layout = 0x7f040049;
+		public static final int kakao_internal_login_activity = 0x7f04004b;
+		public static final int kakao_login_layout = 0x7f04004c;
 	}
 	public static final class string {
 		public static final int com_kakao_account_cancel = 0x7f090072;
@@ -93,7 +93,7 @@ public final class R {
 		public static final int core_com_kakao_sdk_loading = 0x7f090095;
 	}
 	public static final class styleable {
-		public static final int[] LoadingImageView = { 0x7f010133, 0x7f010134, 0x7f010135 };
+		public static final int[] LoadingImageView = { 0x7f010157, 0x7f010158, 0x7f010159 };
 		public static final int LoadingImageView_circleCrop = 2;
 		public static final int LoadingImageView_imageAspectRatio = 1;
 		public static final int LoadingImageView_imageAspectRatioAdjust = 0;

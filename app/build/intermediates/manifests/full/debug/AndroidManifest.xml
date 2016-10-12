@@ -17,10 +17,7 @@
 
     <!-- Permissions required for GCM -->
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
-    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- Optional permission for Analytics to run. -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Optional permission for Analytics to run. -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <permission
@@ -52,11 +49,6 @@
         <activity
             android:name="ga.washmose.mose.main.MainActivity"
             android:screenOrientation="portrait" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="ga.washmose.mose.pre.SplashActivity"
@@ -81,7 +73,17 @@
             android:label="@string/title_activity_seller_detail"
             android:theme="@style/AppTheme" />
         <activity android:name="ga.washmose.mose.seller.SellerOrderList" />
-        <activity android:name="ga.washmose.mose.seller.SellerManageActivity" />
+        <activity
+            android:name="ga.washmose.mose.OrderActivity"
+            android:label="@string/title_activity_order"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="ga.washmose.mose.OrderItemList" />
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"

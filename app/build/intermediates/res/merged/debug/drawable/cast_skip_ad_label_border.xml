@@ -3,4 +3,4 @@
     <solid android:color="@android:color/transparent" />
     <stroke android:width="0.5dp" android:color="@android:color/darker_gray"/>
 </shape>
-<!-- From: file:/tmp/aar_gen_tmp6682929371290315669/tmp-deduplicated/java/com/google/android/gmscore/integ/client/cast/framework/res/drawable/cast_skip_ad_label_border.xml -->
+<!-- From: file:/tmp/aar_gen_tmp1364595097250085438/tmp-deduplicated/java/com/google/android/gmscore/integ/client/cast/framework/res/drawable/cast_skip_ad_label_border.xml -->

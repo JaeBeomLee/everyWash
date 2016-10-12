@@ -1,6 +1,7 @@
 package ga.washmose.mose;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -16,6 +17,8 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
+
+import ga.washmose.mose.seller.SellerDetail;
 
 /**
  * Created by leejaebeom on 2016. 10. 8..
@@ -62,7 +65,8 @@ public class UserLaundryFragment extends Fragment{
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
+                Intent intent = new Intent(getContext(), SellerDetail.class);
+                startActivity(intent);
             }
         });
         return rootView;

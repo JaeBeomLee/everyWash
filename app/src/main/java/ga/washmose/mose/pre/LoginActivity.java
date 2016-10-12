@@ -32,6 +32,7 @@ import ga.viewpagerindicator.CirclePageIndicator;
 
 import java.util.Arrays;
 
+import ga.washmose.mose.main.MainActivity;
 import okhttp3.FormBody;
 import okhttp3.RequestBody;
 
@@ -118,12 +119,18 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.facebook_login:
-                kakaoLogin.setEnabled(false);
-                LoginManager.getInstance().logInWithReadPermissions(LoginActivity.this, Arrays.asList("public_profile", "user_friends"));
+//                kakaoLogin.setEnabled(false);
+//                LoginManager.getInstance().logInWithReadPermissions(LoginActivity.this, Arrays.asList("public_profile", "user_friends"));
+                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(intent);
+                finish();
                 break;
             case R.id.kakao_login:
-                facebookLogin.setEnabled(false);
-                hideLoginButton.performClick();
+//                facebookLogin.setEnabled(false);
+//                hideLoginButton.performClick();
+                Intent intent2 = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(intent2);
+                finish();
                 break;
 //            case R.id.sign_up:
 //                Intent intent = new Intent(LoginActivity.this, signUPActivity.class);

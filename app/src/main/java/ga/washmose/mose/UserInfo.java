@@ -6,4 +6,5 @@ package ga.washmose.mose;
 
 public class UserInfo {
     int userType;
+    public static boolean isSeller = false;
 }

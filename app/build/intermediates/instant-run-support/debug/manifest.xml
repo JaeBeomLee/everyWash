@@ -56,7 +56,13 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_splash"
             android:screenOrientation="portrait"
-            android:theme="@style/FullScreenTheme" />
+            android:theme="@style/StartTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name="ga.washmose.mose.pre.LoginActivity"
             android:label="@string/title_activity_login"
@@ -78,11 +84,6 @@
             android:name="ga.washmose.mose.OrderActivity"
             android:label="@string/title_activity_order"
             android:theme="@style/AppTheme" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name="ga.washmose.mose.OrderItemList" />
         <activity

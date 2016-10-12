@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/stuff_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            />
+
+        <TextView
+            android:id="@+id/stuff_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/information_text_size"
+            android:textColor="@android:color/black"
+            fontPath="fonts/NotoSansKR-Regular-Hestia.otf"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="bottom"
+            android:layout_marginRight="16dp"
+            >
+            <TextView
+                android:id="@+id/stuff_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:textSize="10dp"
+                fontPath="fonts/NotoSansKR-Regular-Hestia.otf"
+                />
+            <TextView
+                android:id="@+id/stuff_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/information_text_size"
+                android:textColor="@android:color/black"
+                fontPath="fonts/NotoSansKR-Medium-Hestia.otf"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

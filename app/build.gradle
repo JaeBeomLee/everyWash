@@ -28,6 +28,7 @@ dependencies {
     compile group: 'com.kakao.sdk', name: 'kakaotalk', version: project.KAKAO_SDK_VERSION
     // push sdk를 사용하기 위해 필요.
     compile group: 'com.kakao.sdk', name: 'push', version: project.KAKAO_SDK_VERSION
+    compile project(':ViewPagerIndicator')
     compile 'com.facebook.android:facebook-android-sdk:4.5.0'
     compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.android.support:support-v4:24.2.1'
@@ -38,7 +39,6 @@ dependencies {
     compile 'com.hedgehog.ratingbar:app:1.1.2'
     compile 'de.hdodenhof:circleimageview:2.1.0'
     compile 'uk.co.chrisjenx:calligraphy:2.2.0'
-    compile project(':ViewPagerIndicator')
-    testCompile 'junit:junit:4.12'
     compile 'com.google.android.gms:play-services:9.6.0'
+    testCompile 'junit:junit:4.12'
 }

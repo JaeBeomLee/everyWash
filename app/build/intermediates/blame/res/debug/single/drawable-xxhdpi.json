@@ -1,0 +1,106 @@
+[
+    {
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable-xxhdpi/com_facebook_button_send_icon.png",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/res/drawable-xxhdpi/com_facebook_button_send_icon.png"
+    },
+    {
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable-xxhdpi/kakao.png",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/res/drawable-xxhdpi/kakao.png"
+    },
+    {
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable-xxhdpi/messenger_bubble_small_blue.png",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/res/drawable-xxhdpi/messenger_bubble_small_blue.png"
+    },
+    {
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable-xxhdpi/messenger_bubble_large_white.png",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/res/drawable-xxhdpi/messenger_bubble_large_white.png"
+    },
+    {
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_laundry.png",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/res/drawable-xxhdpi/ic_laundry.png"
+    },
+    {
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable-xxhdpi/kakaotalk_icon.png",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.kakao.sdk/util/1.1.5/res/drawable-xxhdpi/kakaotalk_icon.png"
+    },
+    {
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable-xxhdpi/kakaostory_icon.png",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.kakao.sdk/util/1.1.5/res/drawable-xxhdpi/kakaostory_icon.png"
+    },
+    {
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_login_step_1.png",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/res/drawable-xxhdpi/ic_login_step_1.png"
+    },
+    {
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable-xxhdpi/messenger_bubble_small_white.png",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/res/drawable-xxhdpi/messenger_bubble_small_white.png"
+    },
+    {
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_menu.png",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/res/drawable-xxhdpi/ic_menu.png"
+    },
+    {
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable-xxhdpi/rate_star.png",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/res/drawable-xxhdpi/rate_star.png"
+    },
+    {
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_logo_text.png",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/res/drawable-xxhdpi/ic_logo_text.png"
+    },
+    {
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_phone.png",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/res/drawable-xxhdpi/ic_phone.png"
+    },
+    {
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable-xxhdpi/messenger_button_send_round_shadow.png",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/res/drawable-xxhdpi/messenger_button_send_round_shadow.png"
+    },
+    {
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable-xxhdpi/rate_blank_star.png",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/res/drawable-xxhdpi/rate_blank_star.png"
+    },
+    {
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable-xxhdpi/com_facebook_button_like_icon_selected.png",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/res/drawable-xxhdpi/com_facebook_button_like_icon_selected.png"
+    },
+    {
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_login_step_2.png",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/res/drawable-xxhdpi/ic_login_step_2.png"
+    },
+    {
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_authority.png",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/res/drawable-xxhdpi/ic_authority.png"
+    },
+    {
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_logo.png",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/res/drawable-xxhdpi/ic_logo.png"
+    },
+    {
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable-xxhdpi/login_step_2.png",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/res/drawable-xxhdpi/login_step_2.png"
+    },
+    {
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable-xxhdpi/messenger_bubble_large_blue.png",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/res/drawable-xxhdpi/messenger_bubble_large_blue.png"
+    },
+    {
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable-xxhdpi/com_facebook_button_icon.png",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/res/drawable-xxhdpi/com_facebook_button_icon.png"
+    },
+    {
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_list.png",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/res/drawable-xxhdpi/ic_list.png"
+    },
+    {
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable-xxhdpi/kakaoaccount_icon.png",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.kakao.sdk/util/1.1.5/res/drawable-xxhdpi/kakaoaccount_icon.png"
+    },
+    {
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable-xxhdpi/facebook.png",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/res/drawable-xxhdpi/facebook.png"
+    },
+    {
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable-xxhdpi/login_step_3.png",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/res/drawable-xxhdpi/login_step_3.png"
+    }
+]

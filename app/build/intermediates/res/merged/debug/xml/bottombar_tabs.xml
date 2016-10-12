@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_laundry"
+        icon="@drawable/ic_laundry"
+        title="세탁" />
+    <tab
+        id="@+id/tab_list"
+        icon="@drawable/ic_list"
+        title="주문 상황" />
+    <tab
+        id="@+id/tab_menu"
+        icon="@drawable/ic_menu"
+        title="더보기" />
+</tabs>

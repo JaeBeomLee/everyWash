@@ -1,0 +1,1470 @@
+[
+    {
+        "outputFile": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ms/values-ms.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 105,
+                    "endColumn": 77,
+                    "endOffset": 178
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 356,
+                        "endColumn": 77,
+                        "endOffset": 429
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 183,
+                    "endColumn": 98,
+                    "endOffset": 277
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 434,
+                        "endColumn": 98,
+                        "endOffset": 528
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 282,
+                    "endColumn": 95,
+                    "endOffset": 373
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 533,
+                        "endColumn": 95,
+                        "endOffset": 624
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 378,
+                    "endColumn": 116,
+                    "endOffset": 490
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 629,
+                        "endColumn": 116,
+                        "endOffset": 741
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 495,
+                    "endColumn": 92,
+                    "endOffset": 583
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 746,
+                        "endColumn": 92,
+                        "endOffset": 834
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 588,
+                    "endColumn": 120,
+                    "endOffset": 704
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 839,
+                        "endColumn": 120,
+                        "endOffset": 955
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 709,
+                    "endColumn": 110,
+                    "endOffset": 815
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 960,
+                        "endColumn": 110,
+                        "endOffset": 1066
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 820,
+                    "endColumn": 119,
+                    "endOffset": 935
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 1071,
+                        "endColumn": 119,
+                        "endOffset": 1186
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 940,
+                    "endColumn": 101,
+                    "endOffset": 1037
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1191,
+                        "endColumn": 101,
+                        "endOffset": 1288
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 1042,
+                    "endColumn": 104,
+                    "endOffset": 1142
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1293,
+                        "endColumn": 104,
+                        "endOffset": 1393
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 1147,
+                    "endColumn": 77,
+                    "endOffset": 1220
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1398,
+                        "endColumn": 77,
+                        "endOffset": 1471
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 1225,
+                    "endColumn": 93,
+                    "endOffset": 1314
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1476,
+                        "endColumn": 93,
+                        "endOffset": 1565
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 1319,
+                    "endColumn": 96,
+                    "endOffset": 1411
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1570,
+                        "endColumn": 96,
+                        "endOffset": 1662
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 1416,
+                    "endColumn": 107,
+                    "endOffset": 1519
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1667,
+                        "endColumn": 107,
+                        "endOffset": 1770
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 1524,
+                    "endColumn": 73,
+                    "endOffset": 1593
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1775,
+                        "endColumn": 73,
+                        "endOffset": 1844
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1598,
+                    "endColumn": 139,
+                    "endOffset": 1733
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 346,
+                        "endColumn": 139,
+                        "endOffset": 481
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1738,
+                    "endColumn": 138,
+                    "endOffset": 1872
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 486,
+                        "endColumn": 138,
+                        "endOffset": 620
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1877,
+                    "endColumn": 105,
+                    "endOffset": 1978
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 625,
+                        "endColumn": 105,
+                        "endOffset": 726
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1983,
+                    "endColumn": 73,
+                    "endOffset": 2052
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1849,
+                        "endColumn": 73,
+                        "endOffset": 1918
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 2057,
+                    "endColumn": 72,
+                    "endOffset": 2125
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1923,
+                        "endColumn": 72,
+                        "endOffset": 1991
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 2130,
+                    "endColumn": 76,
+                    "endOffset": 2202
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1996,
+                        "endColumn": 76,
+                        "endOffset": 2068
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 2207,
+                    "endColumn": 92,
+                    "endOffset": 2295
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 2073,
+                        "endColumn": 92,
+                        "endOffset": 2161
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 2300,
+                    "endColumn": 95,
+                    "endOffset": 2391
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 2166,
+                        "endColumn": 95,
+                        "endOffset": 2257
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 2396,
+                    "endColumn": 98,
+                    "endOffset": 2490
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 2262,
+                        "endColumn": 98,
+                        "endOffset": 2356
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 2495,
+                    "endColumn": 99,
+                    "endOffset": 2590
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 2361,
+                        "endColumn": 99,
+                        "endOffset": 2456
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 2595,
+                    "endColumn": 99,
+                    "endOffset": 2690
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 2461,
+                        "endColumn": 99,
+                        "endOffset": 2556
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 2695,
+                    "endColumn": 76,
+                    "endOffset": 2767
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 2561,
+                        "endColumn": 76,
+                        "endOffset": 2633
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 2772,
+                    "endColumn": 103,
+                    "endOffset": 2871
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 4,
+                        "startOffset": 2638,
+                        "endColumn": 103,
+                        "endOffset": 2737
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 2876,
+                    "endColumn": 96,
+                    "endOffset": 2968
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 2742,
+                        "endColumn": 96,
+                        "endOffset": 2834
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 31,
+                    "startColumn": 4,
+                    "startOffset": 2973,
+                    "endColumn": 97,
+                    "endOffset": 3066
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 4,
+                        "startOffset": 2839,
+                        "endColumn": 97,
+                        "endOffset": 2932
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 32,
+                    "startColumn": 4,
+                    "startOffset": 3071,
+                    "endColumn": 142,
+                    "endOffset": 3209
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 31,
+                        "startColumn": 4,
+                        "startOffset": 2937,
+                        "endColumn": 142,
+                        "endOffset": 3075
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 33,
+                    "startColumn": 4,
+                    "startOffset": 3214,
+                    "endColumn": 132,
+                    "endOffset": 3342
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 32,
+                        "startColumn": 4,
+                        "startOffset": 3080,
+                        "endColumn": 132,
+                        "endOffset": 3208
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 3347,
+                    "endColumn": 130,
+                    "endOffset": 3473
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 33,
+                        "startColumn": 4,
+                        "startOffset": 3213,
+                        "endColumn": 130,
+                        "endOffset": 3339
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 3478,
+                    "endColumn": 95,
+                    "endOffset": 3569
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 4,
+                        "startOffset": 3344,
+                        "endColumn": 95,
+                        "endOffset": 3435
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 3574,
+                    "endColumn": 90,
+                    "endOffset": 3660
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 35,
+                        "startColumn": 4,
+                        "startOffset": 3440,
+                        "endColumn": 90,
+                        "endOffset": 3526
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 3665,
+                    "endColumn": 104,
+                    "endOffset": 3765
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 36,
+                        "startColumn": 4,
+                        "startOffset": 3531,
+                        "endColumn": 104,
+                        "endOffset": 3631
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 3770,
+                    "endColumn": 79,
+                    "endOffset": 3845
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 37,
+                        "startColumn": 4,
+                        "startOffset": 3636,
+                        "endColumn": 79,
+                        "endOffset": 3711
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 39,
+                    "startColumn": 4,
+                    "startOffset": 3850,
+                    "endColumn": 116,
+                    "endOffset": 3962
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/res/values-ms/values-ms.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 164,
+                        "endColumn": 116,
+                        "endOffset": 276
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 40,
+                    "startColumn": 4,
+                    "startOffset": 3967,
+                    "endColumn": 122,
+                    "endOffset": 4085
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/res/values-ms/values-ms.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 281,
+                        "endColumn": 122,
+                        "endOffset": 399
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 41,
+                    "startColumn": 4,
+                    "startOffset": 4090,
+                    "endColumn": 94,
+                    "endOffset": 4180
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/res/values-ms/values-ms.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 404,
+                        "endColumn": 94,
+                        "endOffset": 494
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 42,
+                    "startColumn": 4,
+                    "startOffset": 4185,
+                    "endColumn": 66,
+                    "endOffset": 4247
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/res/values-ms/values-ms.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 499,
+                        "endColumn": 66,
+                        "endOffset": 561
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 43,
+                    "startColumn": 4,
+                    "startOffset": 4252,
+                    "endColumn": 67,
+                    "endOffset": 4315
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/res/values-ms/values-ms.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 566,
+                        "endColumn": 67,
+                        "endOffset": 629
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 44,
+                    "startColumn": 4,
+                    "startOffset": 4320,
+                    "endColumn": 61,
+                    "endOffset": 4377
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/res/values-ms/values-ms.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 634,
+                        "endColumn": 61,
+                        "endOffset": 691
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 45,
+                    "startColumn": 4,
+                    "startOffset": 4382,
+                    "endColumn": 70,
+                    "endOffset": 4448
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/res/values-ms/values-ms.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 696,
+                        "endColumn": 70,
+                        "endOffset": 762
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 46,
+                    "startColumn": 4,
+                    "startOffset": 4453,
+                    "endColumn": 74,
+                    "endOffset": 4523
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/res/values-ms/values-ms.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 767,
+                        "endColumn": 74,
+                        "endOffset": 837
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 47,
+                    "startColumn": 4,
+                    "startOffset": 4528,
+                    "endColumn": 95,
+                    "endOffset": 4619
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/res/values-ms/values-ms.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 842,
+                        "endColumn": 95,
+                        "endOffset": 933
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 48,
+                    "startColumn": 4,
+                    "startOffset": 4624,
+                    "endColumn": 76,
+                    "endOffset": 4696
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/res/values-ms/values-ms.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 938,
+                        "endColumn": 76,
+                        "endOffset": 1010
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 49,
+                    "startColumn": 4,
+                    "startOffset": 4701,
+                    "endColumn": 76,
+                    "endOffset": 4773
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/res/values-ms/values-ms.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1015,
+                        "endColumn": 76,
+                        "endOffset": 1087
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 50,
+                    "startColumn": 4,
+                    "startOffset": 4778,
+                    "endColumn": 89,
+                    "endOffset": 4863
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/res/values-ms/values-ms.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1092,
+                        "endColumn": 89,
+                        "endOffset": 1177
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 51,
+                    "startColumn": 4,
+                    "startOffset": 4868,
+                    "endColumn": 108,
+                    "endOffset": 4972
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/res/values-ms/values-ms.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1182,
+                        "endColumn": 108,
+                        "endOffset": 1286
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 52,
+                    "startColumn": 4,
+                    "startOffset": 4977,
+                    "endColumn": 64,
+                    "endOffset": 5037
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/res/values-ms/values-ms.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1291,
+                        "endColumn": 64,
+                        "endOffset": 1351
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 53,
+                    "startColumn": 4,
+                    "startOffset": 5042,
+                    "endColumn": 65,
+                    "endOffset": 5103
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/res/values-ms/values-ms.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1356,
+                        "endColumn": 65,
+                        "endOffset": 1417
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 54,
+                    "startColumn": 4,
+                    "startOffset": 5108,
+                    "endColumn": 138,
+                    "endOffset": 5242
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/res/values-ms/values-ms.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1422,
+                        "endColumn": 138,
+                        "endOffset": 1556
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 55,
+                    "startColumn": 4,
+                    "startOffset": 5247,
+                    "endColumn": 107,
+                    "endOffset": 5350
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 340,
+                        "endColumn": 107,
+                        "endOffset": 443
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 56,
+                    "startColumn": 4,
+                    "startOffset": 5355,
+                    "endColumn": 204,
+                    "endOffset": 5555
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 448,
+                        "endColumn": 204,
+                        "endOffset": 648
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 57,
+                    "startColumn": 4,
+                    "startOffset": 5560,
+                    "endColumn": 131,
+                    "endOffset": 5687
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 653,
+                        "endColumn": 131,
+                        "endOffset": 780
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 58,
+                    "startColumn": 4,
+                    "startOffset": 5692,
+                    "endColumn": 107,
+                    "endOffset": 5795
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 785,
+                        "endColumn": 107,
+                        "endOffset": 888
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 59,
+                    "startColumn": 4,
+                    "startOffset": 5800,
+                    "endColumn": 236,
+                    "endOffset": 6032
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 893,
+                        "endColumn": 236,
+                        "endOffset": 1125
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 60,
+                    "startColumn": 4,
+                    "startOffset": 6037,
+                    "endColumn": 236,
+                    "endOffset": 6269
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 1130,
+                        "endColumn": 236,
+                        "endOffset": 1362
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 61,
+                    "startColumn": 4,
+                    "startOffset": 6274,
+                    "endColumn": 133,
+                    "endOffset": 6403
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 1367,
+                        "endColumn": 133,
+                        "endOffset": 1496
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 62,
+                    "startColumn": 4,
+                    "startOffset": 6408,
+                    "endColumn": 135,
+                    "endOffset": 6539
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 1501,
+                        "endColumn": 135,
+                        "endOffset": 1632
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 63,
+                    "startColumn": 4,
+                    "startOffset": 6544,
+                    "endColumn": 260,
+                    "endOffset": 6800
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 343,
+                        "endColumn": 260,
+                        "endOffset": 599
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 64,
+                    "startColumn": 4,
+                    "startOffset": 6805,
+                    "endColumn": 262,
+                    "endOffset": 7063
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1637,
+                        "endColumn": 262,
+                        "endOffset": 1895
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 65,
+                    "startColumn": 4,
+                    "startOffset": 7068,
+                    "endColumn": 127,
+                    "endOffset": 7191
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1900,
+                        "endColumn": 127,
+                        "endOffset": 2023
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 66,
+                    "startColumn": 4,
+                    "startOffset": 7196,
+                    "endColumn": 110,
+                    "endOffset": 7302
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 2028,
+                        "endColumn": 110,
+                        "endOffset": 2134
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 67,
+                    "startColumn": 4,
+                    "startOffset": 7307,
+                    "endColumn": 205,
+                    "endOffset": 7508
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 2139,
+                        "endColumn": 205,
+                        "endOffset": 2340
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 68,
+                    "startColumn": 4,
+                    "startOffset": 7513,
+                    "endColumn": 136,
+                    "endOffset": 7645
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 2345,
+                        "endColumn": 136,
+                        "endOffset": 2477
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 69,
+                    "startColumn": 4,
+                    "startOffset": 7650,
+                    "endColumn": 229,
+                    "endOffset": 7875
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 2482,
+                        "endColumn": 229,
+                        "endOffset": 2707
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 70,
+                    "startColumn": 4,
+                    "startOffset": 7880,
+                    "endColumn": 141,
+                    "endOffset": 8017
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 2712,
+                        "endColumn": 141,
+                        "endOffset": 2849
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 71,
+                    "startColumn": 4,
+                    "startOffset": 8022,
+                    "endColumn": 204,
+                    "endOffset": 8222
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 2854,
+                        "endColumn": 204,
+                        "endOffset": 3054
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 72,
+                    "startColumn": 4,
+                    "startOffset": 8227,
+                    "endColumn": 96,
+                    "endOffset": 8319
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 3059,
+                        "endColumn": 96,
+                        "endOffset": 3151
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 73,
+                    "startColumn": 4,
+                    "startOffset": 8324,
+                    "endColumn": 93,
+                    "endOffset": 8413
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 3156,
+                        "endColumn": 93,
+                        "endOffset": 3245
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 74,
+                    "startColumn": 4,
+                    "startOffset": 8418,
+                    "endColumn": 111,
+                    "endOffset": 8525
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 3250,
+                        "endColumn": 111,
+                        "endOffset": 3357
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 75,
+                    "startColumn": 4,
+                    "startOffset": 8530,
+                    "endColumn": 61,
+                    "endOffset": 8587
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/res/values-ms/values-ms.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1687,
+                        "endColumn": 61,
+                        "endOffset": 1744
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 76,
+                    "startColumn": 4,
+                    "startOffset": 8592,
+                    "endColumn": 106,
+                    "endOffset": 8694
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 293,
+                        "endColumn": 106,
+                        "endOffset": 395
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 77,
+                    "startColumn": 4,
+                    "startOffset": 8699,
+                    "endColumn": 93,
+                    "endOffset": 8788
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 400,
+                        "endColumn": 93,
+                        "endOffset": 489
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 78,
+                    "startColumn": 4,
+                    "startOffset": 8793,
+                    "endColumn": 106,
+                    "endOffset": 8895
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/9.6.0/res/values-ms/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 300,
+                        "endColumn": 106,
+                        "endOffset": 402
+                    }
+                }
+            }
+        ]
+    }
+]

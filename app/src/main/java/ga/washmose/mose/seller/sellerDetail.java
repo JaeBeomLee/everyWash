@@ -25,7 +25,7 @@ import ga.washmose.mose.R;
 import ga.washmose.mose.ReviewData;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
-public class sellerDetail extends AppCompatActivity implements OnMapReadyCallback{
+public class SellerDetail extends AppCompatActivity implements OnMapReadyCallback{
 
     ImageView profile;
     TextView name, location, rateCount;
@@ -68,7 +68,7 @@ public class sellerDetail extends AppCompatActivity implements OnMapReadyCallbac
         items.add(new ItemData("https://cleanfly.link/image/1003_icon.jpg", "남성 속옷 하의", 10, 2000));
 
         for (int i = 0; i< items.size(); i++){
-            View view = inflater.inflate(R.layout.seller_detail_stuff_item, itemListLayout, false);
+            View view = inflater.inflate(R.layout.item_seller_detail_stuff, itemListLayout, false);
             TextView name = (TextView) view.findViewById(R.id.stuff_name);
             TextView count = (TextView) view.findViewById(R.id.stuff_count);
             TextView price = (TextView) view.findViewById(R.id.stuff_price);
@@ -90,7 +90,7 @@ public class sellerDetail extends AppCompatActivity implements OnMapReadyCallbac
         reviews.add(new ReviewData("http://chem.unl.edu/guo_profile_pic-2.jpg", "조세현", "16년 8월", "거리가 먼게 흠이긴 하지만 세탁을 잘 해서 주시니 너무 좋네요. 다리미질에 깔끔하게 접어서 주셨어요."));
 
         for (int i = 0; i< reviews.size(); i++){
-            View view = inflater.inflate(R.layout.seller_detail_review_item, reviewLayout, false);
+            View view = inflater.inflate(R.layout.item_seller_detail_review, reviewLayout, false);
             TextView name = (TextView) view.findViewById(R.id.review_item_name);
             TextView date = (TextView) view.findViewById(R.id.review_item_date);
             TextView review = (TextView) view.findViewById(R.id.review_item_content);

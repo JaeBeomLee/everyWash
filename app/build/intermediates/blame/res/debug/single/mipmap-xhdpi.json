@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/mipmap-xhdpi/star_empty.png",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.hedgehog.ratingbar/app/1.1.2/res/mipmap-xhdpi/star_empty.png"
+    },
+    {
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/mipmap-xhdpi/star_half.png",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.hedgehog.ratingbar/app/1.1.2/res/mipmap-xhdpi/star_half.png"
+    },
+    {
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/mipmap-xhdpi/star_full.png",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.hedgehog.ratingbar/app/1.1.2/res/mipmap-xhdpi/star_full.png"
+    }
+]

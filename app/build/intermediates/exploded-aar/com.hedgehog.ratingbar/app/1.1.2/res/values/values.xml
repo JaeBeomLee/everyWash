@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RatingBar"><attr format="dimension" name="starImageSize"/><attr format="dimension" name="starImageWidth"/><attr format="dimension" name="starImageHeight"/><attr format="dimension" name="starImagePadding"/><attr format="integer" name="starCount"/><attr format="integer" name="starNum"/><attr format="reference" name="starEmpty"/><attr format="reference" name="starFill"/><attr format="reference" name="starHalf"/><attr format="boolean" name="clickable"/><attr format="boolean" name="halfstart"/></declare-styleable>
+    <!-- From: file:/D:/GitHub/RatingBar/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/D:/GitHub/RatingBar/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">RatingBar</string>
+    <string name="hello_world">Hello world!</string>
+    <!-- From: file:/D:/GitHub/RatingBar/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

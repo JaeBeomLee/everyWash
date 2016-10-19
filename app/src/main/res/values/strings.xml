@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">everywash</string>
+    <string name="app_name">모두의 세탁</string>
 
     <string name="title_activity_splash">SplashActivity</string>
     <string name="title_activity_login">LoginActivity</string>

@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import de.hdodenhof.circleimageview.CircleImageView;
+import ga.washmose.mose.User.UserInfo;
 import ga.washmose.mose.main.MainActivity;
 
 public class MoreFragment extends Fragment {

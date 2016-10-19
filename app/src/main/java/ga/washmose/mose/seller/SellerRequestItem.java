@@ -7,15 +7,15 @@ package ga.washmose.mose.seller;
 public class SellerRequestItem {
     public String imageUrl;
     public String name;
-    public String location;
+    public String address;
     public String summary;
     public String request;
     public boolean author;
 
-    public SellerRequestItem(String imageUrl, String name, String location, String request, String summary, boolean author) {
+    public SellerRequestItem(String imageUrl, String name, String address, String request, String summary, boolean author) {
         this.imageUrl = imageUrl;
         this.name = name;
-        this.location = location;
+        this.address = address;
         this.request = request;
         this.summary = summary;
         this.author = author;

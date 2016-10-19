@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:2:1-77:12
+ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:2:1-80:12
 	package
 		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:4:5-31
 		INJECTED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml
@@ -43,7 +43,7 @@ MERGED from [com.google.android.gms:play-services-maps:9.6.1] /Users/leejaebeom/
 	android:required
 		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:11:9-32
 application
-ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:13:5-75:19
+ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:13:5-78:19
 MERGED from [com.google.android.gms:play-services-gcm:9.6.1] /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.6.1/AndroidManifest.xml:23:5-19
 MERGED from [com.google.android.gms:play-services-base:9.6.1] /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/AndroidManifest.xml:18:5-20:19
 MERGED from [com.google.android.gms:play-services-basement:9.6.1] /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.1/AndroidManifest.xml:19:5-21:19
@@ -145,83 +145,105 @@ MERGED from [com.google.android.gms:play-services-basement:9.6.1] /Users/leejaeb
 	android:name
 		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:33:13-58
 activity#ga.washmose.mose.main.MainActivity
-ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:36:9-39:20
+ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:36:9-38:52
 	android:screenOrientation
 		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:38:13-49
 	android:name
 		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:37:13-46
 activity#ga.washmose.mose.pre.SplashActivity
-ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:40:9-51:20
+ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:39:9-49:20
 	android:screenOrientation
-		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:44:13-49
-	android:label
-		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:43:13-58
+		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:42:13-49
 	android:configChanges
-		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:42:13-74
+		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:41:13-74
 	android:theme
-		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:45:13-46
+		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:43:13-46
 	android:name
-		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:41:13-47
+		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:40:13-47
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:46:13-50:29
+ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:44:13-48:29
 action#android.intent.action.MAIN
-ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:47:17-69
+ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:45:17-69
 	android:name
-		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:47:25-66
+		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:45:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:49:17-77
+ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:47:17-77
 	android:name
-		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:49:27-74
+		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:47:27-74
 activity#ga.washmose.mose.pre.LoginActivity
-ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:52:9-56:54
+ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:50:9-54:54
 	android:screenOrientation
-		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:55:13-49
+		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:53:13-49
 	android:label
-		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:54:13-57
+		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:52:13-57
 	android:theme
-		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:56:13-51
+		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:54:13-51
 	android:name
-		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:53:13-46
+		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:51:13-46
 activity#com.facebook.FacebookActivity
-ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:57:9-62:75
+ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:55:9-60:75
 	android:screenOrientation
-		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:61:13-49
+		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:59:13-49
 	android:label
-		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:60:13-45
+		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:58:13-45
 	android:configChanges
-		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:59:13-96
+		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:57:13-96
 	android:theme
-		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:62:13-72
+		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:60:13-72
 	android:name
-		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:58:13-57
+		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:56:13-57
 activity#ga.washmose.mose.temp
-ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:63:9-42
+ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:61:9-42
 	android:name
-		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:63:19-39
+		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:61:19-39
 activity#ga.washmose.mose.seller.SellerDetail
-ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:64:9-67:47
+ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:62:9-65:47
 	android:label
-		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:66:13-65
+		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:64:13-65
 	android:theme
-		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:67:13-44
+		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:65:13-44
 	android:name
-		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:65:13-48
+		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:63:13-48
 activity#ga.washmose.mose.seller.SellerOrderList
-ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:68:9-60
+ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:66:9-60
 	android:name
-		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:68:19-57
+		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:66:19-57
 activity#ga.washmose.mose.OrderActivity
-ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:69:9-73:20
+ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:67:9-70:47
 	android:label
-		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:71:13-57
+		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:69:13-57
 	android:theme
-		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:72:13-44
+		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:70:13-44
 	android:name
-		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:70:13-42
+		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:68:13-42
 activity#ga.washmose.mose.OrderItemList
-ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:74:9-51
+ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:71:9-51
 	android:name
-		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:74:19-48
+		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:71:19-48
+activity#ga.washmose.mose.User.UserEvaluationActivity
+ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:72:9-74
+	android:name
+		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:72:19-62
+activity#ga.washmose.mose.User.UserOrderInfo
+ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:73:9-65
+	android:name
+		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:73:19-53
+activity#ga.washmose.mose.seller.SellerOrderRequestActivity
+ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:74:9-71
+	android:name
+		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:74:19-68
+activity#ga.washmose.mose.seller.SellerOrderManageActivity
+ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:75:9-70
+	android:name
+		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:75:19-67
+activity#ga.washmose.mose.User.UserOrderRequestActivity
+ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:76:9-67
+	android:name
+		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:76:19-64
+activity#ga.washmose.mose.pre.SignUpActivity
+ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:77:9-65
+	android:name
+		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:77:19-53
 uses-sdk
 INJECTED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.kakao.sdk:kakaolink:1.1.5] /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.kakao.sdk/kakaolink/1.1.5/AndroidManifest.xml:11:5-13:41
@@ -303,6 +325,7 @@ MERGED from [com.google.android.gms:play-services-vision:9.6.1] /Users/leejaebeo
 MERGED from [com.google.android.gms:play-services-wallet:9.6.1] /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/9.6.1/AndroidManifest.xml:18:5-42
 MERGED from [com.google.android.gms:play-services-wearable:9.6.1] /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/9.6.1/AndroidManifest.xml:17:5-42
 MERGED from [com.android.support.constraint:constraint-layout:1.0.0-alpha9] /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support.constraint/constraint-layout/1.0.0-alpha9/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:multidex:1.0.1] /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/AndroidManifest.xml:18:5-42
 	tools:overrideLibrary
 		ADDED from [com.android.support:support-v4:24.2.1] /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/AndroidManifest.xml:23:9-51
 	android:targetSdkVersion

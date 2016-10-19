@@ -6,18 +6,25 @@ import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 
 import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnTabSelectListener;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 import ga.washmose.mose.MoreFragment;
 import ga.washmose.mose.R;
-import ga.washmose.mose.UserLaundryFragment;
+import ga.washmose.mose.User.UserInfo;
+import ga.washmose.mose.User.UserLaundryFragment;
+import ga.washmose.mose.User.UserOrderRequestFragment;
+import ga.washmose.mose.Util.UHttps;
 import ga.washmose.mose.seller.SellerManageFragment;
 import ga.washmose.mose.seller.SellerOrderRequestFragment;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
-import static ga.washmose.mose.UserInfo.isSeller;
+import static ga.washmose.mose.User.UserInfo.isSeller;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     SellerOrderRequestFragment requestFragment;
     SellerManageFragment manageFragment;
     UserLaundryFragment laundryFragment;
+    UserOrderRequestFragment userRequestFragment;
     MoreFragment moreFragment;
     FragmentManager fragmentManager = null;
 
@@ -37,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
         toolbar = (Toolbar)findViewById(R.id.toolbar);
         mainBar = (BottomBar)findViewById(R.id.main_bar);
 
+        initUserData();
+        initUserOrders();
         fragmentManager = getSupportFragmentManager();
 
 
@@ -77,6 +87,11 @@ public class MainActivity extends AppCompatActivity {
                                     .replace(R.id.main_content, laundryFragment = new UserLaundryFragment())
                                     .commit();
                             break;
+                        case R.id.tab_list:
+                            fragmentManager.beginTransaction()
+                                    .replace(R.id.main_content, userRequestFragment = new UserOrderRequestFragment())
+                                    .commit();
+                            break;
                         case R.id.tab_menu:
                             fragmentManager.beginTransaction()
                                     .replace(R.id.main_content, moreFragment = new MoreFragment())
@@ -86,6 +101,42 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    private void initUserData(){
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                JSONObject res = UHttps.okHttp(UHttps.IP+"/user", UserInfo.apiKey);
+                UserInfo.userID = res.optInt("user_id");
+                UserInfo.user_level = res.optInt("user_level");
+                UserInfo.loginType = res.optInt("login_type");
+                UserInfo.openID = res.optString("app_id");
+                UserInfo.name = res.optString("user_name");
+                UserInfo.address = res.optString("address");
+                UserInfo.phone = res.optString("phone");
+                UserInfo.profileURL = res.optString("profile_image");
+
+                Log.d("MA response", res.toString());
+            }
+        });
+
+        thread.setDaemon(true);
+        thread.start();
+    }
+
+    private void initUserOrders(){
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                JSONObject res = UHttps.okHttp(UHttps.IP+"/orders", UserInfo.apiKey);
+                JSONArray orders = res.optJSONArray("order");
+                Log.d("MA response", orders.toString());
+            }
+        });
+
+        thread.setDaemon(true);
+        thread.start();
     }
 
     @Override

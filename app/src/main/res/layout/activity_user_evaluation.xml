@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_user_evaluation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ga.washmose.mose.User.UserEvaluationActivity">
+
+    <include layout="@layout/app_bar"
+        android:id="@+id/app_bar"
+        />
+    <RelativeLayout
+        android:layout_below="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="32dp"
+        android:paddingBottom="24dp"
+        android:paddingRight="32dp"
+        android:paddingLeft="32dp"
+        >
+        <LinearLayout
+            android:id="@+id/information_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/information_profile"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/temp_profile"
+                />
+
+            <TextView
+                android:id="@+id/information"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:textSize="24dp"
+                android:text="바이오 컴퓨터 세탁소"
+                android:textColor="@android:color/black"
+                fontPath="fonts/NotoSansKR-Bold-Hestia.otf"
+                />
+        </LinearLayout>
+
+        <com.hedgehog.ratingbar.RatingBar
+            android:id="@+id/rating"
+            android:layout_below="@+id/information_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            app:starEmpty="@drawable/rate_blank_star"
+            app:starFill="@drawable/rate_star"
+            app:starImageHeight="48dp"
+            app:starImageWidth="48dp"
+            />
+
+        <EditText
+            android:id="@+id/rate_detail"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/rating"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="12dp"
+            android:textSize="14dp"
+            android:hint="세탁 만족도, 판매자 만족도 등, 편하게 작성해 주세요 (선택사항)"
+            android:textColor="#b4000000"
+            android:background="@color/colorPrimary005"
+            android:gravity="top"
+            fontPath="fonts/NotoSansKR-Regular-Hestia.otf"
+            />
+
+        <Button
+            android:id="@+id/accept"
+            android:layout_below="@+id/rate_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:text="확인"
+            android:textSize="16dp"
+            fontPath="fonts/NotoSansKR-Medium-Hestia.otf"
+            />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

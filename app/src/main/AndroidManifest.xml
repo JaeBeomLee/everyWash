@@ -35,12 +35,10 @@
 
         <activity
             android:name=".main.MainActivity"
-            android:screenOrientation="portrait">
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".pre.SplashActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/title_activity_splash"
             android:screenOrientation="portrait"
             android:theme="@style/StartTheme">
             <intent-filter>
@@ -69,9 +67,14 @@
         <activity
             android:name=".OrderActivity"
             android:label="@string/title_activity_order"
-            android:theme="@style/AppTheme">
-        </activity>
+            android:theme="@style/AppTheme" />
         <activity android:name=".OrderItemList" />
+        <activity android:name=".User.UserEvaluationActivity"></activity>
+        <activity android:name=".User.UserOrderInfo"></activity>
+        <activity android:name=".seller.SellerOrderRequestActivity" />
+        <activity android:name=".seller.SellerOrderManageActivity" />
+        <activity android:name=".User.UserOrderRequestActivity" />
+        <activity android:name=".pre.SignUpActivity"></activity>
     </application>
 
 </manifest>

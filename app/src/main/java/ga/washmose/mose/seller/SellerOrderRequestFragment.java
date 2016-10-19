@@ -1,11 +1,13 @@
 package ga.washmose.mose.seller;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -14,13 +16,16 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 
+import ga.washmose.mose.ItemData;
+import ga.washmose.mose.OrderData;
 import ga.washmose.mose.R;
 
 public class SellerOrderRequestFragment extends Fragment {
     sellerRequestAdapter adapter;
     ArrayList<SellerRequestItem> items =new ArrayList<>();
-
+    OrderData data;
     public SellerOrderRequestFragment() {
         // Required empty public constructor
     }
@@ -38,7 +43,7 @@ public class SellerOrderRequestFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //items의 배열이 비어 있어서 아무것도 안나올 것으로 추정
+        data = new OrderData();
         items.add(new SellerRequestItem("http://www.vipstudio.co.kr/bbs/data/gallery01/남자증명01.jpg", "김강현", "분당구 수내동 10-1 트라펠리스 910호", "10월 3일 세탁 요청", "속옷 30, 상의 2", false));
         items.add(new SellerRequestItem("http://pds19.egloos.com/pds/201011/22/73/f0095273_4cea0b1348cfe.jpg", "정시후", "분당구 정자동 두산위브파빌리온 A동 1820호", "10월 5일 세탁 요청", "속옷 10, 하의 5", true));
         items.add(new SellerRequestItem("http://cfile202.uf.daum.net/image/2429503F5507C4E6203EF1", "최지훈", "분당구 운중동 산운마을판교월든힐스2단지아파트 203동 111호", "10월 5일 세탁 요청", "상의 4, 하의 5", true));
@@ -57,6 +62,28 @@ public class SellerOrderRequestFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_seller_order_request, container, false);
         ListView list = (ListView)rootView.findViewById(R.id.seller_order_request_list);
         list.setAdapter(adapter);
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                data.code = 1111;
+                data.progress = 0;
+                Calendar collection = Calendar.getInstance();
+                collection.set(Calendar.YEAR, 2016);
+                collection.set(Calendar.MONTH, 10);
+                collection.set(Calendar.DAY_OF_MONTH, 3);
+                data.collectionDate = collection;
+                data.completeDate = collection;
+                data.address = items.get(position).address;
+
+                ArrayList<ItemData> items = new ArrayList<ItemData>();
+                items.add(new ItemData("Url","티셔츠", 3, 2000, "세탁 진행중.."));
+                items.add(new ItemData("Url","남성 속옷 하의", 8, 1000, "세탁 안함"));
+                data.items = items;
+                Intent intent = new Intent(getContext(), SellerOrderRequestActivity.class);
+                intent.putExtra("orderData", data);
+                startActivity(intent);
+            }
+        });
         return rootView;
     }
 
@@ -104,7 +131,7 @@ public class SellerOrderRequestFragment extends Fragment {
             }
 
             holder.name.setText(items.get(position).name);
-            holder.location.setText(items.get(position).location);
+            holder.location.setText(items.get(position).address);
             holder.summary.setText(items.get(position).summary);
             Glide.with(context).load(items.get(position).imageUrl).into(holder.profile);
             holder.request.setText(items.get(position).request);

@@ -223,7 +223,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="0801dc5ccd10dda1ac8cf3d78b87fb62553dbac0">
+        sha1="2e553e7ea350eff4746c4287fa00e946d3aeabe9">
         <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_63d2b55a68a9ea51e2bb5c8570cf7612e8de3295/classes.dex" />
     </item>
     <item
@@ -367,7 +367,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="4072c6112f3d2f81f9a0ca89956bbba485b304e5">
+        sha1="b75c68e080798fc0711fc7ca4fa6f674d4cb8d95">
         <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_6eee8c3f127fe1028b58aac78bbb0ef8bf95a350/classes.dex" />
     </item>
     <item
@@ -504,6 +504,15 @@
         revision="24.0.3"
         sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
         <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-mediarouter-v7-24.0.0_ce25b5b878d32bd9561e0c08ee000a1eb466f01f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-multidex-1.0.1_6a51d0d0597fec6e918b0d10c7d41a47239f5e46/classes.dex" />
     </item>
     <item
         is-multidex="true"

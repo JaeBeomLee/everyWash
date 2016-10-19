@@ -49,12 +49,10 @@
 
         <activity
             android:name="ga.washmose.mose.main.MainActivity"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name="ga.washmose.mose.pre.SplashActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/title_activity_splash"
             android:screenOrientation="portrait"
             android:theme="@style/StartTheme" >
             <intent-filter>
@@ -83,9 +81,14 @@
         <activity
             android:name="ga.washmose.mose.OrderActivity"
             android:label="@string/title_activity_order"
-            android:theme="@style/AppTheme" >
-        </activity>
+            android:theme="@style/AppTheme" />
         <activity android:name="ga.washmose.mose.OrderItemList" />
+        <activity android:name="ga.washmose.mose.User.UserEvaluationActivity" />
+        <activity android:name="ga.washmose.mose.User.UserOrderInfo" />
+        <activity android:name="ga.washmose.mose.seller.SellerOrderRequestActivity" />
+        <activity android:name="ga.washmose.mose.seller.SellerOrderManageActivity" />
+        <activity android:name="ga.washmose.mose.User.UserOrderRequestActivity" />
+        <activity android:name="ga.washmose.mose.pre.SignUpActivity" />
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"

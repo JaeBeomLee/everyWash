@@ -16,7 +16,7 @@ import org.json.JSONObject;
 
 import ga.washmose.mose.MoreFragment;
 import ga.washmose.mose.R;
-import ga.washmose.mose.User.UserInfo;
+import ga.washmose.mose.UserInfo;
 import ga.washmose.mose.User.UserLaundryFragment;
 import ga.washmose.mose.User.UserOrderRequestFragment;
 import ga.washmose.mose.Util.UHttps;
@@ -24,7 +24,7 @@ import ga.washmose.mose.seller.SellerManageFragment;
 import ga.washmose.mose.seller.SellerOrderRequestFragment;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
-import static ga.washmose.mose.User.UserInfo.isSeller;
+import static ga.washmose.mose.UserInfo.isSeller;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -46,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
         mainBar = (BottomBar)findViewById(R.id.main_bar);
 
         initUserData();
-        initUserOrders();
         fragmentManager = getSupportFragmentManager();
 
 
@@ -110,14 +109,16 @@ public class MainActivity extends AppCompatActivity {
                 JSONObject res = UHttps.okHttp(UHttps.IP+"/user", UserInfo.apiKey);
                 UserInfo.userID = res.optInt("user_id");
                 UserInfo.user_level = res.optInt("user_level");
-                UserInfo.loginType = res.optInt("login_type");
-                UserInfo.openID = res.optString("app_id");
+                UserInfo.loginType = res.optInt("open_id_type");
+                UserInfo.openID = res.optString("open_id");
                 UserInfo.name = res.optString("user_name");
                 UserInfo.address = res.optString("address");
                 UserInfo.phone = res.optString("phone");
                 UserInfo.profileURL = res.optString("profile_image");
 
                 Log.d("MA response", res.toString());
+
+                initUserOrders();
             }
         });
 
@@ -129,9 +130,17 @@ public class MainActivity extends AppCompatActivity {
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
+                int code;
                 JSONObject res = UHttps.okHttp(UHttps.IP+"/orders", UserInfo.apiKey);
-                JSONArray orders = res.optJSONArray("order");
-                Log.d("MA response", orders.toString());
+                if (res != null){
+                    code = res.optInt("code");
+                    if (code == 200){
+                        JSONArray orders = res.optJSONArray("order");
+                        Log.d("MA response", orders.toString());
+                    }
+                }else {
+
+                }
             }
         });
 

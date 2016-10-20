@@ -11,7 +11,7 @@ import android.widget.EditText;
 import org.json.JSONObject;
 
 import ga.washmose.mose.R;
-import ga.washmose.mose.User.UserInfo;
+import ga.washmose.mose.UserInfo;
 import ga.washmose.mose.Util.UHttps;
 import okhttp3.FormBody;
 import okhttp3.RequestBody;

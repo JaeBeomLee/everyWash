@@ -38,7 +38,7 @@ public final class R {
 		public static final int kakaotalk_icon = 0x7f020170;
 	}
 	public static final class id {
-		public static final int kakao_login_activity_progress_bar = 0x7f100172;
+		public static final int kakao_login_activity_progress_bar = 0x7f100173;
 	}
 	public static final class layout {
 		public static final int kakao_internal_login_activity = 0x7f040051;

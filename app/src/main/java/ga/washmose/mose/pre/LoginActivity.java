@@ -37,7 +37,7 @@ import com.kakao.util.exception.KakaoException;
 import org.json.JSONObject;
 
 import ga.washmose.mose.R;
-import ga.washmose.mose.User.UserInfo;
+import ga.washmose.mose.UserInfo;
 import ga.washmose.mose.Util.UDialog;
 import ga.washmose.mose.Util.UHttps;
 import ga.viewpagerindicator.CirclePageIndicator;
@@ -92,7 +92,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         //kakao
         callback = new SessionCallback();
         Session.getCurrentSession().addCallback(callback);
-        Session.getCurrentSession().checkAndImplicitOpen();
+//        Session.getCurrentSession().checkAndImplicitOpen();
 
 
         //facebook
@@ -108,13 +108,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     public void run() {
                         final int code;
                         Log.d("LA", "open_id: " + loginResult.getAccessToken().getUserId());
-                        RequestBody body = new FormBody.Builder()
-//                                .add("app_id", loginResult.getAccessToken().getUserId())
-                                .add("open_id", loginResult.getAccessToken().getApplicationId())
-                                .add("open_id_type", String.valueOf(UserInfo.TYPE_FACEBOOK))
-                                .build();
+                        UHttps.initBody();
+                        UHttps.addParameter("open_id", loginResult.getAccessToken().getApplicationId());
+                        UHttps.addParameter("open_id_type", String.valueOf(UserInfo.TYPE_FACEBOOK));
 
-                        final JSONObject response = UHttps.okHttp(UHttps.IP + "/login", body);
+                        final JSONObject response = UHttps.okHttp(UHttps.IP + "/login", UHttps.getBody());
                         code = response.optInt("code");
                         handler.post(new Runnable() {
                             @Override
@@ -249,7 +247,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
             @Override
             public void onNotSignedUp() {
-
+                Log.d("Kakao LA", "onNotSignedUp");
             }
 
             @Override
@@ -257,13 +255,44 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 Thread thread = new Thread(new Runnable() {
                     @Override
                     public void run() {
+                        final int code;
                         Log.d("LA", "open_id: " + String.valueOf(result.getId()));
-                        RequestBody body = new FormBody.Builder()
-                                .add("open_id", String.valueOf(result.getId()))
-                                .add("open_id_type", String.valueOf(1))
-                                .build();
+                        UHttps.initBody();
+                        UHttps.addParameter("open_id", String.valueOf(result.getId()));
+                        UHttps.addParameter("open_id_type", String.valueOf(1));
 
-                        JSONObject response = UHttps.okHttp(UHttps.IP + "/login", body);
+                        final JSONObject response = UHttps.okHttp(UHttps.IP + "/login", UHttps.getBody());
+                        code = response.optInt("code");
+                        handler.post(new Runnable() {
+                            @Override
+                            public void run() {
+                                switch (code) {
+                                    case 400:
+                                        //찾을 수 없음 (에러)
+                                        UDialog.setDialog(LoginActivity.this, "관리자에게 문의 해주세요! \n코드 : " + code);
+                                        break;
+                                    case 401:   //인증 받지 않은 요청. (회원 가입으로 감)
+                                        UserInfo.openID = String.valueOf(result.getId());
+                                        UserInfo.loginType = UserInfo.TYPE_KAKAO;
+                                        Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
+                                        startActivity(intent);
+                                        finish();
+                                        break;
+                                    case 500:
+                                        //내부 서버 오류
+
+                                        break;
+                                    case 200:   //로그인
+                                        UPreferences.setStringPref(LoginActivity.this, UserInfo.PREF_USER, UserInfo.PREF_SUB_USER_APIKEY,response.optString("api_key"));
+                                        UserInfo.apiKey = UPreferences.getStringPref(LoginActivity.this, UserInfo.PREF_USER, UserInfo.PREF_SUB_USER_APIKEY,"");
+                                        UserInfo.isSeller = false;
+                                        Intent intent2 = new Intent(LoginActivity.this, MainActivity.class);
+                                        startActivity(intent2);
+                                        finish();
+                                        break;
+                                }
+                            }
+                        });
                         Log.d("LA", "response : " + response);
                     }
                 });

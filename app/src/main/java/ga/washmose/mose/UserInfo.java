@@ -1,4 +1,4 @@
-package ga.washmose.mose.User;
+package ga.washmose.mose;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -9,7 +9,9 @@ import java.util.ArrayList;
 
 public class UserInfo implements Serializable{
     public static String PREF_USER = "user";
+    public static String PREF_GCM = "gcm";
     public static String PREF_SUB_USER_APIKEY = "api_key";
+    public static String PREF_SUB_GCM_REG= "gcm_register";
     public static int TYPE_FACEBOOK = 1;
     public static int TYPE_KAKAO = 2;
 

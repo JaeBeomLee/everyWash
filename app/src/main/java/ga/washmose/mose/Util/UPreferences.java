@@ -13,6 +13,8 @@ import java.util.ArrayList;
  * Created by C on 15. 9. 2..
  */
 public class UPreferences {
+
+
     public static void setLongPref(Context context, String pref, String key, long value) {
         SharedPreferences prefs = context.getSharedPreferences(pref, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = prefs.edit();

@@ -16,11 +16,11 @@
         "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/ViewpagerIndicator/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/vpi__tab_selected_focused_holo.9.png"
     },
     {
-        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/ViewpagerIndicator/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/vpi__tab_selected_pressed_holo.9.png",
-        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/ViewpagerIndicator/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/vpi__tab_selected_pressed_holo.9.png"
-    },
-    {
         "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/ViewpagerIndicator/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/vpi__tab_unselected_holo.9.png",
         "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/ViewpagerIndicator/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/vpi__tab_unselected_holo.9.png"
+    },
+    {
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/ViewpagerIndicator/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/vpi__tab_selected_pressed_holo.9.png",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/ViewpagerIndicator/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/vpi__tab_selected_pressed_holo.9.png"
     }
 ]

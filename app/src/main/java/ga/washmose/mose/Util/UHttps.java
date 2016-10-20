@@ -13,6 +13,7 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
+import java.net.ProtocolException;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.util.HashMap;
@@ -24,6 +25,7 @@ import javax.net.ssl.SSLContext;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
 
+import okhttp3.FormBody;
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -34,6 +36,23 @@ public class UHttps {
     public static String IP = "https://api2.washmose.ga/v1";
     public static final MediaType JSON = MediaType.parse("application/json");
     public static final MediaType X_WWW_FORM_URLENCODED = MediaType.parse("application/x-www-form-urlencoded");
+    public static FormBody.Builder builder;
+//    RequestBody body = new FormBody.Builder()
+//    .add("device_key", "")
+//    .add("device_type", "0")
+//    .build();
+
+    public static void initBody(){
+        builder = null;
+        builder = new FormBody.Builder();
+    }
+    public static void addParameter(String parameter, String value){
+        builder.add(parameter, value);
+    }
+
+    public static RequestBody getBody(){
+        return builder.build();
+    }
     public static JSONObject okHttp(String urlString, RequestBody body) {
         int code;
         OkHttpClient client = new OkHttpClient();
@@ -99,8 +118,9 @@ public class UHttps {
                 .get()
                 .build();
 
+        Response response = null;
         try {
-            Response response = client.newCall(request).execute();
+            response = client.newCall(request).execute();
             JSONObject res = null;
             try {
                 String responseStr = response.body().string();
@@ -108,6 +128,12 @@ public class UHttps {
                 res.put("code", response.code());
             } catch (JSONException e) {
                 e.printStackTrace();
+                res = new JSONObject();
+                try {
+                    res.put("code", response.code());
+                } catch (JSONException e1) {
+                    e1.printStackTrace();
+                }
             }
             return res;
         } catch (IOException e) {

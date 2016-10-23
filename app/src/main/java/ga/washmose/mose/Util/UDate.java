@@ -19,7 +19,7 @@ public class UDate {
     private final static DateFormat dateTimeFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.KOREA);
     private final static DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd (E)", Locale.KOREA);
     private final static DateFormat timeFormat = new SimpleDateFormat("HH:mm", Locale.KOREA);
-    private final static DateFormat simpleDateFormat = new SimpleDateFormat("MM.dd", Locale.KOREA);
+    private final static DateFormat simpleDateFormat = new SimpleDateFormat("MM월 dd일", Locale.KOREA);
     private final static DateFormat timeStampFormat = new SimpleDateFormat("yyyyMMddHHmmss", Locale.KOREA);
     private final static DateFormat periodFormat = new SimpleDateFormat("yyyyMMdd", Locale.KOREA);
     private final static DateFormat logFormat = new SimpleDateFormat("yy/MM/dd HH:mm", Locale.KOREA);

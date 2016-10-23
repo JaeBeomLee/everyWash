@@ -1,6 +1,8 @@
 package ga.washmose.mose.seller;
 
+import android.app.FragmentTransaction;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
 import android.support.v7.app.AppCompatActivity;
@@ -13,8 +15,14 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
+import com.google.android.gms.maps.model.MarkerOptions;
 import com.hedgehog.ratingbar.RatingBar;
 
 import java.util.ArrayList;
@@ -23,6 +31,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 import ga.washmose.mose.ItemData;
 import ga.washmose.mose.R;
 import ga.washmose.mose.ReviewData;
+import ga.washmose.mose.User.UserLaundryItem;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class SellerDetail extends AppCompatActivity implements OnMapReadyCallback{
@@ -33,12 +42,25 @@ public class SellerDetail extends AppCompatActivity implements OnMapReadyCallbac
     Button contact;
 
     ViewGroup itemListLayout, reviewLayout;
+
+    UserLaundryItem seller;
+    LatLng sellerLocation;
+    private GoogleMap map;
+    MapFragment mapFragment;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_seller_detail);
+        Intent intent = getIntent();
+        seller = (UserLaundryItem) intent.getSerializableExtra("seller");
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        mapFragment = MapFragment.newInstance();
+        FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+        fragmentTransaction.add(R.id.seller_detail_map, mapFragment);
+        fragmentTransaction.commit();
+        mapFragment.getMapAsync(this);
 
         profile = (ImageView)findViewById(R.id.seller_detail_profile);
         name = (TextView)findViewById(R.id.seller_detail_name);
@@ -50,9 +72,10 @@ public class SellerDetail extends AppCompatActivity implements OnMapReadyCallbac
         itemListLayout = (ViewGroup)findViewById(R.id.seller_detail_item_list_layout);
         reviewLayout = (ViewGroup)findViewById(R.id.seller_detail_review_layout);
 
-        Glide.with(this).load("https://api2.washmose.ga/data/test/3.jpeg").centerCrop().into(profile);
-        name.setText("바이오 컴퓨터 세탁");
-        location.setText("수내동");
+        sellerLocation = new LatLng(37.261946, 127.108925);
+        Glide.with(this).load(seller.imageUrl).centerCrop().into(profile);
+        name.setText(seller.name);
+        location.setText(seller.location);
         ratingBar.setStar(3);
         rateCount.setText("529");
 
@@ -62,10 +85,7 @@ public class SellerDetail extends AppCompatActivity implements OnMapReadyCallbac
 
     private void initItem(){
         LayoutInflater inflater = (LayoutInflater)getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        ArrayList<ItemData> items = new ArrayList<>();
-        items.add(new ItemData("https://cleanfly.link/image/1001_icon.jpg", "티셔츠", 1, 3000));
-        items.add(new ItemData("https://cleanfly.link/image/1002_icon.jpg", "남성 속옷 상의", 10, 1500));
-        items.add(new ItemData("https://cleanfly.link/image/1003_icon.jpg", "남성 속옷 하의", 10, 2000));
+        ArrayList<ItemData> items = seller.items;
 
         for (int i = 0; i< items.size(); i++){
             View view = inflater.inflate(R.layout.item_seller_detail_stuff, itemListLayout, false);
@@ -107,6 +127,10 @@ public class SellerDetail extends AppCompatActivity implements OnMapReadyCallbac
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
+        map = googleMap;
+        Marker marker = map.addMarker(new MarkerOptions().position(sellerLocation));
+        map.moveCamera(CameraUpdateFactory.newLatLngZoom(sellerLocation, 17));
+        map.getUiSettings().setScrollGesturesEnabled(false);
 
     }
 

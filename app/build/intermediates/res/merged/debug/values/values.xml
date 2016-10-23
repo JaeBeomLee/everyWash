@@ -1008,7 +1008,7 @@
     <string name="decline">Decline</string>
     <string name="facebook_app_id">580843672076295</string>
     <string name="facebook_text">페이스북으로 로그인</string>
-    <string name="google_map_key">AIzaSyANZK5fzLNE0IlLSNunN54z0jZNxdL-TwE</string>
+    <string name="google_map_key">AIzaSyC67MaW-zr6iNadJbwyToqabBBEvB7QGsg</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_world">Hello world!</string>
     <string name="kakao_app_key">68eef828831b6e0f88e2b80c92d23735</string>
@@ -1042,6 +1042,9 @@
     <string name="tagmanager_preview_dialog_button">Continue</string>
     <string name="tagmanager_preview_dialog_message">Preview mode updated.</string>
     <string name="tagmanager_preview_dialog_title">Preview</string>
+    <string name="tedpermission_close">Close</string>
+    <string name="tedpermission_confirm">Confirm</string>
+    <string name="tedpermission_setting">Setting</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_order">OrderActivity</string>
     <string name="title_activity_seller_detail">seller_detail</string>
@@ -2579,6 +2582,16 @@
         <item name="vpiIconPageIndicatorStyle">@style/Widget.IconPageIndicator</item>
         <item name="vpiTabPageIndicatorStyle">@style/Widget.TabPageIndicator</item>
     </style>
+    <style name="Theme.Transparent" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:backgroundDimEnabled">false</item>
+
+
+  </style>
     <style name="ThemeOverlay.AppCompat" parent="Base.ThemeOverlay.AppCompat"/>
     <style name="ThemeOverlay.AppCompat.ActionBar" parent="Base.ThemeOverlay.AppCompat.ActionBar"/>
     <style name="ThemeOverlay.AppCompat.Dark" parent="Base.ThemeOverlay.AppCompat.Dark"/>

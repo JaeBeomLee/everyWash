@@ -16,8 +16,14 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.Serializable;
 import java.util.ArrayList;
 
+import ga.washmose.mose.ItemData;
 import ga.washmose.mose.R;
 import ga.washmose.mose.seller.SellerDetail;
 
@@ -28,14 +34,16 @@ import ga.washmose.mose.seller.SellerDetail;
 public class UserLaundryFragment extends Fragment{
 
     userLaundryAdapter adapter;
-    ArrayList<UserLaundryItem> items;
-
+    ArrayList<UserLaundryItem> sellers;
+    private static String ARG_SELLERS = "sellers";
+    JSONArray sellersJSON;
     public UserLaundryFragment() {
     }
 
-    public static UserLaundryFragment newInstance() {
+    public static UserLaundryFragment newInstance(JSONArray sellers) {
         UserLaundryFragment fragment = new UserLaundryFragment();
         Bundle args = new Bundle();
+        args.putString(ARG_SELLERS, sellers.toString());
         fragment.setArguments(args);
         return fragment;
     }
@@ -43,6 +51,14 @@ public class UserLaundryFragment extends Fragment{
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        if (getArguments() != null) {
+            try {
+                sellersJSON = new JSONArray(getArguments().getString(ARG_SELLERS));
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
 
     }
 
@@ -53,13 +69,24 @@ public class UserLaundryFragment extends Fragment{
 
         ListView list = (ListView)rootView.findViewById(R.id.user_laundry_list);
 
-        items = new ArrayList<>();
-        items.add(new UserLaundryItem("https://api2.washmose.ga/data/test/0.jpeg", "주부 5년차", "수내동","속옷 3, 겉옷 5"));
-        items.add(new UserLaundryItem("https://api2.washmose.ga/data/test/3.jpeg", "바이오 컴퓨터 세탁소", "수내동","속옷 2, 겉옷 3"));
-        items.add(new UserLaundryItem("https://api2.washmose.ga/data/test/2.jpeg", "자취생", "수내동","속옷 1"));
-        items.add(new UserLaundryItem("https://api2.washmose.ga/data/test/1.jpeg", "트레벨 오피스텔 가능, 수선 가능", "수내동","속옷, 상의, 하의"));
-        items.add(new UserLaundryItem("https://api2.washmose.ga/data/test/4.jpeg", "보보스 오피스텔 4층", "수내동","속옷 10, 겨울 옷"));
-        adapter = new userLaundryAdapter(items, getContext());
+        sellers = new ArrayList<>();
+//        sellers.add(new UserLaundryItem("https://api2.washmose.ga/data/test/0.jpeg", "주부 5년차", "수내동","속옷 3, 겉옷 5"));
+//        sellers.add(new UserLaundryItem("https://api2.washmose.ga/data/test/3.jpeg", "바이오 컴퓨터 세탁소", "수내동","속옷 2, 겉옷 3"));
+//        sellers.add(new UserLaundryItem("https://api2.washmose.ga/data/test/2.jpeg", "자취생", "수내동","속옷 1"));
+//        sellers.add(new UserLaundryItem("https://api2.washmose.ga/data/test/1.jpeg", "트레벨 오피스텔 가능, 수선 가능", "수내동","속옷, 상의, 하의"));
+//        sellers.add(new UserLaundryItem("https://api2.washmose.ga/data/test/4.jpeg", "보보스 오피스텔 4층", "수내동","속옷 10, 겨울 옷"));
+
+        for (int i = 0; i< sellersJSON.length(); i++){
+            JSONObject seller = sellersJSON.optJSONObject(i);
+
+            ArrayList<ItemData> items = new ArrayList<ItemData>();
+            items.add(new ItemData("Url","티셔츠 (not)", 3, 2000, "세탁 진행중.."));
+            items.add(new ItemData("Url","남성 속옷 하의 (not)", 8, 1000, "세탁 안함"));
+
+            sellers.add(new UserLaundryItem(seller.optString("header_image"), seller.optString("title"), seller.optString("address"),"속옷 3, 겉옷 5", items, seller.optInt("latitude"), seller.optInt("longitude")));
+
+        }
+        adapter = new userLaundryAdapter(sellers, getContext());
 
         list.setAdapter(adapter);
 
@@ -67,6 +94,7 @@ public class UserLaundryFragment extends Fragment{
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(getContext(), SellerDetail.class);
+                intent.putExtra("seller", sellers.get(position));
                 startActivity(intent);
             }
         });

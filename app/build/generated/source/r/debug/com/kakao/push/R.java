@@ -68,7 +68,7 @@ public final class R {
 		public static final int com_kakao_logout_button = 0x7f09007b;
 		public static final int com_kakao_ok_button = 0x7f09007c;
 		public static final int com_kakao_other_kakaoaccount = 0x7f09007d;
-		public static final int com_kakao_profile_nickname = 0x7f090094;
+		public static final int com_kakao_profile_nickname = 0x7f090097;
 		public static final int com_kakao_profile_userId = 0x7f09007e;
 		public static final int com_kakao_unlink_button = 0x7f09007f;
 		public static final int common_google_play_services_enable_button = 0x7f090048;
@@ -90,7 +90,7 @@ public final class R {
 		public static final int common_open_on_phone = 0x7f090059;
 		public static final int common_signin_button_text = 0x7f09005a;
 		public static final int common_signin_button_text_long = 0x7f09005b;
-		public static final int core_com_kakao_sdk_loading = 0x7f090095;
+		public static final int core_com_kakao_sdk_loading = 0x7f090098;
 	}
 	public static final class styleable {
 		public static final int[] LoadingImageView = { 0x7f010157, 0x7f010158, 0x7f010159 };

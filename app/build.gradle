@@ -44,5 +44,6 @@ dependencies {
     compile 'com.google.android.gms:play-services:9.6.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha9'
     compile 'com.android.support:multidex:1.0.0'
+    compile 'com.github.ParkSangGwon:TedPermission:v1.0.11'
     testCompile 'junit:junit:4.12'
 }

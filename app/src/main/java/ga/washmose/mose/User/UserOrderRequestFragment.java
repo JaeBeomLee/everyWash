@@ -15,31 +15,36 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Calendar;
 
 import ga.washmose.mose.ItemData;
 import ga.washmose.mose.OrderData;
 import ga.washmose.mose.R;
-import ga.washmose.mose.seller.SellerOrderManageActivity;
-import ga.washmose.mose.seller.SellerRequestItem;
+import ga.washmose.mose.Util.UDate;
 
 public class UserOrderRequestFragment extends Fragment {
     sellerRequestAdapter adapter;
-    ArrayList<SellerRequestItem> items =new ArrayList<>();
-    OrderData data;
+    private static final String ARG_ORDERS = "orders";
+    ArrayList<OrderData> Orders =new ArrayList<>();
+    JSONArray requestOrders;
 
     public UserOrderRequestFragment() {
         // Required empty public constructor
     }
 
     // TODO: Rename and change types and number of parameters
-    public static UserOrderRequestFragment newInstance() {
+    public static UserOrderRequestFragment newInstance(JSONArray orders) {
         UserOrderRequestFragment fragment = new UserOrderRequestFragment();
-//        Bundle args = new Bundle();
-//        args.putString(ARG_PARAM1, param1);
+        Bundle args = new Bundle();
+        args.putString(ARG_ORDERS, orders.toString());
 //        args.putString(ARG_PARAM2, param2);
-//        fragment.setArguments(args);
+        fragment.setArguments(args);
         return fragment;
     }
 
@@ -47,15 +52,43 @@ public class UserOrderRequestFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //items의 배열이 비어 있어서 아무것도 안나올 것으로 추정
-        items.add(new SellerRequestItem("http://www.vipstudio.co.kr/bbs/data/gallery01/남자증명01.jpg", "바이오 컴퓨터 세탁소", "분당구 수내동 10-1 트라펠리스 910호", "10월 3일 세탁 요청", "속옷 30, 상의 2", false));
+//        items.add(new SellerRequestItem("http://www.vipstudio.co.kr/bbs/data/gallery01/남자증명01.jpg", "바이오 컴퓨터 세탁소", "분당구 수내동 10-1 트라펠리스 910호", "10월 3일 세탁 요청", "속옷 30, 상의 2", false));
 
-        data = new OrderData();
-        adapter = new sellerRequestAdapter(items, getContext());
-//        if (getArguments() != null) {
-//            mParam1 = getArguments().getString(ARG_PARAM1);
-//            mParam2 = getArguments().getString(ARG_PARAM2);
-//        }
+        if (getArguments() != null) {
+            try {
+                requestOrders = new JSONArray(getArguments().getString(ARG_ORDERS));
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
+
+        for (int i = 0; i< requestOrders.length(); i++){
+            JSONObject order = requestOrders.optJSONObject(i);
+            Calendar requestDate = null, collectionDate = null, completeDate = null;
+            try {
+                requestDate = Calendar.getInstance();
+                requestDate.setTime(UDate.getDate(order.optString("request_date")));
+
+                collectionDate = Calendar.getInstance();
+                collectionDate.setTime(UDate.getDate(order.optString("send_date")));
+
+                completeDate = Calendar.getInstance();
+                completeDate.setTime(UDate.getDate(order.optString("finish_date")));
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+            ArrayList<ItemData> items = new ArrayList<ItemData>();
+            items.add(new ItemData("Url","티셔츠 (not)", 3, 2000, "세탁 진행중.."));
+            items.add(new ItemData("Url","남성 속옷 하의 (not)", 8, 1000, "세탁 안함"));
+
+            JSONObject seller = order.optJSONObject("seller");
+            Orders.add(new OrderData(seller.optString("header_image"),seller.optString("profile_image"),seller.optString("seller_name"), seller.optString("title"), "Summary", requestDate, true, order.optInt("order_code"),
+                    order.optInt("order_status"), order.optString("phone") + "data", collectionDate, completeDate, seller.optString("address"),  items));
+        }
+        adapter = new sellerRequestAdapter(Orders, getContext());
     }
+
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -67,22 +100,8 @@ public class UserOrderRequestFragment extends Fragment {
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                data.code = 1111;
-                data.progress = 0;
-                Calendar collection = Calendar.getInstance();
-                collection.set(Calendar.YEAR, 2016);
-                collection.set(Calendar.MONTH, 10);
-                collection.set(Calendar.DAY_OF_MONTH, 3);
-                data.collectionDate = collection;
-                data.completeDate = collection;
-                data.address = items.get(position).address;
-
-                ArrayList<ItemData> items = new ArrayList<ItemData>();
-                items.add(new ItemData("Url","티셔츠", 3, 2000, "세탁 진행중.."));
-                items.add(new ItemData("Url","남성 속옷 하의", 8, 1000, "세탁 안함"));
-                data.items = items;
                 Intent intent = new Intent(getContext(), UserOrderRequestActivity.class);
-                intent.putExtra("orderData", data);
+                intent.putExtra("orderData", Orders.get(position));
                 startActivity(intent);
             }
         });
@@ -91,9 +110,9 @@ public class UserOrderRequestFragment extends Fragment {
 
     public class sellerRequestAdapter extends BaseAdapter {
 
-        ArrayList<SellerRequestItem> items;
+        ArrayList<OrderData> items;
         Context context;
-        public sellerRequestAdapter(ArrayList<SellerRequestItem> items, Context context) {
+        public sellerRequestAdapter(ArrayList<OrderData> items, Context context) {
             this.items = items;
             this.context = context;
         }
@@ -132,11 +151,12 @@ public class UserOrderRequestFragment extends Fragment {
                 holder = (ViewHolder)convertView.getTag();
             }
 
-            holder.name.setText(items.get(position).name);
+            holder.name.setText(items.get(position).title);
             holder.location.setText(items.get(position).address);
             holder.summary.setText(items.get(position).summary);
-            Glide.with(context).load(items.get(position).imageUrl).into(holder.profile);
-            holder.request.setText(items.get(position).request);
+            Glide.with(context).load(items.get(position).profileImageUrl).into(holder.profile);
+            String request = UDate.getSimpleDateFormat(items.get(position).request.getTime()) + " 세탁 요청";
+            holder.request.setText(request);
             if (items.get(position).author){
                 holder.author.setVisibility(View.VISIBLE);
             }else{

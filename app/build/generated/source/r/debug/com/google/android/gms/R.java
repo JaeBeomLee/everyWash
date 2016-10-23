@@ -460,7 +460,7 @@ public final class R {
 		public static final int gtm_analytics = 0x7f080000;
 	}
 	public static final class string {
-		public static final int accept = 0x7f09008c;
+		public static final int accept = 0x7f09008f;
 		public static final int cast_ad_label = 0x7f090013;
 		public static final int cast_casting_to_device = 0x7f090014;
 		public static final int cast_closed_captions = 0x7f090015;
@@ -475,8 +475,8 @@ public final class R {
 		public static final int cast_forward_10 = 0x7f09001e;
 		public static final int cast_forward_30 = 0x7f09001f;
 		public static final int cast_intro_overlay_button_text = 0x7f090020;
-		public static final int cast_invalid_stream_duration_text = 0x7f090091;
-		public static final int cast_invalid_stream_position_text = 0x7f090092;
+		public static final int cast_invalid_stream_duration_text = 0x7f090094;
+		public static final int cast_invalid_stream_position_text = 0x7f090095;
 		public static final int cast_mute = 0x7f090021;
 		public static final int cast_notification_connected_message = 0x7f090022;
 		public static final int cast_notification_connecting_message = 0x7f090023;
@@ -520,20 +520,20 @@ public final class R {
 		public static final int common_open_on_phone = 0x7f090059;
 		public static final int common_signin_button_text = 0x7f09005a;
 		public static final int common_signin_button_text_long = 0x7f09005b;
-		public static final int create_calendar_message = 0x7f090096;
-		public static final int create_calendar_title = 0x7f090097;
-		public static final int debug_menu_ad_information = 0x7f090098;
-		public static final int debug_menu_creative_preview = 0x7f090099;
-		public static final int debug_menu_title = 0x7f09009a;
-		public static final int debug_menu_troubleshooting = 0x7f09009b;
-		public static final int decline = 0x7f09009c;
+		public static final int create_calendar_message = 0x7f090099;
+		public static final int create_calendar_title = 0x7f09009a;
+		public static final int debug_menu_ad_information = 0x7f09009b;
+		public static final int debug_menu_creative_preview = 0x7f09009c;
+		public static final int debug_menu_title = 0x7f09009d;
+		public static final int debug_menu_troubleshooting = 0x7f09009e;
+		public static final int decline = 0x7f09009f;
 		public static final int place_autocomplete_clear_button = 0x7f09006d;
 		public static final int place_autocomplete_search_hint = 0x7f09006e;
-		public static final int store_picture_message = 0x7f0900a7;
-		public static final int store_picture_title = 0x7f0900a8;
-		public static final int tagmanager_preview_dialog_button = 0x7f0900a9;
-		public static final int tagmanager_preview_dialog_message = 0x7f0900aa;
-		public static final int tagmanager_preview_dialog_title = 0x7f0900ab;
+		public static final int store_picture_message = 0x7f0900aa;
+		public static final int store_picture_title = 0x7f0900ab;
+		public static final int tagmanager_preview_dialog_button = 0x7f0900ac;
+		public static final int tagmanager_preview_dialog_message = 0x7f0900ad;
+		public static final int tagmanager_preview_dialog_title = 0x7f0900ae;
 		public static final int wallet_buy_button_place_holder = 0x7f090071;
 	}
 	public static final class style {
@@ -548,10 +548,10 @@ public final class R {
 		public static final int Theme_AppInvite_Preview = 0x7f0b012c;
 		public static final int Theme_AppInvite_Preview_Base = 0x7f0b001f;
 		public static final int Theme_IAPTheme = 0x7f0b0133;
-		public static final int WalletFragmentDefaultButtonTextAppearance = 0x7f0b0140;
-		public static final int WalletFragmentDefaultDetailsHeaderTextAppearance = 0x7f0b0141;
-		public static final int WalletFragmentDefaultDetailsTextAppearance = 0x7f0b0142;
-		public static final int WalletFragmentDefaultStyle = 0x7f0b0143;
+		public static final int WalletFragmentDefaultButtonTextAppearance = 0x7f0b0141;
+		public static final int WalletFragmentDefaultDetailsHeaderTextAppearance = 0x7f0b0142;
+		public static final int WalletFragmentDefaultDetailsTextAppearance = 0x7f0b0143;
+		public static final int WalletFragmentDefaultStyle = 0x7f0b0144;
 	}
 	public static final class styleable {
 		public static final int[] AdsAttrs = { 0x7f010060, 0x7f010061, 0x7f010062 };

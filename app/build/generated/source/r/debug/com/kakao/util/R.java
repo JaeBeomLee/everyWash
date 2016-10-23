@@ -54,7 +54,7 @@ public final class R {
 		public static final int com_kakao_logout_button = 0x7f09007b;
 		public static final int com_kakao_ok_button = 0x7f09007c;
 		public static final int com_kakao_other_kakaoaccount = 0x7f09007d;
-		public static final int com_kakao_profile_nickname = 0x7f090094;
+		public static final int com_kakao_profile_nickname = 0x7f090097;
 		public static final int com_kakao_profile_userId = 0x7f09007e;
 		public static final int com_kakao_unlink_button = 0x7f09007f;
 	}

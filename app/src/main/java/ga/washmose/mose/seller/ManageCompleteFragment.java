@@ -32,7 +32,7 @@ public class ManageCompleteFragment extends Fragment {
     String title;
     ManageCompleteAdapter adapter;
     ArrayList<SellerManageItem> items = new ArrayList<>();
-    OrderData data;
+//    OrderData data;
 
     public static ManageCompleteFragment newInstance(int page, String title) {
         ManageCompleteFragment fragment = new ManageCompleteFragment();
@@ -47,7 +47,7 @@ public class ManageCompleteFragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        data = new OrderData();
+//        data = new OrderData();
         page = getArguments().getInt("page", 0);
         title = getArguments().getString("title", "세탁 완료");
         items.add(new SellerManageItem("10/03", 1, "분당구 수내동 10-1 트라펠리스 910호", "010-3132-9028"));
@@ -61,28 +61,28 @@ public class ManageCompleteFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_manage, container, false);
         ListView listView = (ListView) view.findViewById(R.id.manage_list);
         listView.setAdapter(adapter);
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                data.code = 1111;
-                data.progress = 4;
-                Calendar collection = Calendar.getInstance();
-                collection.set(Calendar.YEAR, 2016);
-                collection.set(Calendar.MONTH, 11);
-                collection.set(Calendar.DAY_OF_MONTH, 11);
-                data.collectionDate = collection;
-                data.completeDate = collection;
-                data.address = items.get(position).address;
-
-                ArrayList<ItemData> items = new ArrayList<ItemData>();
-                items.add(new ItemData("Url","티셔츠", 3, 2000, "세탁 진행중.."));
-                items.add(new ItemData("Url","남성 속옷 하의", 8, 1000, "세탁 안함"));
-                data.items = items;
-                Intent intent = new Intent(getContext(), SellerOrderManageActivity.class);
-                intent.putExtra("orderData", data);
-                startActivity(intent);
-            }
-        });
+//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                data.code = 1111;
+//                data.progress = 4;
+//                Calendar collection = Calendar.getInstance();
+//                collection.set(Calendar.YEAR, 2016);
+//                collection.set(Calendar.MONTH, 11);
+//                collection.set(Calendar.DAY_OF_MONTH, 11);
+//                data.collectionDate = collection;
+//                data.completeDate = collection;
+//                data.address = items.get(position).address;
+//
+//                ArrayList<ItemData> items = new ArrayList<ItemData>();
+//                items.add(new ItemData("Url","티셔츠", 3, 2000, "세탁 진행중.."));
+//                items.add(new ItemData("Url","남성 속옷 하의", 8, 1000, "세탁 안함"));
+//                data.items = items;
+//                Intent intent = new Intent(getContext(), SellerOrderManageActivity.class);
+//                intent.putExtra("orderData", data);
+//                startActivity(intent);
+//            }
+//        });
         return view;
     }
 

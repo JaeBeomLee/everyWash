@@ -132,5 +132,8 @@
     <string msgid="2809095107724486040" name="place_autocomplete_search_hint">"검색"</string>
     <string msgid="146198913615257606" name="search_menu_title">"검색"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="tedpermission_close">닫기</string>
+    <string name="tedpermission_confirm">확인</string>
+    <string name="tedpermission_setting">설정</string>
     <string msgid="363496807345461806" name="wallet_buy_button_place_holder">"Google로 구매"</string>
 </resources>

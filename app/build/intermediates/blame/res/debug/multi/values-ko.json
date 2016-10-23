@@ -2441,8 +2441,65 @@
                     "startLine": 134,
                     "startColumn": 4,
                     "startOffset": 12429,
+                    "endColumn": 50,
+                    "endOffset": 12475
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.github.ParkSangGwon/TedPermission/v1.0.11/res/values-ko/values-ko.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 50,
+                        "endOffset": 101
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 135,
+                    "startColumn": 4,
+                    "startOffset": 12480,
+                    "endColumn": 52,
+                    "endOffset": 12528
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.github.ParkSangGwon/TedPermission/v1.0.11/res/values-ko/values-ko.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 106,
+                        "endColumn": 52,
+                        "endOffset": 154
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 136,
+                    "startColumn": 4,
+                    "startOffset": 12533,
+                    "endColumn": 52,
+                    "endOffset": 12581
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.github.ParkSangGwon/TedPermission/v1.0.11/res/values-ko/values-ko.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 159,
+                        "endColumn": 52,
+                        "endOffset": 207
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 137,
+                    "startColumn": 4,
+                    "startOffset": 12586,
                     "endColumn": 98,
-                    "endOffset": 12523
+                    "endOffset": 12680
                 },
                 "from": {
                     "file": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/9.6.1/res/values-ko/values.xml",

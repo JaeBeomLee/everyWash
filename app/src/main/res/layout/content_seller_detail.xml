@@ -99,11 +99,13 @@
                 android:orientation="vertical"
                 />
             <fragment
+                xmlns:map="http://schemas.android.com/apk/res-auto"
                 android:layout_marginTop="16dp"
                 android:id="@+id/seller_detail_map"
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
                 android:name="com.google.android.gms.maps.SupportMapFragment"
+                map:cameraZoom="13"
                 />
 
             <TextView

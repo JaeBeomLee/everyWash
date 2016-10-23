@@ -81,6 +81,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
             >
             <ImageView
                 android:layout_width="14dp"
@@ -91,6 +92,7 @@
                 android:id="@+id/list_item_location"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
                 android:textSize="14dp"
                 android:text="분당구 수내동 10-1 트라펠리스 910호"
                 android:textColor="@android:color/black"

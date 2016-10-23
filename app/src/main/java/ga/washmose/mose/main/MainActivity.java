@@ -2,6 +2,7 @@ package ga.washmose.mose.main;
 
 import android.content.Context;
 import android.os.AsyncTask;
+import android.os.Parcel;
 import android.os.SystemClock;
 import android.support.annotation.IdRes;
 import android.support.v4.app.FragmentManager;
@@ -17,6 +18,8 @@ import com.roughike.bottombar.OnTabSelectListener;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
+
+import java.net.ProtocolException;
 
 import ga.washmose.mose.MoreFragment;
 import ga.washmose.mose.R;
@@ -133,7 +136,7 @@ public class MainActivity extends AppCompatActivity {
 
                 Log.d("MA response", res.toString());
 
-                initUserOrders();
+                initSellerData();
             }
         });
 
@@ -146,19 +149,21 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 int code;
-                JSONObject res = UHttps.okHttp(UHttps.IP+"/orders", UserInfo.apiKey);
+                JSONObject res;
+                res = UHttps.okHttp(UHttps.IP+"/orders", UserInfo.apiKey);
                 if (res != null){
                     code = res.optInt("code");
                     if (code == 200){
                         JSONArray orders = res.optJSONArray("order");
                         requestOrders = orders;
                         Log.d("MA response orders", orders.toString());
+                    }else {
                     }
-
-                    initSellerData();
                 }else {
-
+                    requestOrders = new JSONArray();
                 }
+
+                initMain();
             }
         });
 
@@ -180,7 +185,7 @@ public class MainActivity extends AppCompatActivity {
                         sellers = seller;
                         Log.d("MA response seller", seller.toString());
                     }
-                    initMain();
+                    initUserOrders();
                 }else {
 
                 }

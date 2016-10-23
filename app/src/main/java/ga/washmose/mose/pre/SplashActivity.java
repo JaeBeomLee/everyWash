@@ -34,6 +34,7 @@ import java.util.Arrays;
 import ga.washmose.mose.R;
 import ga.washmose.mose.UserInfo;
 import ga.washmose.mose.Util.UHttps;
+import ga.washmose.mose.Util.UKakaoLogin;
 import ga.washmose.mose.Util.UPreferences;
 import ga.washmose.mose.main.MainActivity;
 import okhttp3.FormBody;
@@ -45,7 +46,7 @@ import static ga.washmose.mose.UserInfo.PREF_SUB_GCM_REG;
 public class SplashActivity extends AppCompatActivity {
 
     // Kakao
-    private SessionCallback kakaoCallback = null;
+    private UKakaoLogin.SessionCallback kakaoCallback = null;
 
     // Facebook
     private CallbackManager facebookCallback;
@@ -53,11 +54,13 @@ public class SplashActivity extends AppCompatActivity {
 
     boolean isLogin = false;
     boolean isSnsLogin = false;
+    UKakaoLogin kakaoLogin;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        kakaoLogin = new UKakaoLogin(SplashActivity.this);
         initKakao();
 
     }
@@ -146,7 +149,7 @@ public class SplashActivity extends AppCompatActivity {
     private void initKakao() {
         // 세션 콜백 추가
         isSnsLogin = true;
-        kakaoCallback = new SessionCallback();
+        kakaoCallback = new UKakaoLogin.SessionCallback();
         Session.getCurrentSession().addCallback(kakaoCallback);
         boolean isCheck = Session.getCurrentSession().checkAndImplicitOpen();
         Log.d("kakao", isCheck +"");
@@ -165,7 +168,7 @@ public class SplashActivity extends AppCompatActivity {
 
         @Override
         public void onSessionOpenFailed(KakaoException exception) {
-            Log.d("SessionCallback LA", exception.getMessage());
+//            Log.d("SessionCallback SignA", exception.getMessage());
         }
     }
 
@@ -201,7 +204,7 @@ public class SplashActivity extends AppCompatActivity {
                     public void run() {
                         UHttps.initBody();
                         UHttps.addParameter("open_id", String.valueOf(result.getId()));
-                        UHttps.addParameter("open_id_type", String.valueOf(1));
+                        UHttps.addParameter("open_id_type", String.valueOf(UserInfo.TYPE_KAKAO));
 
                         final JSONObject response = UHttps.okHttp(UHttps.IP + "/login", UHttps.getBody());
 

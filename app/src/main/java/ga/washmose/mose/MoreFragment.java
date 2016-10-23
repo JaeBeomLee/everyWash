@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.facebook.login.LoginManager;
+import com.kakao.usermgmt.UserManagement;
+import com.kakao.usermgmt.callback.LogoutResponseCallback;
 import com.kakao.usermgmt.response.model.User;
 
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -47,6 +49,15 @@ public class MoreFragment extends Fragment {
                     Intent intent = new Intent(getContext(), LoginActivity.class);
                     startActivity(intent);
                     getActivity().finish();
+                }else if (UserInfo.loginType == UserInfo.TYPE_KAKAO){
+                    UserManagement.requestLogout(new LogoutResponseCallback() {
+                        @Override
+                        public void onCompleteLogout() {
+                            Intent intent = new Intent(getContext(), LoginActivity.class);
+                            startActivity(intent);
+                            getActivity().finish();
+                        }
+                    });
                 }
             }
         });

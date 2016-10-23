@@ -44,6 +44,7 @@ import ga.viewpagerindicator.CirclePageIndicator;
 
 import java.util.Arrays;
 
+import ga.washmose.mose.Util.UKakaoLogin;
 import ga.washmose.mose.Util.UPreferences;
 import ga.washmose.mose.main.MainActivity;
 import okhttp3.FormBody;
@@ -60,7 +61,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     // Facebook
     private CallbackManager facebookCallback;
     //Kakao
-    private SessionCallback callback = null;
+    UKakaoLogin KakaoLogin;
+    public UKakaoLogin.SessionCallback callback = null;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -75,6 +77,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
 
+        KakaoLogin = new UKakaoLogin(LoginActivity.this);
         mViewPager = (ViewPager) findViewById(R.id.container);
         indicator = (CirclePageIndicator) findViewById(R.id.login_indicator);
         SNSBtns = (ViewGroup) findViewById(R.id.SNS_btns);
@@ -90,7 +93,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         kakaoLogin.setOnClickListener(this);
 
         //kakao
-        callback = new SessionCallback();
+//        callback = new SessionCallback();
+        callback = new UKakaoLogin.SessionCallback();
         Session.getCurrentSession().addCallback(callback);
 //        Session.getCurrentSession().checkAndImplicitOpen();
 
@@ -338,7 +342,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         client.disconnect();
     }
 
-    private class SessionCallback implements ISessionCallback {
+    public class SessionCallback implements ISessionCallback {
 
         @Override
         public void onSessionOpened() {

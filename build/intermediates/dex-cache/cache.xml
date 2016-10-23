@@ -3,51 +3,6 @@
 
     <item
         is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-instantapps/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="babb25794a7599069d34705038744c5760a9a88c">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-instantapps-9.6.1_4566e2d8462a5e8d3e0317eb980f864bf96aa587/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="465f40f840e583f8b7421a3aacf3fbf08c28f00a">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-base-9.6.1_a64e810588c6b77cfec35881e5f05efc4f4cc6b7/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="b75ecdd04a37d31b4a0da2729fc5c558962a529b">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-9.6.1_088466ada43012ec4170bde000a3b6ed07619307/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_d17d121c27b26a5cf883186b9164a07a467b6953/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="8c6ef5bd4072f8cda2b89d8356ea7d8acd0683aa">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-9.6.1_2d8c4a0543544e1ceb0d9a21220e8c8a2571077b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-awareness/9.6.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -93,6 +48,438 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="1e14ebe1cda8491f152083e752ca5bf73cd37bff">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-9.6.1_084c1d770e799023286153da316d37c1797ab70c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.kakao.sdk/friends/1.1.5/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d3ac71a2d16571ab61dea99e1cc8fb6606530f50">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.kakao.sdk-friends-1.1.5_e498429dc52e54bab3992adb9c5b56753a8feb3e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0e0e0681c26a1f575d3e4c542182dd59bab75fd6">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appinvite-9.6.1_3ab968d40d8717fa0d8253ea5fdbbe0babead1cb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.kakao.sdk/kakaotalk/1.1.5/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="5346250f029a4d9004c8cef3107b3ab95a398cdd">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.kakao.sdk-kakaotalk-1.1.5_a2e935774be8b319c6c322557a8f78a8784c48a7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.kakao.sdk/kakaostory/1.1.5/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="cf56317109aaebd7cb87cebd3e93a957a6f5c8d8">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.kakao.sdk-kakaostory-1.1.5_36973ea7304e31d750db87a5b76a7d3604f5fd6f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="47bbb3ec4b31ba71e125241c090dabe70cbb4de7">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-9.6.1_e7eb90a6c3d862f5c6d9a0c4bbe72b64bcbf9209/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="cc39b4bcc9e7062891db90d5a752fa9e4986f447">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-9.6.1_77e12e33063e594a98af00931fa94f3da9ae8fff/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_097a0faaae39b34214cd40858910e2be6f2b6883/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="2a18547ea91d258866d132c2a763185f15b01b25">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-9.6.1_a1fabdabc0e4d9858938cce5b98d2942053abf2e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.kakao.sdk/network/1.1.5/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e4a6c19afa2d8f43517a04083881e5478fb462d1">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.kakao.sdk-network-1.1.5_471d89181f81f303c34fc73b7a27590de71074b0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="6ff796a3173787afe2e712f3aec6f5b99796118e">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-lite-9.6.1_1e0568b02e6f06a4e6aba1b746623764a678d89d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/glide-3.7.0_e74508236c2fc6736c6aa042eefcd978224a6a31/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.2.0/6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd/bolts-android-1.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-android-1.2.0_c6615ad47361a37f5f6f786b2f3c7f6c8b01c9cb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.4.1_324f5a49631477f0137f6999c24bf85ee2eac266/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_108b7bb71430aa06761442c0f642f2f05454d605/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_4e154a41373b825feb13ca468eed0eae5addfb43/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="62ff84124b89177abc0c27f3e38c9732f2d41617">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-9.6.1_58f8ac91e2c2fa7607683e375e1c451341586656/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_7708ad0a2481718d9924f0b63d4609a8ae64f97e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.1_435de75241b0f2c6f386af2f6cc54f2afe2a3b9f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_402623f0e1e08d4ae4b590d90ee4b23703ff74e5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="ff9be0a1e75a21c372735930d8987a55b5e6065f">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-panorama-9.6.1_61521cd2930ad3f3617f078878ec25e62d3b1a4f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-mediarouter-v7-24.0.0_ce25b5b878d32bd9561e0c08ee000a1eb466f01f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-multidex-1.0.1_6a51d0d0597fec6e918b0d10c7d41a47239f5e46/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_806eda77cf4c08d971ac5bd7777236196a39d784/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f6aa7c76cbaa867e05dbad0afab1ef0e65c4e55f">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-nearby-9.6.1_d4d4f62ba261afcbd01176a3ac19ae175730fedb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support.constraint/constraint-layout/1.0.0-alpha9/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f2b64f6a762f61a2379d6a79af03e2ee56eefe0b">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support.constraint-constraint-layout-1.0.0-alpha9_283735437e3b3f1cb5d23f3d5ee36f3bc6e7686e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0efd1b44f47c134fb245914a1d54a55adbfc2f8d">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-9.6.1_64a12ed885f7d92ed87fc6797fa5dfd1d5d2b5dc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="15ad6a46fb8e2ed86556e0b330d738b589dc62c7">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.facebook.android-facebook-android-sdk-4.5.0_d69f1b9a332267ef23a4a84d65070c28a1140045/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0cae6511c5705869cacf199f8abb0ea84cd10157">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-vision-9.6.1_a3e43a15ec5041f37a671f8d72858d0469399cf8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="8ebae43cd06058e99e08c8b4d305b72f2b9927c6">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-plus-9.6.1_e4691f4ba431833c7ba6eea31d3959a8271f5242/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.1_ee38e724b32d79b422005d9ac9343abd1d0e6621/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0dfc12e4aacf514346ea866560c99807d032bc48">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-iid-9.6.1_3edde8b07bd7270e2aa2e765ebc33677a4e34f7e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="c4394d46152165cd3256fb711ac94f66a28fbae1">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wearable-9.6.1_02b026e20e2e53c1425beef214e102081c3d8a47/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="cf2c4e6607c77b0e671dc5ca252c5ea0d9c1ce0d">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-config-9.6.1_8ed4cdac6cb888c65fd6be655ace3f71d78ab89d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f8db47be01cbe8cfa81e9cecce5ff1371ed1ad95">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-drive-9.6.1_301f6fe6236e9d954c6962d0e47f2101df6b238b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.2.1_321bd68637a765f0b9445b037c320f5b469e468b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.1_f207dd28c97ecc5299a76cf68ab53823b41b32a2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.github.ParkSangGwon/TedPermission/v1.0.11/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d56fbfe953158b806d94f815bf928cc021616b89">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.ParkSangGwon-TedPermission-v1.0.11_913e611c791d63f8effef5b42cd031c4868b77a1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_1ef2b21565ca66ba59415d4d8e7b8dc7bb39df6c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="c828add497d2b7a3de7c047bf72050cd4b7521a1">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-safetynet-9.6.1_8b609b65bc62af8e02c428452a20e534e106aa96/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="a53ac0560ab915a02c50d2e5c7b003381e6fb5e3">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-impl-9.6.1_f183409c00be04168e9d6fce56b1018b4f311e68/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_46cbc6916fba02579aa22bf996feed312ebdc314/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="cdddf21e0a8205e9955661061d1735ed10e44a7b">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-places-9.6.1_b355014eebc8e5ace56d590b860727a00ea3cfb6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-instantapps/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="babb25794a7599069d34705038744c5760a9a88c">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-instantapps-9.6.1_4566e2d8462a5e8d3e0317eb980f864bf96aa587/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="465f40f840e583f8b7421a3aacf3fbf08c28f00a">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-base-9.6.1_a64e810588c6b77cfec35881e5f05efc4f4cc6b7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="b75ecdd04a37d31b4a0da2729fc5c558962a529b">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-9.6.1_088466ada43012ec4170bde000a3b6ed07619307/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_d17d121c27b26a5cf883186b9164a07a467b6953/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="8c6ef5bd4072f8cda2b89d8356ea7d8acd0683aa">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-9.6.1_2d8c4a0543544e1ceb0d9a21220e8c8a2571077b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.6.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -129,57 +516,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="1e14ebe1cda8491f152083e752ca5bf73cd37bff">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-9.6.1_084c1d770e799023286153da316d37c1797ab70c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.kakao.sdk/friends/1.1.5/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="d3ac71a2d16571ab61dea99e1cc8fb6606530f50">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.kakao.sdk-friends-1.1.5_e498429dc52e54bab3992adb9c5b56753a8feb3e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="0e0e0681c26a1f575d3e4c542182dd59bab75fd6">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appinvite-9.6.1_3ab968d40d8717fa0d8253ea5fdbbe0babead1cb/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.kakao.sdk/auth/1.1.5/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="8f1b152734f1a89938ef1ad915027695729160d1">
         <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.kakao.sdk-auth-1.1.5_40981d003d9785aa1ebfa35b6b510eb9cc2c4454/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.kakao.sdk/kakaotalk/1.1.5/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="5346250f029a4d9004c8cef3107b3ab95a398cdd">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.kakao.sdk-kakaotalk-1.1.5_a2e935774be8b319c6c322557a8f78a8784c48a7/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.kakao.sdk/kakaostory/1.1.5/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="cf56317109aaebd7cb87cebd3e93a957a6f5c8d8">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.kakao.sdk-kakaostory-1.1.5_36973ea7304e31d750db87a5b76a7d3604f5fd6f/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -201,29 +543,11 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="47bbb3ec4b31ba71e125241c090dabe70cbb4de7">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-9.6.1_e7eb90a6c3d862f5c6d9a0c4bbe72b64bcbf9209/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="cc39b4bcc9e7062891db90d5a752fa9e4986f447">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-9.6.1_77e12e33063e594a98af00931fa94f3da9ae8fff/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="ac7e8c22f416f6b2a342fcf7ad88fa5344c063ac">
+        sha1="975936021b86e89ae47257ba7a549ca7085f0d35">
         <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_63d2b55a68a9ea51e2bb5c8570cf7612e8de3295/classes.dex" />
     </item>
     <item
@@ -246,57 +570,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_097a0faaae39b34214cd40858910e2be6f2b6883/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="2a18547ea91d258866d132c2a763185f15b01b25">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-9.6.1_a1fabdabc0e4d9858938cce5b98d2942053abf2e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/2.1.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
         <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/de.hdodenhof-circleimageview-2.1.0_c96882ed0f3a2e5ccf3d12f518ed30c61f1110fd/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.kakao.sdk/network/1.1.5/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="e4a6c19afa2d8f43517a04083881e5478fb462d1">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.kakao.sdk-network-1.1.5_471d89181f81f303c34fc73b7a27590de71074b0/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="6ff796a3173787afe2e712f3aec6f5b99796118e">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-lite-9.6.1_1e0568b02e6f06a4e6aba1b746623764a678d89d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/leejaebeom/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/glide-3.7.0_e74508236c2fc6736c6aa042eefcd978224a6a31/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -367,53 +646,8 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="bd4f7864a93d564ef6d579c02738519a0f11ec66">
+        sha1="7dfbb90120bd4c00ab8327b7a9b0df8c3a72e28d">
         <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_6eee8c3f127fe1028b58aac78bbb0ef8bf95a350/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/leejaebeom/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.2.0/6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd/bolts-android-1.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-android-1.2.0_c6615ad47361a37f5f6f786b2f3c7f6c8b01c9cb/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/leejaebeom/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.4.1_324f5a49631477f0137f6999c24bf85ee2eac266/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_108b7bb71430aa06761442c0f642f2f05454d605/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_4e154a41373b825feb13ca468eed0eae5addfb43/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="62ff84124b89177abc0c27f3e38c9732f2d41617">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-9.6.1_58f8ac91e2c2fa7607683e375e1c451341586656/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -435,15 +669,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_7708ad0a2481718d9924f0b63d4609a8ae64f97e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/leejaebeom/Documents/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.0-alpha9/constraint-layout-solver-1.0.0-alpha9.jar"
         jumboMode="true"
         optimize="true"
@@ -462,66 +687,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.1_435de75241b0f2c6f386af2f6cc54f2afe2a3b9f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_402623f0e1e08d4ae4b590d90ee4b23703ff74e5/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/9.6.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="a136366045678579300d161de97c2211c4c4f7a0">
         <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-9.6.1_dc09aba0ed4d01312438c413574a2c5365c0bf73/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="ff9be0a1e75a21c372735930d8987a55b5e6065f">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-panorama-9.6.1_61521cd2930ad3f3617f078878ec25e62d3b1a4f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-mediarouter-v7-24.0.0_ce25b5b878d32bd9561e0c08ee000a1eb466f01f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-multidex-1.0.1_6a51d0d0597fec6e918b0d10c7d41a47239f5e46/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_806eda77cf4c08d971ac5bd7777236196a39d784/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -540,33 +711,6 @@
         revision="24.0.3"
         sha1="69d90fd7fb70e54746e26c10454c220e40a775ce">
         <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/otto-1.3.7_6e1de093e6bc0954291d41f9a0621581cec43c62/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="f6aa7c76cbaa867e05dbad0afab1ef0e65c4e55f">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-nearby-9.6.1_d4d4f62ba261afcbd01176a3ac19ae175730fedb/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support.constraint/constraint-layout/1.0.0-alpha9/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="f2b64f6a762f61a2379d6a79af03e2ee56eefe0b">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support.constraint-constraint-layout-1.0.0-alpha9_283735437e3b3f1cb5d23f3d5ee36f3bc6e7686e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="0efd1b44f47c134fb245914a1d54a55adbfc2f8d">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-9.6.1_64a12ed885f7d92ed87fc6797fa5dfd1d5d2b5dc/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -597,39 +741,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="15ad6a46fb8e2ed86556e0b330d738b589dc62c7">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.facebook.android-facebook-android-sdk-4.5.0_d69f1b9a332267ef23a4a84d65070c28a1140045/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="0cae6511c5705869cacf199f8abb0ea84cd10157">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-vision-9.6.1_a3e43a15ec5041f37a671f8d72858d0469399cf8/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.kakao.sdk/kakaolink/1.1.5/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="06012cbf012f7910f9b544b5ac942efebb23d806">
         <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.kakao.sdk-kakaolink-1.1.5_656bd7d1701191ecb8fcdea3aa37fdeabfaec36f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="8ebae43cd06058e99e08c8b4d305b72f2b9927c6">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-plus-9.6.1_e4691f4ba431833c7ba6eea31d3959a8271f5242/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -660,24 +777,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.1_ee38e724b32d79b422005d9ac9343abd1d0e6621/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="0dfc12e4aacf514346ea866560c99807d032bc48">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-iid-9.6.1_3edde8b07bd7270e2aa2e765ebc33677a4e34f7e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager/9.6.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -687,48 +786,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="c4394d46152165cd3256fb711ac94f66a28fbae1">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wearable-9.6.1_02b026e20e2e53c1425beef214e102081c3d8a47/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="cf2c4e6607c77b0e671dc5ca252c5ea0d9c1ce0d">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-config-9.6.1_8ed4cdac6cb888c65fd6be655ace3f71d78ab89d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="f8db47be01cbe8cfa81e9cecce5ff1371ed1ad95">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-drive-9.6.1_301f6fe6236e9d954c6962d0e47f2101df6b238b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.hedgehog.ratingbar/app/1.1.2/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="1d44591ba0874a48bc2c8c32f636697d6997e232">
         <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.hedgehog.ratingbar-app-1.1.2_1be20f282ca40bcb4c7af702bbaa5a4d8d5ba95a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.2.1_321bd68637a765f0b9445b037c320f5b469e468b/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -768,75 +831,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.1_f207dd28c97ecc5299a76cf68ab53823b41b32a2/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.github.ParkSangGwon/TedPermission/v1.0.11/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="d56fbfe953158b806d94f815bf928cc021616b89">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.ParkSangGwon-TedPermission-v1.0.11_913e611c791d63f8effef5b42cd031c4868b77a1/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_1ef2b21565ca66ba59415d4d8e7b8dc7bb39df6c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="c828add497d2b7a3de7c047bf72050cd4b7521a1">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-safetynet-9.6.1_8b609b65bc62af8e02c428452a20e534e106aa96/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="a53ac0560ab915a02c50d2e5c7b003381e6fb5e3">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-impl-9.6.1_f183409c00be04168e9d6fce56b1018b4f311e68/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/9.6.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="dfcba20b85ef3669a8ced0a8760a6df281cbd7c7">
         <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wallet-9.6.1_b97e1b91e1513530cbe294b4ac3aa3a6ff9f29a6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_46cbc6916fba02579aa22bf996feed312ebdc314/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="cdddf21e0a8205e9955661061d1735ed10e44a7b">
-        <dex dex="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-places-9.6.1_b355014eebc8e5ace56d590b860727a00ea3cfb6/classes.dex" />
     </item>
     <item
         is-multidex="true"

@@ -13,6 +13,8 @@ import org.json.JSONObject;
 import ga.washmose.mose.R;
 import ga.washmose.mose.UserInfo;
 import ga.washmose.mose.Util.UHttps;
+import ga.washmose.mose.Util.UPreferences;
+import ga.washmose.mose.main.MainActivity;
 import okhttp3.FormBody;
 import okhttp3.RequestBody;
 
@@ -54,6 +56,14 @@ public class SignUpActivity extends AppCompatActivity {
 
                         JSONObject res = UHttps.okHttp(UHttps.IP+"/register", body);
                         Log.d("SUA res", res.toString());
+                        if (res.optInt("code") == 201){
+                            UPreferences.setStringPref(SignUpActivity.this, UserInfo.PREF_USER, UserInfo.PREF_SUB_USER_APIKEY, res.optString("api_key"));
+                            UserInfo.apiKey = UPreferences.getStringPref(SignUpActivity.this, UserInfo.PREF_USER, UserInfo.PREF_SUB_USER_APIKEY,"");
+                            UserInfo.isSeller = false;
+                            UserInfo.isSeller = false;
+                            Intent intent2 = new Intent(SignUpActivity.this, MainActivity.class);
+                            startActivity(intent2);
+                        }
                     }
                 });
 

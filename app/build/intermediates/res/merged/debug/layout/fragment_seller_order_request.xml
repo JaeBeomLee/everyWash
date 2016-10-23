@@ -3,6 +3,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="ga.washmose.mose.seller.SellerOrderRequestFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주문이 아직 없습니다 주문을 넣어 주세요"
+        android:textSize="16dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="48dp"
+        />
     <ListView
         android:id="@+id/seller_order_request_list"
         android:layout_width="match_parent"

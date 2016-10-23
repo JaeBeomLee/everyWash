@@ -32,10 +32,6 @@
         "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.kakao.sdk/util/1.1.5/res/drawable-xxhdpi/kakaostory_icon.png"
     },
     {
-        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_man_underwear_down.png",
-        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/res/drawable-xxhdpi/ic_man_underwear_down.png"
-    },
-    {
         "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_login_step_1.png",
         "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/res/drawable-xxhdpi/ic_login_step_1.png"
     },
@@ -90,10 +86,6 @@
     {
         "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_login_step_2.png",
         "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/res/drawable-xxhdpi/ic_login_step_2.png"
-    },
-    {
-        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_man_underwear_up.png",
-        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/res/drawable-xxhdpi/ic_man_underwear_up.png"
     },
     {
         "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_authority.png",

@@ -15,6 +15,9 @@ import com.facebook.AccessTokenTracker;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
+import com.facebook.GraphRequest;
+import com.facebook.GraphResponse;
+import com.facebook.HttpMethod;
 import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
 import com.google.android.gms.gcm.GoogleCloudMessaging;
@@ -95,16 +98,30 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void onSuccess(final LoginResult loginResult) {
                 Log.d("facebook login", "success");
-                Log.d("loginResult", loginResult.getAccessToken().getToken());
+                Log.d("loginResult", loginResult.getAccessToken().getApplicationId());
+
+                Bundle params = new Bundle();
+                params.putString("fields", "id,email,gender,cover,picture.type(large)");
+                new GraphRequest(loginResult.getAccessToken(), "me", params, HttpMethod.GET, new GraphRequest.Callback() {
+                    @Override
+                    public void onCompleted(GraphResponse response) {
+                        JSONObject data = response.getJSONObject();
+                        if (data.has("picture")) {
+                            String profilePicUrl = data.optJSONObject("picture").optJSONObject("data").optString("url");
+                            // set profile image to imageview using Picasso or Native methods
+                            UserInfo.profileURL = profilePicUrl;
+                            Log.d("profile", UserInfo.profileURL);
+                        }
+                    }
+                }).executeAsync();
 
                 Thread thread = new Thread(new Runnable() {
                     @Override
                     public void run() {
                         UHttps body = new UHttps();
                         body.initBody();
-                        body.addParameter("open_id", loginResult.getAccessToken().getApplicationId());
+                        body.addParameter("open_id", loginResult.getAccessToken().getUserId());
                         body.addParameter("open_id_type", String.valueOf(UserInfo.TYPE_FACEBOOK));
-
                         final JSONObject response = UHttps.okHttp(UHttps.IP + "/v1/login", body.getBody());
 
                         UPreferences.setStringPref(SplashActivity.this, UserInfo.PREF_USER, UserInfo.PREF_SUB_USER_APIKEY,response.optString("api_key"));

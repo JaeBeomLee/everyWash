@@ -208,20 +208,20 @@
         "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/res/drawable/kakao_login_text.xml"
     },
     {
-        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable/messenger_button_white_bg_round.xml",
-        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/res/drawable/messenger_button_white_bg_round.xml"
-    },
-    {
         "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
         "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/drawable/design_snackbar_background.xml"
     },
     {
-        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light.xml",
-        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/drawable/common_google_signin_btn_icon_light.xml"
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable/messenger_button_white_bg_round.xml",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/res/drawable/messenger_button_white_bg_round.xml"
     },
     {
         "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable/kakao_default_profile_image.png",
         "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.kakao.sdk/util/1.1.5/res/drawable/kakao_default_profile_image.png"
+    },
+    {
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light.xml",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/drawable/common_google_signin_btn_icon_light.xml"
     },
     {
         "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_small_icon.xml",
@@ -488,12 +488,12 @@
         "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.1/res/drawable/cast_ic_notification_forward10.xml"
     },
     {
-        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_play.xml",
-        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.1/res/drawable/cast_ic_notification_play.xml"
-    },
-    {
         "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable/cast_ic_expanded_controller_rewind30.xml",
         "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.1/res/drawable/cast_ic_expanded_controller_rewind30.xml"
+    },
+    {
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_play.xml",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.1/res/drawable/cast_ic_notification_play.xml"
     },
     {
         "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_login_silver_background.xml",

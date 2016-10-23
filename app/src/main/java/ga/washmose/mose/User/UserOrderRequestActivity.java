@@ -30,7 +30,6 @@ public class UserOrderRequestActivity extends OrderInfo {
             @Override
             public void onClick(View v) {
                 setCancelOrder();
-                Toast.makeText(UserOrderRequestActivity.this, "버튼을 누름", Toast.LENGTH_SHORT).show();
             }
         });
     }

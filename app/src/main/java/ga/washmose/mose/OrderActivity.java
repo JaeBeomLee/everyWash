@@ -23,7 +23,7 @@ public class OrderActivity extends AppCompatActivity {
         setContentView(R.layout.activity_order);
 
         dateSelect = (Button) findViewById(R.id.order_date_select);
-        addItems = (Button)findViewById(R.id.order_add_items);
+//        addItems = (Button)findViewById(R.id.order_add_items);
 
         dateSelect.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,14 +35,14 @@ public class OrderActivity extends AppCompatActivity {
                 new DatePickerDialog(OrderActivity.this, dateSetListener, year, month, day).show();
             }
         });
-        addItems.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(OrderActivity.this, OrderItemList.class);
-                startActivityForResult(intent, REQ_ADD_ITEMS);
-
-            }
-        });
+//        addItems.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(OrderActivity.this, OrderItemList.class);
+//                startActivityForResult(intent, REQ_ADD_ITEMS);
+//
+//            }
+//        });
 
     }
 

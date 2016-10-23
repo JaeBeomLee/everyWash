@@ -442,7 +442,7 @@ public final class R {
 		public static final int abc_textfield_search_activated_mtrl_alpha = 0x7f02004f;
 		public static final int abc_textfield_search_default_mtrl_alpha = 0x7f020050;
 		public static final int abc_textfield_search_material = 0x7f020051;
-		public static final int notification_template_icon_bg = 0x7f0201ca;
+		public static final int notification_template_icon_bg = 0x7f0201c8;
 	}
 	public static final class id {
 		public static final int action0 = 0x7f10018e;
@@ -528,7 +528,7 @@ public final class R {
 		public static final int status_bar_latest_event_content = 0x7f100190;
 		public static final int submit_area = 0x7f1000c5;
 		public static final int tabMode = 0x7f10001d;
-		public static final int text = 0x7f100119;
+		public static final int text = 0x7f100118;
 		public static final int text2 = 0x7f100052;
 		public static final int textSpacerNoButtons = 0x7f1000ac;
 		public static final int time = 0x7f100194;

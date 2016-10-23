@@ -4,83 +4,33 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.0"
-    timestamp="178977570095364"
+    timestamp="182420946957417"
     token="-6595544127926227983"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="1135" />
+        duration="1930" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="54" />
+        duration="2676" />
     <task
         name="verifier"
-        duration="3" />
+        duration="388" />
 
     <artifact
-        location="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
-        type="DEX" />
+        location="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
 
     <build
-        timestamp="162684380813714"
+        timestamp="182420946957417"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="169392192520589"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex"
-            type="DEX" />
-    </build>
-    <build
-        timestamp="172094202181067"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex"
-            type="DEX" />
-    </build>
-    <build
-        timestamp="176642127049493"
-        verifier="FIELD_TYPE_CHANGE" >
-        <artifact
-            location="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex"
-            type="DEX" />
-    </build>
-    <build
-        timestamp="177300492806964"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex"
-            type="DEX" />
-    </build>
-    <build
-        timestamp="178977570095364"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
-            type="DEX" />
     </build>
 
 </instant-run>

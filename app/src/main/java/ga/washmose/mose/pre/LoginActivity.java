@@ -19,6 +19,9 @@ import android.view.ViewGroup;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
+import com.facebook.GraphRequest;
+import com.facebook.GraphResponse;
+import com.facebook.HttpMethod;
 import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
 import com.google.android.gms.appindexing.Action;
@@ -106,7 +109,19 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             public void onSuccess(final LoginResult loginResult) {
                 Log.d("facebook login", "success");
                 Log.d("loginResult", loginResult.getAccessToken().getToken());
-
+                Bundle params = new Bundle();
+                params.putString("fields", "id,email,gender,cover,picture.type(large)");
+                new GraphRequest(loginResult.getAccessToken(), "me", params, HttpMethod.GET, new GraphRequest.Callback() {
+                    @Override
+                    public void onCompleted(GraphResponse response) {
+                        JSONObject data = response.getJSONObject();
+                        if (data.has("picture")) {
+                            String profilePicUrl = data.optJSONObject("picture").optJSONObject("data").optString("url");
+                            // set profile image to imageview using Picasso or Native methods
+                            UserInfo.profileURL = profilePicUrl;
+                        }
+                    }
+                }).executeAsync();
                 Thread thread = new Thread(new Runnable() {
                     @Override
                     public void run() {
@@ -114,7 +129,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                         Log.d("LA", "open_id: " + loginResult.getAccessToken().getUserId());
                         UHttps body = new UHttps();
                         body.initBody();
-                        body.addParameter("open_id", loginResult.getAccessToken().getApplicationId());
+                        body.addParameter("open_id", loginResult.getAccessToken().getUserId());
                         body.addParameter("open_id_type", String.valueOf(UserInfo.TYPE_FACEBOOK));
 
                         final JSONObject response = UHttps.okHttp(UHttps.IP + "/v1/login", body.getBody());
@@ -231,82 +246,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         facebookCallback.onActivityResult(requestCode, resultCode, data);
     }
 
-    protected void kakaoRequestMe() {
-        UserManagement.requestMe(new MeResponseCallback() {
-            @Override
-            public void onFailure(ErrorResult errorResult) {
-                int ErrorCode = errorResult.getErrorCode();
-                int ClientErrorCode = -777;
-
-                if (ErrorCode == ClientErrorCode) {
-                    Log.e("Kakao LA", "카카오 서버 네트워크가 불안정함.");
-                } else {
-                    Log.d("Kakao LA", "오류로 카카오로그인 실패");
-                }
-            }
-
-            @Override
-            public void onSessionClosed(ErrorResult errorResult) {
-                Log.d("Kakao LA", "오류로 카카오로그인 실패");
-            }
-
-            @Override
-            public void onNotSignedUp() {
-                Log.d("Kakao LA", "onNotSignedUp");
-            }
-
-            @Override
-            public void onSuccess(final UserProfile result) {
-                Thread thread = new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        final int code;
-                        Log.d("LA", "open_id: " + String.valueOf(result.getId()));
-                        UHttps body = new UHttps();
-                        body.initBody();
-                        body.addParameter("open_id", String.valueOf(result.getId()));
-                        body.addParameter("open_id_type", String.valueOf(1));
-
-                        final JSONObject response = UHttps.okHttp(UHttps.IP + "/v1/login", body.getBody());
-                        code = response.optInt("code");
-                        handler.post(new Runnable() {
-                            @Override
-                            public void run() {
-                                switch (code) {
-                                    case 400:
-                                        //찾을 수 없음 (에러)
-                                        UDialog.setDialog(LoginActivity.this, "관리자에게 문의 해주세요! \n코드 : " + code);
-                                        break;
-                                    case 401:   //인증 받지 않은 요청. (회원 가입으로 감)
-                                        UserInfo.openID = String.valueOf(result.getId());
-                                        UserInfo.loginType = UserInfo.TYPE_KAKAO;
-                                        Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
-                                        startActivity(intent);
-                                        finish();
-                                        break;
-                                    case 500:
-                                        //내부 서버 오류
-
-                                        break;
-                                    case 200:   //로그인
-                                        UPreferences.setStringPref(LoginActivity.this, UserInfo.PREF_USER, UserInfo.PREF_SUB_USER_APIKEY,response.optString("api_key"));
-                                        UserInfo.apiKey = UPreferences.getStringPref(LoginActivity.this, UserInfo.PREF_USER, UserInfo.PREF_SUB_USER_APIKEY,"");
-                                        UserInfo.isSeller = false;
-                                        Intent intent2 = new Intent(LoginActivity.this, MainActivity.class);
-                                        startActivity(intent2);
-                                        finish();
-                                        break;
-                                }
-                            }
-                        });
-                        Log.d("LA", "response : " + response);
-                    }
-                });
-                thread.setDaemon(true);
-                thread.start();
-            }
-        });
-    }
 
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -344,18 +283,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         client.disconnect();
     }
 
-    public class SessionCallback implements ISessionCallback {
-
-        @Override
-        public void onSessionOpened() {
-            kakaoRequestMe();
-        }
-
-        @Override
-        public void onSessionOpenFailed(KakaoException exception) {
-            Log.d("SessionCallback LA", exception.getMessage());
-        }
-    }
 
     @Override
     public void onDestroy() {

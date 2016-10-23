@@ -26,6 +26,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.hedgehog.ratingbar.RatingBar;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 import ga.washmose.mose.ItemData;
@@ -73,12 +74,15 @@ public class SellerDetail extends AppCompatActivity implements OnMapReadyCallbac
         itemListLayout = (ViewGroup)findViewById(R.id.seller_detail_item_list_layout);
         reviewLayout = (ViewGroup)findViewById(R.id.seller_detail_review_layout);
 
+        Random random = new Random();
         sellerLocation = new LatLng(seller.latitude, seller.longitude);
         Glide.with(this).load(UHttps.IP+seller.imageUrl).centerCrop().into(profile);
         name.setText(seller.name);
         location.setText(seller.location);
-        ratingBar.setStar(3);
-        rateCount.setText("529");
+
+        ratingBar.setStar(random.nextInt(4) + 1);
+        int count = random.nextInt(9) +1;
+        rateCount.setText(count +"");
 
         initItem();
         initReview();

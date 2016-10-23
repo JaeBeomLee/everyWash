@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
                 UserInfo.name = res.optString("user_name");
                 UserInfo.address = res.optString("address");
                 UserInfo.phone = res.optString("phone");
-                UserInfo.profileURL = res.optString("profile_image");
+//                UserInfo.profileURL = res.optString("profile_image");
                 initMain();
                 Log.d("MA response", res.toString());
             }

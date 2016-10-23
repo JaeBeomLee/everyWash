@@ -77,6 +77,7 @@ public class UKakaoLogin {
 
             @Override
             public void onSuccess(final UserProfile result) {
+                UserInfo.profileURL = result.getThumbnailImagePath();
                 Thread thread = new Thread(new Runnable() {
                     @Override
                     public void run() {

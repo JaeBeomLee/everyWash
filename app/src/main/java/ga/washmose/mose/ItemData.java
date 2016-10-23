@@ -7,21 +7,29 @@ import java.io.Serializable;
  */
 
 public class ItemData implements Serializable {
-    public String name, iconURL, progress;
-    public int count, price;
+    public String name, iconURL, progress, sellerID;
+    public int count, price, priceCode, goodsCode;
 
-    public ItemData(String iconURL, String name, int count, int price) {
-        this.iconURL = iconURL;
+    public ItemData(String name, String iconURL, String sellerID,
+                    int count, int price, int priceCode,
+                    int goodsCode) {
         this.name = name;
+        this.iconURL = iconURL;
+        this.sellerID = sellerID;
         this.count = count;
         this.price = price;
+        this.priceCode = priceCode;
+        this.goodsCode = goodsCode;
     }
 
-    public ItemData(String iconURL, String name, int count, int price, String progress) {
+    public ItemData(String name, String iconURL,
+                    int count, int price, int priceCode,
+                    int goodsCode) {
         this.name = name;
         this.iconURL = iconURL;
-        this.progress = progress;
         this.count = count;
         this.price = price;
+        this.priceCode = priceCode;
+        this.goodsCode = goodsCode;
     }
 }

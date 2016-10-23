@@ -27,6 +27,7 @@ import ga.washmose.mose.ItemData;
 import ga.washmose.mose.OrderData;
 import ga.washmose.mose.R;
 import ga.washmose.mose.Util.UDate;
+import ga.washmose.mose.Util.UHttps;
 
 public class UserOrderRequestFragment extends Fragment {
     sellerRequestAdapter adapter;
@@ -78,8 +79,14 @@ public class UserOrderRequestFragment extends Fragment {
                 e.printStackTrace();
             }
             ArrayList<ItemData> items = new ArrayList<ItemData>();
-            items.add(new ItemData("Url","티셔츠 (not)", 3, 2000, "세탁 진행중.."));
-            items.add(new ItemData("Url","남성 속옷 하의 (not)", 8, 1000, "세탁 안함"));
+            JSONArray itemsJSON = order.optJSONArray("items");
+            for (int j = 0; j< itemsJSON.length(); j++){
+                JSONObject item = itemsJSON.optJSONObject(j);
+                //{"item_code":"1","order_code":"3","goods_code":"1","goods_name":"남성 속옷 (하의)","goods_image":"\/data\/imgs\/goods\/1_man_underwear_down.png","unit_amount":"3","price":"1000","amount":"2","is_color":"0","item_status":"0","total_price":"2000"}
+                items.add(new ItemData(item.optString("goods_name"), item.optString("goods_image"), item.optInt("unit_amount"), item.optInt("price"), item.optInt("item_code"), item.optInt("goods_code")));
+            }
+//            items.add(new ItemData("Url","티셔츠 (not)", 3, 2000, "세탁 진행중.."));
+//            items.add(new ItemData("Url","남성 속옷 하의 (not)", 8, 1000, "세탁 안함"));
 
             JSONObject seller = order.optJSONObject("seller");
             Orders.add(new OrderData(seller.optString("header_image"),seller.optString("profile_image"),seller.optString("seller_name"), seller.optString("title"), "Summary", requestDate, true, order.optInt("order_code"),
@@ -154,7 +161,7 @@ public class UserOrderRequestFragment extends Fragment {
             holder.name.setText(items.get(position).title);
             holder.location.setText(items.get(position).address);
             holder.summary.setText(items.get(position).summary);
-            Glide.with(context).load(items.get(position).profileImageUrl).into(holder.profile);
+            Glide.with(context).load(UHttps.IP + items.get(position).headerImageUrl).into(holder.profile);
             String request = UDate.getSimpleDateFormat(items.get(position).request.getTime()) + " 세탁 요청";
             holder.request.setText(request);
             if (items.get(position).author){

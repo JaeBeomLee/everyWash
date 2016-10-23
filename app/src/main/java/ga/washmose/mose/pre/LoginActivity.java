@@ -116,7 +116,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                         UHttps.addParameter("open_id", loginResult.getAccessToken().getApplicationId());
                         UHttps.addParameter("open_id_type", String.valueOf(UserInfo.TYPE_FACEBOOK));
 
-                        final JSONObject response = UHttps.okHttp(UHttps.IP + "/login", UHttps.getBody());
+                        final JSONObject response = UHttps.okHttp(UHttps.IP + "/v1/login", UHttps.getBody());
                         code = response.optInt("code");
                         handler.post(new Runnable() {
                             @Override
@@ -265,7 +265,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                         UHttps.addParameter("open_id", String.valueOf(result.getId()));
                         UHttps.addParameter("open_id_type", String.valueOf(1));
 
-                        final JSONObject response = UHttps.okHttp(UHttps.IP + "/login", UHttps.getBody());
+                        final JSONObject response = UHttps.okHttp(UHttps.IP + "/v1/login", UHttps.getBody());
                         code = response.optInt("code");
                         handler.post(new Runnable() {
                             @Override

@@ -32,6 +32,7 @@ import ga.washmose.mose.ItemData;
 import ga.washmose.mose.R;
 import ga.washmose.mose.ReviewData;
 import ga.washmose.mose.User.UserLaundryItem;
+import ga.washmose.mose.Util.UHttps;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class SellerDetail extends AppCompatActivity implements OnMapReadyCallback{
@@ -72,8 +73,8 @@ public class SellerDetail extends AppCompatActivity implements OnMapReadyCallbac
         itemListLayout = (ViewGroup)findViewById(R.id.seller_detail_item_list_layout);
         reviewLayout = (ViewGroup)findViewById(R.id.seller_detail_review_layout);
 
-        sellerLocation = new LatLng(37.261946, 127.108925);
-        Glide.with(this).load(seller.imageUrl).centerCrop().into(profile);
+        sellerLocation = new LatLng(seller.latitude, seller.longitude);
+        Glide.with(this).load(UHttps.IP+seller.imageUrl).centerCrop().into(profile);
         name.setText(seller.name);
         location.setText(seller.location);
         ratingBar.setStar(3);
@@ -94,7 +95,7 @@ public class SellerDetail extends AppCompatActivity implements OnMapReadyCallbac
             TextView price = (TextView) view.findViewById(R.id.stuff_price);
             CircleImageView icon = (CircleImageView) view.findViewById(R.id.stuff_icon);
 
-            Glide.with(this).load(items.get(i).iconURL).into(icon);
+            Glide.with(this).load(UHttps.IP + items.get(i).iconURL).into(icon);
             name.setText(items.get(i).name);
             count.setText(items.get(i).count + "벌 당");
             price.setText(items.get(i).price + " 원");

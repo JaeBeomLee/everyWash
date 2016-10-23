@@ -85,7 +85,7 @@ public class UKakaoLogin {
                             UHttps.addParameter("open_id", String.valueOf(result.getId()));
                             UHttps.addParameter("open_id_type", String.valueOf(UserInfo.TYPE_KAKAO));
 
-                            final JSONObject response = UHttps.okHttp(UHttps.IP + "/login", UHttps.getBody());
+                            final JSONObject response = UHttps.okHttp(UHttps.IP + "/v1/login", UHttps.getBody());
 
                             UPreferences.setStringPref(context, UserInfo.PREF_USER, UserInfo.PREF_SUB_USER_APIKEY, response.optString("api_key"));
                             UserInfo.apiKey = UPreferences.getStringPref(context, UserInfo.PREF_USER, UserInfo.PREF_SUB_USER_APIKEY,"");
@@ -102,7 +102,7 @@ public class UKakaoLogin {
                             UHttps.addParameter("open_id", String.valueOf(result.getId()));
                             UHttps.addParameter("open_id_type", String.valueOf(UserInfo.TYPE_KAKAO));
 
-                            final JSONObject response = UHttps.okHttp(UHttps.IP + "/login", UHttps.getBody());
+                            final JSONObject response = UHttps.okHttp(UHttps.IP + "/v1/login", UHttps.getBody());
                             code = response.optInt("code");
                             handler.post(new Runnable() {
                                 @Override

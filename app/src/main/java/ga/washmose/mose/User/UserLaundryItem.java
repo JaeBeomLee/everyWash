@@ -15,9 +15,9 @@ public class UserLaundryItem implements Serializable{
     public String location;
     public String summary;
     public ArrayList<ItemData> items;
-    public int latitude, longitude;
+    public double latitude, longitude;
 
-    public UserLaundryItem(String imageUrl, String name, String location, String summary, ArrayList<ItemData> items, int latitude, int longitude) {
+    public UserLaundryItem(String imageUrl, String name, String location, String summary, ArrayList<ItemData> items, double latitude, double longitude) {
         this.imageUrl = imageUrl;
         this.name = name;
         this.location = location;

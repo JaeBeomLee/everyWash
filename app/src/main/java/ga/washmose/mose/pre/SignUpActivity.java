@@ -54,7 +54,7 @@ public class SignUpActivity extends AppCompatActivity {
 
                         body = builder.build();
 
-                        JSONObject res = UHttps.okHttp(UHttps.IP+"/register", body);
+                        JSONObject res = UHttps.okHttp(UHttps.IP+"/v1/register", body);
                         Log.d("SUA res", res.toString());
                         if (res.optInt("code") == 201){
                             UPreferences.setStringPref(SignUpActivity.this, UserInfo.PREF_USER, UserInfo.PREF_SUB_USER_APIKEY, res.optString("api_key"));

@@ -590,7 +590,7 @@ public final class R {
 		public static final int bb_bottom_bar_top_shadow = 0x7f020054;
 		public static final int design_fab_background = 0x7f0200ae;
 		public static final int design_snackbar_background = 0x7f0200b0;
-		public static final int notification_template_icon_bg = 0x7f0201c8;
+		public static final int notification_template_icon_bg = 0x7f0201ca;
 	}
 	public static final class id {
 		public static final int action0 = 0x7f10018e;

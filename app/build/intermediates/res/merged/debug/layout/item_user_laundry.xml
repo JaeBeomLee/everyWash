@@ -70,6 +70,7 @@
                     android:text="속옷 2, 상의 2"
                     android:layout_alignParentRight="true"
                     android:textSize="@dimen/small_text_size"
+                    android:visibility="gone"
                     />
             </RelativeLayout>
         </RelativeLayout>

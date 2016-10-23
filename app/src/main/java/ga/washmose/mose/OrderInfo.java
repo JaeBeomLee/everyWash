@@ -16,6 +16,7 @@ import com.bumptech.glide.Glide;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 import ga.washmose.mose.Util.UDate;
+import ga.washmose.mose.Util.UHttps;
 
 /**
  * Created by leejaebeom on 2016. 10. 16..
@@ -107,11 +108,14 @@ public class OrderInfo extends AppCompatActivity {
             TextView progress = (TextView)view.findViewById(R.id.order_info_item_progress);
             Button reButton = (Button) view.findViewById(R.id.order_info_item_rebtn);
 
-            Glide.with(this).load(orderData.items.get(i).iconURL).into(icon);
+            Glide.with(this).load(UHttps.IP + orderData.items.get(i).iconURL).into(icon);
             name.setText(orderData.items.get(i).name);
             count.setText(orderData.items.get(i).count + " 벌");
             progress.setText(orderData.items.get(i).progress);
-
+            if (orderData.progress == 0){
+                progress.setVisibility(View.GONE);
+                reButton.setVisibility(View.GONE);
+            }
             itemView.addView(view);
         }
     }

@@ -4,53 +4,78 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.0"
-    timestamp="160748640629694"
+    timestamp="173137239513269"
     token="-6595544127926227983"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="813" />
+        duration="1305" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="42" />
+        duration="86" />
     <task
         name="verifier"
-        duration="4" />
+        duration="7" />
 
     <artifact
-        location="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
+        location="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex"
         type="DEX" />
 
     <build
-        timestamp="157550688565643"
+        timestamp="162684380813714"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="157935380390247"
-        verifier="CLASS_ADDED" >
-        <artifact
-            location="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex"
-            type="DEX" />
-    </build>
-    <build
-        timestamp="160061536140198"
+        timestamp="169392192520589"
         verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
+            type="DEX" />
         <artifact
             location="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex"
             type="DEX" />
-    </build>
-    <build
-        timestamp="160748640629694"
-        verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="172094202181067"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="172966682083271"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="173137239513269"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex"
             type="DEX" />
     </build>
 

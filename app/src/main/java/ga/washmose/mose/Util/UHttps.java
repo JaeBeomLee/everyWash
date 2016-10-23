@@ -33,7 +33,7 @@ import okhttp3.RequestBody;
 import okhttp3.Response;
 
 public class UHttps {
-    public static String IP = "https://api2.washmose.ga/v1";
+    public static String IP = "https://api2.washmose.ga";
     public static final MediaType JSON = MediaType.parse("application/json");
     public static final MediaType X_WWW_FORM_URLENCODED = MediaType.parse("application/x-www-form-urlencoded");
     public static FormBody.Builder builder;

@@ -25,6 +25,8 @@ import java.util.ArrayList;
 
 import ga.washmose.mose.ItemData;
 import ga.washmose.mose.R;
+import ga.washmose.mose.Util.UHttps;
+import ga.washmose.mose.main.MainActivity;
 import ga.washmose.mose.seller.SellerDetail;
 
 /**
@@ -80,10 +82,14 @@ public class UserLaundryFragment extends Fragment{
             JSONObject seller = sellersJSON.optJSONObject(i);
 
             ArrayList<ItemData> items = new ArrayList<ItemData>();
-            items.add(new ItemData("Url","티셔츠 (not)", 3, 2000, "세탁 진행중.."));
-            items.add(new ItemData("Url","남성 속옷 하의 (not)", 8, 1000, "세탁 안함"));
+            JSONArray itemsJSON = seller.optJSONArray("price");
+            for (int j = 0; j< itemsJSON.length(); j++){
+                JSONObject item = itemsJSON.optJSONObject(j);
+                //{"price_code":"0","goods_code":"0","seller_id":"0","goods_name":"남성 속옷 (상의)","unit_amount":"3","price":"1000","is_color":"0","enabled":"1","goods_image":"\/data\/imgs\/goods\/0_man_underwear_up.png"}
+                items.add(new ItemData(item.optString("goods_name"), item.optString("goods_image"), item.optString("seller_id"), item.optInt("unit_amount"), item.optInt("price"), item.optInt("price_code"), item.optInt("goods_code")));
+            }
 
-            sellers.add(new UserLaundryItem(seller.optString("header_image"), seller.optString("title"), seller.optString("address"),"속옷 3, 겉옷 5", items, seller.optInt("latitude"), seller.optInt("longitude")));
+            sellers.add(new UserLaundryItem(seller.optString("header_image"), seller.optString("title"), seller.optString("address"),"속옷 3, 겉옷 5", items, seller.optDouble("latitude"), seller.optDouble("longitude")));
 
         }
         adapter = new userLaundryAdapter(sellers, getContext());
@@ -146,7 +152,7 @@ public class UserLaundryFragment extends Fragment{
             holder.name.setText(items.get(position).name);
             holder.location.setText(items.get(position).location);
             holder.summary.setText(items.get(position).summary);
-            Glide.with(context).load(items.get(position).imageUrl).into(holder.profile);
+            Glide.with(context).load(UHttps.IP + items.get(position).imageUrl).into(holder.profile);
 
             return convertView;
         }

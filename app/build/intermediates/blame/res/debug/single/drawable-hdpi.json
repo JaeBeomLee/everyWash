@@ -28,6 +28,10 @@
         "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/res/drawable-hdpi/ic_invite.png"
     },
     {
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_man_underwear_down.png",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/res/drawable-hdpi/ic_man_underwear_down.png"
+    },
+    {
         "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_change.png",
         "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/res/drawable-hdpi/ic_change.png"
     },
@@ -106,6 +110,10 @@
     {
         "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_logo.png",
         "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/res/drawable-hdpi/ic_logo.png"
+    },
+    {
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_man_underwear_up.png",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/res/drawable-hdpi/ic_man_underwear_up.png"
     },
     {
         "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable-hdpi/com_facebook_tooltip_blue_bottomnub.png",

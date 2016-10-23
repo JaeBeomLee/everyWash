@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
-                JSONObject res = UHttps.okHttp(UHttps.IP+"/user", UserInfo.apiKey);
+                JSONObject res = UHttps.okHttp(UHttps.IP+"/v1/user", UserInfo.apiKey);
                 UserInfo.userID = res.optInt("user_id");
                 UserInfo.user_level = res.optInt("user_level");
                 UserInfo.loginType = res.optInt("open_id_type");
@@ -150,7 +150,7 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 int code;
                 JSONObject res;
-                res = UHttps.okHttp(UHttps.IP+"/orders", UserInfo.apiKey);
+                res = UHttps.okHttp(UHttps.IP+"/v1/orders", UserInfo.apiKey);
                 if (res != null){
                     code = res.optInt("code");
                     if (code == 200){
@@ -177,7 +177,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 int code;
-                JSONObject res = UHttps.okHttp(UHttps.IP+"/findSeller/1/1", UserInfo.apiKey);
+                JSONObject res = UHttps.okHttp(UHttps.IP+"/v1/findSeller/37.4578/127.129", UserInfo.apiKey);
                 if (res != null){
                     code = res.optInt("code");
                     if (code == 200){

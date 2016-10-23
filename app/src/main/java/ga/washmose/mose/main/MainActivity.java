@@ -1,6 +1,7 @@
 package ga.washmose.mose.main;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Parcel;
 import android.os.SystemClock;
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
     public final static int REQ_LOCATION = 4332;
     public final static int REQ_PERMISSION_LOCATION = 44;
     private final static int WAIT_COUNT = 600;  // 1sec * 100
+    public final static int UserOrderRequestActivity = 2002;
 
     BottomBar mainBar;
     Toolbar toolbar;
@@ -64,21 +66,12 @@ public class MainActivity extends AppCompatActivity {
         mainBar = (BottomBar)findViewById(R.id.main_bar);
         mLocationService = new ULocationService(MainActivity.this);
 //        getMyLocation();
-        initUserData();
         fragmentManager = getSupportFragmentManager();
+        initUserData();
     }
 
     private void initMain(){
-        if (isSeller){
-            fragmentManager.beginTransaction()
-                    .add(R.id.main_content, requestFragment = new SellerOrderRequestFragment())
-                    .commit();
-        }else{
-            fragmentManager.beginTransaction()
-                    .add(R.id.main_content, laundryFragment = UserLaundryFragment.newInstance(sellers))
-                    .commit();
-        }
-
+        initSellerData();
         mainBar.setOnTabSelectListener(new OnTabSelectListener() {
             @Override
             public void onTabSelected(@IdRes int tabId) {
@@ -102,14 +95,10 @@ public class MainActivity extends AppCompatActivity {
                 }else{
                     switch (tabId){
                         case R.id.tab_laundry:
-                            fragmentManager.beginTransaction()
-                                    .replace(R.id.main_content, laundryFragment = UserLaundryFragment.newInstance(sellers))
-                                    .commit();
+                            initSellerData();
                             break;
                         case R.id.tab_list:
-                            fragmentManager.beginTransaction()
-                                    .replace(R.id.main_content, userRequestFragment = UserOrderRequestFragment.newInstance(requestOrders))
-                                    .commit();
+                            initUserOrders();
                             break;
                         case R.id.tab_menu:
                             fragmentManager.beginTransaction()
@@ -133,10 +122,8 @@ public class MainActivity extends AppCompatActivity {
                 UserInfo.address = res.optString("address");
                 UserInfo.phone = res.optString("phone");
                 UserInfo.profileURL = res.optString("profile_image");
-
+                initMain();
                 Log.d("MA response", res.toString());
-
-                initSellerData();
             }
         });
 
@@ -148,22 +135,24 @@ public class MainActivity extends AppCompatActivity {
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
-                int code;
-                JSONObject res;
-                res = UHttps.okHttp(UHttps.IP+"/v1/orders", UserInfo.apiKey);
-                if (res != null){
-                    code = res.optInt("code");
-                    if (code == 200){
-                        JSONArray orders = res.optJSONArray("order");
-                        requestOrders = orders;
-                        Log.d("MA response orders", orders.toString());
-                    }else {
-                    }
+            int code;
+            JSONObject res;
+            res = UHttps.okHttp(UHttps.IP+"/v1/orders", UserInfo.apiKey);
+            if (res != null){
+                code = res.optInt("code");
+                if (code == 200){
+                    JSONArray orders = res.optJSONArray("order");
+                    requestOrders = orders;
+                    Log.d("MA response orders", orders.toString());
                 }else {
-                    requestOrders = new JSONArray();
                 }
+            }else {
+                requestOrders = new JSONArray();
+            }
 
-                initMain();
+            fragmentManager.beginTransaction()
+                    .replace(R.id.main_content, userRequestFragment = UserOrderRequestFragment.newInstance(requestOrders))
+                    .commit();
             }
         });
 
@@ -185,7 +174,16 @@ public class MainActivity extends AppCompatActivity {
                         sellers = seller;
                         Log.d("MA response seller", seller.toString());
                     }
-                    initUserOrders();
+
+                    if (isSeller){
+                        fragmentManager.beginTransaction()
+                                .add(R.id.main_content, requestFragment = new SellerOrderRequestFragment())
+                                .commit();
+                    }else{
+                        fragmentManager.beginTransaction()
+                                .add(R.id.main_content, laundryFragment = UserLaundryFragment.newInstance(sellers))
+                                .commit();
+                    }
                 }else {
 
                 }
@@ -196,9 +194,23 @@ public class MainActivity extends AppCompatActivity {
         thread.start();
     }
 
+    private void refresh(){
+        initUserData();
+        initSellerData();
+        initMain();
+    }
     @Override
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
+    }
+
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == RESULT_OK){
+            refresh();
+        }
     }
 
     public void getMyLocation() {

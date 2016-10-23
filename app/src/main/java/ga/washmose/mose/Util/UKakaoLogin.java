@@ -81,11 +81,12 @@ public class UKakaoLogin {
                     @Override
                     public void run() {
                         if (context.getClass().getName().equals("ga.washmose.mose.pre.SplashActivity")){
-                            UHttps.initBody();
-                            UHttps.addParameter("open_id", String.valueOf(result.getId()));
-                            UHttps.addParameter("open_id_type", String.valueOf(UserInfo.TYPE_KAKAO));
+                            UHttps body = new UHttps();
+                            body.initBody();
+                            body.addParameter("open_id", String.valueOf(result.getId()));
+                            body.addParameter("open_id_type", String.valueOf(UserInfo.TYPE_KAKAO));
 
-                            final JSONObject response = UHttps.okHttp(UHttps.IP + "/v1/login", UHttps.getBody());
+                            final JSONObject response = UHttps.okHttp(UHttps.IP + "/v1/login", body.getBody());
 
                             UPreferences.setStringPref(context, UserInfo.PREF_USER, UserInfo.PREF_SUB_USER_APIKEY, response.optString("api_key"));
                             UserInfo.apiKey = UPreferences.getStringPref(context, UserInfo.PREF_USER, UserInfo.PREF_SUB_USER_APIKEY,"");
@@ -98,11 +99,12 @@ public class UKakaoLogin {
                         }else {
                             final int code;
                             Log.d("LA", "open_id: " + String.valueOf(result.getId()));
-                            UHttps.initBody();
-                            UHttps.addParameter("open_id", String.valueOf(result.getId()));
-                            UHttps.addParameter("open_id_type", String.valueOf(UserInfo.TYPE_KAKAO));
+                            UHttps body = new UHttps();
+                            body.initBody();
+                            body.addParameter("open_id", String.valueOf(result.getId()));
+                            body.addParameter("open_id_type", String.valueOf(UserInfo.TYPE_KAKAO));
 
-                            final JSONObject response = UHttps.okHttp(UHttps.IP + "/v1/login", UHttps.getBody());
+                            final JSONObject response = UHttps.okHttp(UHttps.IP + "/v1/login", body.getBody());
                             code = response.optInt("code");
                             handler.post(new Runnable() {
                                 @Override

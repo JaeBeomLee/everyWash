@@ -100,11 +100,12 @@ public class SplashActivity extends AppCompatActivity {
                 Thread thread = new Thread(new Runnable() {
                     @Override
                     public void run() {
-                        UHttps.initBody();
-                        UHttps.addParameter("open_id", loginResult.getAccessToken().getApplicationId());
-                        UHttps.addParameter("open_id_type", String.valueOf(UserInfo.TYPE_FACEBOOK));
+                        UHttps body = new UHttps();
+                        body.initBody();
+                        body.addParameter("open_id", loginResult.getAccessToken().getApplicationId());
+                        body.addParameter("open_id_type", String.valueOf(UserInfo.TYPE_FACEBOOK));
 
-                        final JSONObject response = UHttps.okHttp(UHttps.IP + "/v1/login", UHttps.getBody());
+                        final JSONObject response = UHttps.okHttp(UHttps.IP + "/v1/login", body.getBody());
 
                         UPreferences.setStringPref(SplashActivity.this, UserInfo.PREF_USER, UserInfo.PREF_SUB_USER_APIKEY,response.optString("api_key"));
                         UserInfo.apiKey = UPreferences.getStringPref(SplashActivity.this, UserInfo.PREF_USER, UserInfo.PREF_SUB_USER_APIKEY,"");
@@ -202,11 +203,12 @@ public class SplashActivity extends AppCompatActivity {
                 Thread thread = new Thread(new Runnable() {
                     @Override
                     public void run() {
-                        UHttps.initBody();
-                        UHttps.addParameter("open_id", String.valueOf(result.getId()));
-                        UHttps.addParameter("open_id_type", String.valueOf(UserInfo.TYPE_KAKAO));
+                        UHttps body = new UHttps();
+                        body.initBody();
+                        body.addParameter("open_id", String.valueOf(result.getId()));
+                        body.addParameter("open_id_type", String.valueOf(UserInfo.TYPE_KAKAO));
 
-                        final JSONObject response = UHttps.okHttp(UHttps.IP + "/v1/login", UHttps.getBody());
+                        final JSONObject response = UHttps.okHttp(UHttps.IP + "/v1/login", body.getBody());
 
                         UPreferences.setStringPref(SplashActivity.this, UserInfo.PREF_USER, UserInfo.PREF_SUB_USER_APIKEY, response.optString("api_key"));
                         UserInfo.apiKey = UPreferences.getStringPref(SplashActivity.this, UserInfo.PREF_USER, UserInfo.PREF_SUB_USER_APIKEY,"");
@@ -240,11 +242,12 @@ public class SplashActivity extends AppCompatActivity {
         if (!isRegToken) {
 //            String deviceID = Settings.Secure.getString(context.getContentResolver(), Settings.Secure.ANDROID_ID);
 
-            UHttps.initBody();
-            UHttps.addParameter("device_key", "");
-            UHttps.addParameter("device_type", "0");
+            UHttps body = new UHttps();
+            body.initBody();
+            body.addParameter("device_key", "");
+            body.addParameter("device_type", "0");
 
-            JSONObject response = UHttps.okHttp(UHttps.IP+"/v1/register/push", UHttps.getBody());
+            JSONObject response = UHttps.okHttp(UHttps.IP+"/v1/register/push", body.getBody());
         }
     }
 

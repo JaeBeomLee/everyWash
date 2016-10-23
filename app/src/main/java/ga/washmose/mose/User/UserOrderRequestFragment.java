@@ -28,13 +28,14 @@ import ga.washmose.mose.OrderData;
 import ga.washmose.mose.R;
 import ga.washmose.mose.Util.UDate;
 import ga.washmose.mose.Util.UHttps;
+import ga.washmose.mose.main.MainActivity;
 
 public class UserOrderRequestFragment extends Fragment {
     sellerRequestAdapter adapter;
     private static final String ARG_ORDERS = "orders";
     ArrayList<OrderData> Orders =new ArrayList<>();
     JSONArray requestOrders;
-
+    String []summary;
     public UserOrderRequestFragment() {
         // Required empty public constructor
     }
@@ -64,6 +65,8 @@ public class UserOrderRequestFragment extends Fragment {
         }
 
         for (int i = 0; i< requestOrders.length(); i++){
+            summary = new String[requestOrders.length()];
+            summary[i] = "";
             JSONObject order = requestOrders.optJSONObject(i);
             Calendar requestDate = null, collectionDate = null, completeDate = null;
             try {
@@ -78,18 +81,41 @@ public class UserOrderRequestFragment extends Fragment {
             } catch (ParseException e) {
                 e.printStackTrace();
             }
+
+            int count = 0;
+            String oldItemName = null;
             ArrayList<ItemData> items = new ArrayList<ItemData>();
             JSONArray itemsJSON = order.optJSONArray("items");
             for (int j = 0; j< itemsJSON.length(); j++){
                 JSONObject item = itemsJSON.optJSONObject(j);
                 //{"item_code":"1","order_code":"3","goods_code":"1","goods_name":"남성 속옷 (하의)","goods_image":"\/data\/imgs\/goods\/1_man_underwear_down.png","unit_amount":"3","price":"1000","amount":"2","is_color":"0","item_status":"0","total_price":"2000"}
                 items.add(new ItemData(item.optString("goods_name"), item.optString("goods_image"), item.optInt("unit_amount"), item.optInt("price"), item.optInt("item_code"), item.optInt("goods_code")));
+
+                String itemName = item.optString("goods_name").substring(0, 2);
+                if (oldItemName != null){
+                    if (oldItemName.equals(itemName)){
+                        count += item.optInt("unit_amount");
+                    }else {
+                        summary[i]+= " " + count;
+                        count = item.optInt("unit_amount");
+                    }
+
+                    if (j != itemsJSON.length()-1){
+                        summary[i] += ", " + itemName;
+                    }else {
+                        summary[i] += " " + count;
+                    }
+                }else{
+                    summary[i] = summary[i] + itemName;
+                    oldItemName = itemName;
+                    count = item.optInt("unit_amount");
+                }
             }
 //            items.add(new ItemData("Url","티셔츠 (not)", 3, 2000, "세탁 진행중.."));
 //            items.add(new ItemData("Url","남성 속옷 하의 (not)", 8, 1000, "세탁 안함"));
 
             JSONObject seller = order.optJSONObject("seller");
-            Orders.add(new OrderData(seller.optString("header_image"),seller.optString("profile_image"),seller.optString("seller_name"), seller.optString("title"), "Summary", requestDate, true, order.optInt("order_code"),
+            Orders.add(new OrderData(seller.optString("header_image"),seller.optString("profile_image"),seller.optString("seller_name"), seller.optString("title"), summary[i], requestDate, true, order.optInt("order_code"),
                     order.optInt("order_status"), order.optString("phone") + "data", collectionDate, completeDate, seller.optString("address"),  items));
         }
         adapter = new sellerRequestAdapter(Orders, getContext());
@@ -109,7 +135,7 @@ public class UserOrderRequestFragment extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(getContext(), UserOrderRequestActivity.class);
                 intent.putExtra("orderData", Orders.get(position));
-                startActivity(intent);
+                startActivityForResult(intent, MainActivity.UserOrderRequestActivity);
             }
         });
         return rootView;

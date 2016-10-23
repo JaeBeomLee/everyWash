@@ -39,6 +39,7 @@ public class UserLaundryFragment extends Fragment{
     ArrayList<UserLaundryItem> sellers;
     private static String ARG_SELLERS = "sellers";
     JSONArray sellersJSON;
+
     public UserLaundryFragment() {
     }
 
@@ -89,7 +90,7 @@ public class UserLaundryFragment extends Fragment{
                 items.add(new ItemData(item.optString("goods_name"), item.optString("goods_image"), item.optString("seller_id"), item.optInt("unit_amount"), item.optInt("price"), item.optInt("price_code"), item.optInt("goods_code")));
             }
 
-            sellers.add(new UserLaundryItem(seller.optString("header_image"), seller.optString("title"), seller.optString("address"),"속옷 3, 겉옷 5", items, seller.optDouble("latitude"), seller.optDouble("longitude")));
+            sellers.add(new UserLaundryItem(seller.optString("header_image"), seller.optString("title"), seller.optString("address"), "", items, seller.optDouble("latitude"), seller.optDouble("longitude")));
 
         }
         adapter = new userLaundryAdapter(sellers, getContext());

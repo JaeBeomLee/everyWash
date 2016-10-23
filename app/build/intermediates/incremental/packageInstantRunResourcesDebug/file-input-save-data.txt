@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Oct 23 23:01:45 KST 2016
+#Mon Oct 24 00:33:56 KST 2016
 20.base=/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/resources-debug.ap_
 143.base=/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/resources-debug.ap_
 493.base=/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/resources-debug.ap_

@@ -36,21 +36,21 @@ public class UHttps {
     public static String IP = "https://api2.washmose.ga";
     public static final MediaType JSON = MediaType.parse("application/json");
     public static final MediaType X_WWW_FORM_URLENCODED = MediaType.parse("application/x-www-form-urlencoded");
-    public static FormBody.Builder builder;
+    public FormBody.Builder builder;
 //    RequestBody body = new FormBody.Builder()
 //    .add("device_key", "")
 //    .add("device_type", "0")
 //    .build();
 
-    public static void initBody(){
+    public void initBody(){
         builder = null;
         builder = new FormBody.Builder();
     }
-    public static void addParameter(String parameter, String value){
+    public void addParameter(String parameter, String value){
         builder.add(parameter, value);
     }
 
-    public static RequestBody getBody(){
+    public RequestBody getBody(){
         return builder.build();
     }
     public static JSONObject okHttp(String urlString, RequestBody body) {
@@ -116,6 +116,41 @@ public class UHttps {
                 .url(urlString)
                 .addHeader("api_key", header)
                 .get()
+                .build();
+
+        Response response = null;
+        try {
+            response = client.newCall(request).execute();
+            JSONObject res = null;
+            try {
+                String responseStr = response.body().string();
+                res = new JSONObject(responseStr);
+                res.put("code", response.code());
+            } catch (JSONException e) {
+                e.printStackTrace();
+                res = new JSONObject();
+                try {
+                    res.put("code", response.code());
+                } catch (JSONException e1) {
+                    e1.printStackTrace();
+                }
+            }
+            return res;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public static JSONObject okHttpDelete(String urlString, String header) {
+        int code;
+        OkHttpClient client = new OkHttpClient();
+//        RequestBody body = RequestBody.create(X_WWW_FORM_URLENCODED, req);
+
+        Request request = new Request.Builder()
+                .url(urlString)
+                .addHeader("api_key", header)
+                .delete()
                 .build();
 
         Response response = null;

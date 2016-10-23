@@ -112,11 +112,12 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     public void run() {
                         final int code;
                         Log.d("LA", "open_id: " + loginResult.getAccessToken().getUserId());
-                        UHttps.initBody();
-                        UHttps.addParameter("open_id", loginResult.getAccessToken().getApplicationId());
-                        UHttps.addParameter("open_id_type", String.valueOf(UserInfo.TYPE_FACEBOOK));
+                        UHttps body = new UHttps();
+                        body.initBody();
+                        body.addParameter("open_id", loginResult.getAccessToken().getApplicationId());
+                        body.addParameter("open_id_type", String.valueOf(UserInfo.TYPE_FACEBOOK));
 
-                        final JSONObject response = UHttps.okHttp(UHttps.IP + "/v1/login", UHttps.getBody());
+                        final JSONObject response = UHttps.okHttp(UHttps.IP + "/v1/login", body.getBody());
                         code = response.optInt("code");
                         handler.post(new Runnable() {
                             @Override
@@ -261,11 +262,12 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     public void run() {
                         final int code;
                         Log.d("LA", "open_id: " + String.valueOf(result.getId()));
-                        UHttps.initBody();
-                        UHttps.addParameter("open_id", String.valueOf(result.getId()));
-                        UHttps.addParameter("open_id_type", String.valueOf(1));
+                        UHttps body = new UHttps();
+                        body.initBody();
+                        body.addParameter("open_id", String.valueOf(result.getId()));
+                        body.addParameter("open_id_type", String.valueOf(1));
 
-                        final JSONObject response = UHttps.okHttp(UHttps.IP + "/v1/login", UHttps.getBody());
+                        final JSONObject response = UHttps.okHttp(UHttps.IP + "/v1/login", body.getBody());
                         code = response.optInt("code");
                         handler.post(new Runnable() {
                             @Override

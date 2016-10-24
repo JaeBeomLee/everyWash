@@ -86,29 +86,31 @@ public class UserOrderRequestFragment extends Fragment {
             String oldItemName = null;
             ArrayList<ItemData> items = new ArrayList<ItemData>();
             JSONArray itemsJSON = order.optJSONArray("items");
-            for (int j = 0; j< itemsJSON.length(); j++){
-                JSONObject item = itemsJSON.optJSONObject(j);
-                //{"item_code":"1","order_code":"3","goods_code":"1","goods_name":"남성 속옷 (하의)","goods_image":"\/data\/imgs\/goods\/1_man_underwear_down.png","unit_amount":"3","price":"1000","amount":"2","is_color":"0","item_status":"0","total_price":"2000"}
-                items.add(new ItemData(item.optString("goods_name"), item.optString("goods_image"), item.optInt("unit_amount"), item.optInt("price"), item.optInt("item_code"), item.optInt("goods_code")));
+            if (itemsJSON != null){
+                for (int j = 0; j< itemsJSON.length(); j++){
+                    JSONObject item = itemsJSON.optJSONObject(j);
+                    //{"item_code":"1","order_code":"3","goods_code":"1","goods_name":"남성 속옷 (하의)","goods_image":"\/data\/imgs\/goods\/1_man_underwear_down.png","unit_amount":"3","price":"1000","amount":"2","is_color":"0","item_status":"0","total_price":"2000"}
+                    items.add(new ItemData(item.optString("goods_name"), item.optString("goods_image"), item.optInt("unit_amount"), item.optInt("price"), item.optInt("item_code"), item.optInt("goods_code")));
 
-                String itemName = item.optString("goods_name").substring(0, 2);
-                if (oldItemName != null){
-                    if (oldItemName.equals(itemName)){
-                        count += item.optInt("unit_amount");
-                    }else {
-                        summary[i]+= " " + count;
+                    String itemName = item.optString("goods_name").substring(0, 2);
+                    if (oldItemName != null){
+                        if (oldItemName.equals(itemName)){
+                            count += item.optInt("unit_amount");
+                        }else {
+                            summary[i]+= " " + count;
+                            count = item.optInt("unit_amount");
+                        }
+
+                        if (j != itemsJSON.length()-1){
+                            summary[i] += ", " + itemName;
+                        }else {
+                            summary[i] += " " + count;
+                        }
+                    }else{
+                        summary[i] = summary[i] + itemName;
+                        oldItemName = itemName;
                         count = item.optInt("unit_amount");
                     }
-
-                    if (j != itemsJSON.length()-1){
-                        summary[i] += ", " + itemName;
-                    }else {
-                        summary[i] += " " + count;
-                    }
-                }else{
-                    summary[i] = summary[i] + itemName;
-                    oldItemName = itemName;
-                    count = item.optInt("unit_amount");
                 }
             }
 //            items.add(new ItemData("Url","티셔츠 (not)", 3, 2000, "세탁 진행중.."));

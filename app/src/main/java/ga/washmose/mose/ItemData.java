@@ -8,26 +8,26 @@ import java.io.Serializable;
 
 public class ItemData implements Serializable {
     public String name, iconURL, progress, sellerID;
-    public int count, price, priceCode, goodsCode;
+    public int minimum, price, priceCode, goodsCode, count = 0;
 
     public ItemData(String name, String iconURL, String sellerID,
-                    int count, int price, int priceCode,
+                    int minimum, int price, int priceCode,
                     int goodsCode) {
         this.name = name;
         this.iconURL = iconURL;
         this.sellerID = sellerID;
-        this.count = count;
+        this.minimum = minimum;
         this.price = price;
         this.priceCode = priceCode;
         this.goodsCode = goodsCode;
     }
 
     public ItemData(String name, String iconURL,
-                    int count, int price, int priceCode,
+                    int minimum, int price, int priceCode,
                     int goodsCode) {
         this.name = name;
         this.iconURL = iconURL;
-        this.count = count;
+        this.minimum = minimum;
         this.price = price;
         this.priceCode = priceCode;
         this.goodsCode = goodsCode;

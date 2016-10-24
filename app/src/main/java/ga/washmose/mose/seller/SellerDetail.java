@@ -19,7 +19,6 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -30,6 +29,7 @@ import java.util.Random;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 import ga.washmose.mose.ItemData;
+import ga.washmose.mose.OrderActivity;
 import ga.washmose.mose.R;
 import ga.washmose.mose.ReviewData;
 import ga.washmose.mose.User.UserLaundryItem;
@@ -38,10 +38,11 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class SellerDetail extends AppCompatActivity implements OnMapReadyCallback{
 
+    private final int OrderActivity = 3923;
     ImageView profile;
     TextView name, location, rateCount;
     RatingBar ratingBar;
-    Button contact;
+    Button contact, orderBtn;
 
     ViewGroup itemListLayout, reviewLayout;
 
@@ -70,6 +71,7 @@ public class SellerDetail extends AppCompatActivity implements OnMapReadyCallbac
         ratingBar = (RatingBar) findViewById(R.id.seller_detail_rating);
         rateCount = (TextView)findViewById(R.id.seller_detail_rate_count);
         contact = (Button) findViewById(R.id.seller_detail_contact);
+        orderBtn = (Button) findViewById(R.id.seller_detail_order);
 
         itemListLayout = (ViewGroup)findViewById(R.id.seller_detail_item_list_layout);
         reviewLayout = (ViewGroup)findViewById(R.id.seller_detail_review_layout);
@@ -84,8 +86,31 @@ public class SellerDetail extends AppCompatActivity implements OnMapReadyCallbac
         int count = random.nextInt(9) +1;
         rateCount.setText(count +"");
 
+        orderBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(SellerDetail.this, OrderActivity.class);
+                intent1.putExtra("seller", seller);
+                startActivityForResult(intent1, OrderActivity);
+            }
+        });
         initItem();
         initReview();
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == RESULT_OK){
+            setResult(RESULT_OK);
+            finish();
+        }
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        setResult(RESULT_CANCELED);
     }
 
     private void initItem(){
@@ -101,7 +126,7 @@ public class SellerDetail extends AppCompatActivity implements OnMapReadyCallbac
 
             Glide.with(this).load(UHttps.IP + items.get(i).iconURL).into(icon);
             name.setText(items.get(i).name);
-            count.setText(items.get(i).count + "벌 당");
+            count.setText(items.get(i).minimum + "벌 당");
             price.setText(items.get(i).price + " 원");
 
             itemListLayout.addView(view);

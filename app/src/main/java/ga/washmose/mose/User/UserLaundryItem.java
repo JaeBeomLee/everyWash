@@ -10,6 +10,7 @@ import ga.washmose.mose.ItemData;
  */
 
 public class UserLaundryItem implements Serializable{
+    public int id;
     public String imageUrl;
     public String name;
     public String location;
@@ -17,7 +18,8 @@ public class UserLaundryItem implements Serializable{
     public ArrayList<ItemData> items;
     public double latitude, longitude;
 
-    public UserLaundryItem(String imageUrl, String name, String location, String summary, ArrayList<ItemData> items, double latitude, double longitude) {
+    public UserLaundryItem(int id, String imageUrl, String name, String location, String summary, ArrayList<ItemData> items, double latitude, double longitude) {
+        this.id = id;
         this.imageUrl = imageUrl;
         this.name = name;
         this.location = location;

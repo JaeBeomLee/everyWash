@@ -1,4 +1,4 @@
-#Mon Oct 24 02:18:55 KST 2016
+#Mon Oct 24 20:56:20 KST 2016
 base.0=/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_6eee8c3f127fe1028b58aac78bbb0ef8bf95a350
 renamed.1=classes2.dex
 renamed.0=classes.dex

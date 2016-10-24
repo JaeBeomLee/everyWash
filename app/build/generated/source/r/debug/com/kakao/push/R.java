@@ -47,7 +47,7 @@ public final class R {
 	public static final class id {
 		public static final int adjust_height = 0x7f100059;
 		public static final int adjust_width = 0x7f10005a;
-		public static final int kakao_login_activity_progress_bar = 0x7f100173;
+		public static final int kakao_login_activity_progress_bar = 0x7f100176;
 		public static final int none = 0x7f100020;
 	}
 	public static final class integer {

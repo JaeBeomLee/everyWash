@@ -14,55 +14,49 @@
         android:layout_height="wrap_content"
         android:id="@+id/include" />
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginRight="24dp"
-        android:layout_marginLeft="24dp"
-        android:orientation="vertical"
-        >
+        android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="24dp"
+            android:layout_marginLeft="24dp"
             android:orientation="vertical"
-            android:layout_marginTop="24dp"
-            android:background="@drawable/order_buttons_background"
             >
-            <Button
-                android:id="@+id/order_date_select"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="수거날짜 선택"
-                android:background="#00ffffff"
-                />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-        <EditText
-            android:layout_marginTop="32dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/colorAccent"
-            android:hint="연락처 입력"
-            android:inputType="phone"
-            />
-        <EditText
-            android:layout_marginTop="6dp"
-            android:drawableLeft="@drawable/ic_location"
-            android:drawablePadding="8dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/colorAccent"
-            android:hint="주소 입력"
-            />
+                android:orientation="vertical"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/order_buttons_background"
+                >
+                <Button
+                    android:id="@+id/order_date_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="수거날짜 선택"
+                    android:background="#00ffffff"
+                    />
+            </LinearLayout>
 
-        <Button
-            android:layout_marginTop="32dp"
-            android:background="@color/colorPrimary"
-            android:text="수거 요청하기"
-            android:textColor="@android:color/white"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
+            <LinearLayout
+                android:id="@+id/order_item_layout"
+                android:layout_marginTop="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                />
+
+            <Button
+                android:id="@+id/order_send"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                android:background="@color/colorPrimary"
+                android:text="수거 요청하기"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

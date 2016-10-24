@@ -110,7 +110,7 @@ public class OrderInfo extends AppCompatActivity {
 
             Glide.with(this).load(UHttps.IP + orderData.items.get(i).iconURL).into(icon);
             name.setText(orderData.items.get(i).name);
-            count.setText(orderData.items.get(i).count + " 벌");
+            count.setText(orderData.items.get(i).minimum + " 벌");
             progress.setText(orderData.items.get(i).progress);
             if (orderData.progress == 0){
                 progress.setVisibility(View.GONE);

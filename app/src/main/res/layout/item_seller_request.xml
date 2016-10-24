@@ -41,6 +41,8 @@
                 android:layout_marginLeft="4dp"
                 android:layout_gravity="bottom"
                 android:gravity="center_vertical"
+                android:visibility="invisible"
+
                 >
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="10dp"

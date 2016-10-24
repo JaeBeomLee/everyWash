@@ -34,7 +34,7 @@ import ga.washmose.mose.seller.SellerDetail;
  */
 
 public class UserLaundryFragment extends Fragment{
-
+    private final int SellerDetail = 4383;
     userLaundryAdapter adapter;
     ArrayList<UserLaundryItem> sellers;
     private static String ARG_SELLERS = "sellers";
@@ -90,7 +90,7 @@ public class UserLaundryFragment extends Fragment{
                 items.add(new ItemData(item.optString("goods_name"), item.optString("goods_image"), item.optString("seller_id"), item.optInt("unit_amount"), item.optInt("price"), item.optInt("price_code"), item.optInt("goods_code")));
             }
 
-            sellers.add(new UserLaundryItem(seller.optString("header_image"), seller.optString("title"), seller.optString("address"), "", items, seller.optDouble("latitude"), seller.optDouble("longitude")));
+            sellers.add(new UserLaundryItem(seller.optInt("seller_id"),seller.optString("header_image"), seller.optString("title"), seller.optString("address"), "", items, seller.optDouble("latitude"), seller.optDouble("longitude")));
 
         }
         adapter = new userLaundryAdapter(sellers, getContext());
@@ -102,7 +102,7 @@ public class UserLaundryFragment extends Fragment{
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(getContext(), SellerDetail.class);
                 intent.putExtra("seller", sellers.get(position));
-                startActivity(intent);
+                startActivityForResult(intent,SellerDetail);
             }
         });
         return rootView;

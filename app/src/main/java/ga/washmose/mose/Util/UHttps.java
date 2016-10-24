@@ -57,7 +57,7 @@ public class UHttps {
         int code;
         OkHttpClient client = new OkHttpClient();
 //        RequestBody body = RequestBody.create(X_WWW_FORM_URLENCODED, req);
-
+        Log.d("body", body.contentType().toString());
         Request request = new Request.Builder()
                 .url(urlString)
                 .post(body)
@@ -84,7 +84,7 @@ public class UHttps {
         int code;
         OkHttpClient client = new OkHttpClient();
 //        RequestBody body = RequestBody.create(X_WWW_FORM_URLENCODED, req);
-
+        Log.d("body", body.contentType().toString());
         Request request = new Request.Builder()
                 .url(urlString)
                 .addHeader("api_key", header)
@@ -96,6 +96,7 @@ public class UHttps {
             JSONObject res = null;
             try {
                 String responseStr = response.body().string();
+                Log.d("response", responseStr);
                 res = new JSONObject(responseStr);
                 res.put("code", response.code());
             } catch (JSONException e) {
@@ -124,6 +125,7 @@ public class UHttps {
             JSONObject res = null;
             try {
                 String responseStr = response.body().string();
+                Log.d("response", responseStr);
                 res = new JSONObject(responseStr);
                 res.put("code", response.code());
             } catch (JSONException e) {
@@ -159,6 +161,7 @@ public class UHttps {
             JSONObject res = null;
             try {
                 String responseStr = response.body().string();
+                Log.d("response", responseStr);
                 res = new JSONObject(responseStr);
                 res.put("code", response.code());
             } catch (JSONException e) {

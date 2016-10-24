@@ -1,6 +1,14 @@
 [
     {
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/layout-v21/bottom_navigation_item.xml",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.aurelhubert/ahbottomnavigation/1.5.1/res/layout-v21/bottom_navigation_item.xml"
+    },
+    {
         "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/layout-v21/place_autocomplete_fragment.xml",
         "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.6.1/res/layout-v21/place_autocomplete_fragment.xml"
+    },
+    {
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/layout-v21/bottom_navigation_small_item.xml",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.aurelhubert/ahbottomnavigation/1.5.1/res/layout-v21/bottom_navigation_small_item.xml"
     }
 ]

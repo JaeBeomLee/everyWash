@@ -207,11 +207,11 @@
             android:src="@drawable/ic_change"
             />
         <TextView
+            android:id="@+id/more_change_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="4dp"
             android:textSize="16dp"
-            android:text="판매자로 전환하기"
             android:textColor="@android:color/white"
             />
     </LinearLayout>

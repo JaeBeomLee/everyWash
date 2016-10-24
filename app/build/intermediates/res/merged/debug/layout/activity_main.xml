@@ -14,10 +14,15 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         />
-    <com.roughike.bottombar.BottomBar
+    <!--<com.roughike.bottombar.BottomBar-->
+        <!--android:id="@+id/main_bar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="60dp"-->
+        <!--app:bb_tabXmlResource="@xml/bottombar_tabs"-->
+        <!--/>-->
+
+    <com.aurelhubert.ahbottomnavigation.AHBottomNavigation
         android:id="@+id/main_bar"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        app:bb_tabXmlResource="@xml/bottombar_tabs"
-        />
+        android:layout_height="wrap_content"/>
 </LinearLayout>

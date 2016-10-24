@@ -84,10 +84,12 @@ public class UserLaundryFragment extends Fragment{
 
             ArrayList<ItemData> items = new ArrayList<ItemData>();
             JSONArray itemsJSON = seller.optJSONArray("price");
-            for (int j = 0; j< itemsJSON.length(); j++){
-                JSONObject item = itemsJSON.optJSONObject(j);
-                //{"price_code":"0","goods_code":"0","seller_id":"0","goods_name":"남성 속옷 (상의)","unit_amount":"3","price":"1000","is_color":"0","enabled":"1","goods_image":"\/data\/imgs\/goods\/0_man_underwear_up.png"}
-                items.add(new ItemData(item.optString("goods_name"), item.optString("goods_image"), item.optString("seller_id"), item.optInt("unit_amount"), item.optInt("price"), item.optInt("price_code"), item.optInt("goods_code")));
+            if (itemsJSON != null){
+                for (int j = 0; j< itemsJSON.length(); j++){
+                    JSONObject item = itemsJSON.optJSONObject(j);
+                    //{"price_code":"0","goods_code":"0","seller_id":"0","goods_name":"남성 속옷 (상의)","unit_amount":"3","price":"1000","is_color":"0","enabled":"1","goods_image":"\/data\/imgs\/goods\/0_man_underwear_up.png"}
+                    items.add(new ItemData(item.optString("goods_name"), item.optString("goods_image"), item.optString("seller_id"), item.optInt("unit_amount"), item.optInt("price"), item.optInt("price_code"), item.optInt("goods_code")));
+                }
             }
 
             sellers.add(new UserLaundryItem(seller.optInt("seller_id"),seller.optString("header_image"), seller.optString("title"), seller.optString("address"), "", items, seller.optDouble("latitude"), seller.optDouble("longitude")));

@@ -60,7 +60,6 @@ public class SignUpActivity extends AppCompatActivity {
                             UPreferences.setStringPref(SignUpActivity.this, UserInfo.PREF_USER, UserInfo.PREF_SUB_USER_APIKEY, res.optString("api_key"));
                             UserInfo.apiKey = UPreferences.getStringPref(SignUpActivity.this, UserInfo.PREF_USER, UserInfo.PREF_SUB_USER_APIKEY,"");
                             UserInfo.isSeller = false;
-                            UserInfo.isSeller = false;
                             Intent intent2 = new Intent(SignUpActivity.this, MainActivity.class);
                             startActivity(intent2);
                         }

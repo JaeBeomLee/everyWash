@@ -124,6 +124,10 @@
         "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.kakao.sdk/util/1.1.5/res/drawable-xxhdpi/kakaoaccount_icon.png"
     },
     {
+        "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_manage.png",
+        "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/res/drawable-xxhdpi/ic_manage.png"
+    },
+    {
         "merged": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/res/merged/debug/drawable-xxhdpi/facebook.png",
         "source": "/Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/res/drawable-xxhdpi/facebook.png"
     },

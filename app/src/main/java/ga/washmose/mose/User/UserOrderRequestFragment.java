@@ -3,6 +3,7 @@ package ga.washmose.mose.User;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,6 +20,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.Serializable;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -136,7 +138,7 @@ public class UserOrderRequestFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(getContext(), UserOrderRequestActivity.class);
-                intent.putExtra("orderData", Orders.get(position));
+                intent.putExtra("orderData", (Parcelable) Orders.get(position));
                 startActivityForResult(intent, MainActivity.UserOrderRequestActivity);
             }
         });

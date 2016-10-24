@@ -71,12 +71,13 @@
             android:label="@string/title_activity_order"
             android:theme="@style/AppTheme" />
         <activity android:name=".OrderItemList" />
-        <activity android:name=".User.UserEvaluationActivity"></activity>
-        <activity android:name=".User.UserOrderInfo"></activity>
+        <activity android:name=".User.UserEvaluationActivity" />
+        <activity android:name=".User.UserOrderInfo" />
         <activity android:name=".seller.SellerOrderRequestActivity" />
         <activity android:name=".seller.SellerOrderManageActivity" />
         <activity android:name=".User.UserOrderRequestActivity" />
-        <activity android:name=".pre.SignUpActivity"></activity>
+        <activity android:name=".pre.SignUpActivity" />
+        <activity android:name=".RegisterSellerActivity"></activity>
     </application>
 
 </manifest>

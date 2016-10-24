@@ -24,6 +24,8 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.hedgehog.ratingbar.RatingBar;
 
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -33,6 +35,7 @@ import ga.washmose.mose.OrderActivity;
 import ga.washmose.mose.R;
 import ga.washmose.mose.ReviewData;
 import ga.washmose.mose.User.UserLaundryItem;
+import ga.washmose.mose.UserInfo;
 import ga.washmose.mose.Util.UHttps;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 

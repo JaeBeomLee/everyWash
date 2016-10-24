@@ -14,6 +14,14 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.text.ParseException;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+
 import de.hdodenhof.circleimageview.CircleImageView;
 import ga.washmose.mose.Util.UDate;
 import ga.washmose.mose.Util.UHttps;
@@ -28,12 +36,15 @@ public class OrderInfo extends AppCompatActivity {
     TextView code, collectionDate, completeDate, address;
     ViewGroup itemView;
     protected Button customButton;
+    Calendar collection, complete;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_order_info);
         Intent intent = getIntent();
-        orderData = (OrderData) intent.getSerializableExtra("orderData");
+        orderData = intent.getParcelableExtra("orderData");
+
+
         firstStep = (ImageView) findViewById(R.id.first_step);
         secondStep = (ImageView) findViewById(R.id.second_step);
         thirdStep = (ImageView) findViewById(R.id.thrid_step);
@@ -52,9 +63,8 @@ public class OrderInfo extends AppCompatActivity {
         itemView = (ViewGroup) findViewById(R.id.order_info_item_list);
         customButton = (Button) findViewById(R.id.order_info_button);
 
+        initData();
         initProgress();
-        initView();
-        initItems();
     }
 
     public void initProgress(){
@@ -88,36 +98,90 @@ public class OrderInfo extends AppCompatActivity {
     public void initView(){
         code.setText(orderData.code + "");
 
-        String collectionDateString = UDate.getDateFormat(orderData.collectionDate.getTime());
-        collectionDate.setText(collectionDateString);
+        if (orderData.collectionDate != null){
+            String collectionDateString = UDate.getDateFormat(orderData.collectionDate.getTime());
+            collectionDate.setText(collectionDateString);
+        }
 
-        String completeDateString = UDate.getDateFormat(orderData.completeDate.getTime());
-        completeDate.setText(completeDateString);
+        if (orderData.completeDate != null){
+            String completeDateString = UDate.getDateFormat(orderData.completeDate.getTime());
+            completeDate.setText(completeDateString);
+        }
 
         address.setText(orderData.address);
     }
 
     public void initItems(){
         LayoutInflater inflater = (LayoutInflater)getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        if (orderData.items != null){
+            for (int i = 0; i< orderData.items.size(); i++){
+                View view = inflater.inflate(R.layout.item_order_info_items, itemView, false);
+                CircleImageView icon = (CircleImageView) view.findViewById(R.id.order_info_item_icon);
+                TextView name = (TextView)view.findViewById(R.id.order_info_item_name);
+                TextView count = (TextView)view.findViewById(R.id.order_info_item_count);
+                TextView progress = (TextView)view.findViewById(R.id.order_info_item_progress);
+                Button reButton = (Button) view.findViewById(R.id.order_info_item_rebtn);
 
-        for (int i = 0; i< orderData.items.size(); i++){
-            View view = inflater.inflate(R.layout.item_order_info_items, itemView, false);
-            CircleImageView icon = (CircleImageView) view.findViewById(R.id.order_info_item_icon);
-            TextView name = (TextView)view.findViewById(R.id.order_info_item_name);
-            TextView count = (TextView)view.findViewById(R.id.order_info_item_count);
-            TextView progress = (TextView)view.findViewById(R.id.order_info_item_progress);
-            Button reButton = (Button) view.findViewById(R.id.order_info_item_rebtn);
-
-            Glide.with(this).load(UHttps.IP + orderData.items.get(i).iconURL).into(icon);
-            name.setText(orderData.items.get(i).name);
-            count.setText(orderData.items.get(i).minimum + " 벌");
-            progress.setText(orderData.items.get(i).progress);
-            if (orderData.progress == 0){
-                progress.setVisibility(View.GONE);
-                reButton.setVisibility(View.GONE);
+                Glide.with(this).load(UHttps.IP + orderData.items.get(i).iconURL).into(icon);
+                name.setText(orderData.items.get(i).name);
+                count.setText(orderData.items.get(i).minimum + " 벌");
+                progress.setText(orderData.items.get(i).progress);
+                if (orderData.progress == 0){
+                    progress.setVisibility(View.GONE);
+                    reButton.setVisibility(View.GONE);
+                }
+                itemView.addView(view);
             }
-            itemView.addView(view);
         }
+    }
+
+    private void initData(){
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                int code;
+                JSONObject res = UHttps.okHttp(UHttps.IP+"/v1/orders/s/"+ orderData.code, UserInfo.apiKey);
+                code = res.optInt("code");
+                if (code == 200) {
+                    JSONArray orders = res.optJSONArray("order");
+                    collection = Calendar.getInstance();
+                    for (int i = 0; i < orders.length(); i++) {
+                        JSONObject order = orders.optJSONObject(i);
+                        try {
+                            Date date = UDate.getDate(order.optString("send_date"));
+                            collection.setTime(date);
+                            complete = (Calendar) collection.clone();
+                            complete.set(Calendar.DAY_OF_MONTH, complete.get(Calendar.DAY_OF_MONTH) + 4);
+                        } catch (ParseException e) {
+                            e.printStackTrace();
+                        }
+
+                        orderData.collectionDate = collection;
+                        orderData.completeDate = complete;
+
+                        JSONObject user = order.optJSONObject("consumer");
+                        JSONArray items = order.optJSONArray("items");
+                        ArrayList<ItemData> itemsList = new ArrayList<>();
+                        for (int j = 0; j < items.length(); j++) {
+                            JSONObject item = items.optJSONObject(j);
+                            itemsList.add(new ItemData(item.optString("goods_name"), item.optString("goods_image"), item.optInt("unit_amount"), item.optInt("total_price"), item.optInt("item_code"), item.optInt("goods_code")));
+                        }
+
+                        orderData.items = itemsList;
+                    }
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            initView();
+                            initItems();
+                        }
+                    });
+                }
+            }
+        });
+
+        thread.setDaemon(true);
+        thread.start();
     }
 
 }

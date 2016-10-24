@@ -3,6 +3,7 @@ package ga.washmose.mose.seller;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,28 +16,31 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Calendar;
 
 import ga.washmose.mose.ItemData;
 import ga.washmose.mose.OrderData;
 import ga.washmose.mose.R;
+import ga.washmose.mose.Util.UDate;
 
 public class SellerOrderRequestFragment extends Fragment {
+    private static String ARG_REQUEST = "request";
     sellerRequestAdapter adapter;
-    ArrayList<SellerRequestItem> items =new ArrayList<>();
+    ArrayList<OrderData> items =new ArrayList<>();
 //    OrderData data;
     public SellerOrderRequestFragment() {
         // Required empty public constructor
     }
 
     // TODO: Rename and change types and number of parameters
-    public static SellerOrderRequestFragment newInstance() {
+    public static SellerOrderRequestFragment newInstance(ArrayList<OrderData> request) {
         SellerOrderRequestFragment fragment = new SellerOrderRequestFragment();
-//        Bundle args = new Bundle();
-//        args.putString(ARG_PARAM1, param1);
+        Bundle args = new Bundle();
+        args.putParcelableArrayList(ARG_REQUEST, request);
 //        args.putString(ARG_PARAM2, param2);
-//        fragment.setArguments(args);
+        fragment.setArguments(args);
         return fragment;
     }
 
@@ -44,54 +48,42 @@ public class SellerOrderRequestFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 //        data = new OrderData();
-        items.add(new SellerRequestItem("http://www.vipstudio.co.kr/bbs/data/gallery01/남자증명01.jpg", "김강현", "분당구 수내동 10-1 트라펠리스 910호", "10월 3일 세탁 요청", "속옷 30, 상의 2", false));
-        items.add(new SellerRequestItem("http://pds19.egloos.com/pds/201011/22/73/f0095273_4cea0b1348cfe.jpg", "정시후", "분당구 정자동 두산위브파빌리온 A동 1820호", "10월 5일 세탁 요청", "속옷 10, 하의 5", true));
-        items.add(new SellerRequestItem("http://cfile202.uf.daum.net/image/2429503F5507C4E6203EF1", "최지훈", "분당구 운중동 산운마을판교월든힐스2단지아파트 203동 111호", "10월 5일 세탁 요청", "상의 4, 하의 5", true));
+//        items.add(new SellerRequestItem("http://www.vipstudio.co.kr/bbs/data/gallery01/남자증명01.jpg", "김강현", "분당구 수내동 10-1 트라펠리스 910호", "10월 3일 세탁 요청", "속옷 30, 상의 2", false));
+//        items.add(new SellerRequestItem("http://pds19.egloos.com/pds/201011/22/73/f0095273_4cea0b1348cfe.jpg", "정시후", "분당구 정자동 두산위브파빌리온 A동 1820호", "10월 5일 세탁 요청", "속옷 10, 하의 5", true));
+//        items.add(new SellerRequestItem("http://cfile202.uf.daum.net/image/2429503F5507C4E6203EF1", "최지훈", "분당구 운중동 산운마을판교월든힐스2단지아파트 203동 111호", "10월 5일 세탁 요청", "상의 4, 하의 5", true));
 
+        if (getArguments() != null) {
+            items = getArguments().getParcelableArrayList(ARG_REQUEST);
+        }
         adapter = new sellerRequestAdapter(items, getContext());
-//        if (getArguments() != null) {
 //            mParam1 = getArguments().getString(ARG_PARAM1);
 //            mParam2 = getArguments().getString(ARG_PARAM2);
 //        }
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(final LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_seller_order_request, container, false);
         ListView list = (ListView)rootView.findViewById(R.id.seller_order_request_list);
         list.setAdapter(adapter);
-//        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                data.code = 1111;
-//                data.progress = 0;
-//                Calendar collection = Calendar.getInstance();
-//                collection.set(Calendar.YEAR, 2016);
-//                collection.set(Calendar.MONTH, 10);
-//                collection.set(Calendar.DAY_OF_MONTH, 3);
-//                data.collectionDate = collection;
-//                data.completeDate = collection;
-//                data.address = items.get(position).address;
-//
-//                ArrayList<ItemData> items = new ArrayList<ItemData>();
-//                items.add(new ItemData("Url","티셔츠", 3, 2000, "세탁 진행중.."));
-//                items.add(new ItemData("Url","남성 속옷 하의", 8, 1000, "세탁 안함"));
-//                data.items = items;
-//                Intent intent = new Intent(getContext(), SellerOrderRequestActivity.class);
-//                intent.putExtra("orderData", data);
-//                startActivity(intent);
-//            }
-//        });
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(getContext(), SellerOrderRequestActivity.class);
+                intent.putExtra("orderData", (Parcelable) items.get(position));
+                startActivity(intent);
+            }
+        });
         return rootView;
     }
 
     public class sellerRequestAdapter extends BaseAdapter {
 
-        ArrayList<SellerRequestItem> items;
+        ArrayList<OrderData> items;
         Context context;
-        public sellerRequestAdapter(ArrayList<SellerRequestItem> items, Context context) {
+        public sellerRequestAdapter(ArrayList<OrderData> items, Context context) {
             this.items = items;
             this.context = context;
         }
@@ -130,11 +122,13 @@ public class SellerOrderRequestFragment extends Fragment {
                 holder = (ViewHolder)convertView.getTag();
             }
 
+            Calendar send = items.get(position).collectionDate;
+            String sendStr = UDate.getSimpleDateFormat(send.getTime()) + " 세탁 요청";
             holder.name.setText(items.get(position).name);
             holder.location.setText(items.get(position).address);
             holder.summary.setText(items.get(position).summary);
-            Glide.with(context).load(items.get(position).imageUrl).into(holder.profile);
-            holder.request.setText(items.get(position).request);
+            Glide.with(context).load(items.get(position).profileImageUrl).into(holder.profile);
+            holder.request.setText(sendStr);
             if (items.get(position).author){
                 holder.author.setVisibility(View.VISIBLE);
             }else{

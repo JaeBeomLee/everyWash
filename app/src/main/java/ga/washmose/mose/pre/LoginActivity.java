@@ -143,7 +143,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                                         UDialog.setDialog(LoginActivity.this, "관리자에게 문의 해주세요! \n코드 : " + code);
                                         break;
                                     case 401:   //인증 받지 않은 요청. (회원 가입으로 감)
-                                        UserInfo.openID = loginResult.getAccessToken().getApplicationId();
+                                        UserInfo.openID = loginResult.getAccessToken().getUserId();
                                         UserInfo.loginType = UserInfo.TYPE_FACEBOOK;
                                         Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
                                         startActivity(intent);

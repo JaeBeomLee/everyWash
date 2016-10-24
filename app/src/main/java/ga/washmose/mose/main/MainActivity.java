@@ -2,31 +2,36 @@ package ga.washmose.mose.main;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.AsyncTask;
-import android.os.Parcel;
 import android.os.SystemClock;
-import android.support.annotation.IdRes;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.view.View;
 import android.widget.Toast;
 
-import com.roughike.bottombar.BottomBar;
-import com.roughike.bottombar.OnTabSelectListener;
+import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
+import com.aurelhubert.ahbottomnavigation.AHBottomNavigation.OnTabSelectedListener;
+import com.aurelhubert.ahbottomnavigation.AHBottomNavigationAdapter;
+import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import java.net.ProtocolException;
+import java.text.ParseException;
+import java.util.ArrayList;
+import java.util.Calendar;
 
+import ga.washmose.mose.ItemData;
 import ga.washmose.mose.MoreFragment;
+import ga.washmose.mose.OrderData;
 import ga.washmose.mose.R;
 import ga.washmose.mose.UserInfo;
 import ga.washmose.mose.User.UserLaundryFragment;
 import ga.washmose.mose.User.UserOrderRequestFragment;
+import ga.washmose.mose.Util.UDate;
 import ga.washmose.mose.Util.UGeoPoint;
 import ga.washmose.mose.Util.UGeocoder;
 import ga.washmose.mose.Util.UHttps;
@@ -44,7 +49,10 @@ public class MainActivity extends AppCompatActivity {
     private final static int WAIT_COUNT = 600;  // 1sec * 100
     public final static int UserOrderRequestActivity = 2002;
 
-    BottomBar mainBar;
+    AHBottomNavigation mainBar;
+    AHBottomNavigationItem item1;
+    AHBottomNavigationItem item2;
+    AHBottomNavigationItem item3;
     Toolbar toolbar;
 
     SellerOrderRequestFragment requestFragment;
@@ -55,6 +63,10 @@ public class MainActivity extends AppCompatActivity {
     FragmentManager fragmentManager = null;
     JSONArray requestOrders, sellers;
 
+    ArrayList<OrderData> requestDatas = new ArrayList<>();
+    ArrayList<OrderData> ingDatas = new ArrayList<>();
+    ArrayList<OrderData> completeDatas = new ArrayList<>();
+
     ULocationService mLocationService;
     boolean SearchFlag = false, isSearching = false;
     String myLocation;
@@ -63,49 +75,54 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         toolbar = (Toolbar)findViewById(R.id.toolbar);
-        mainBar = (BottomBar)findViewById(R.id.main_bar);
+        mainBar = (AHBottomNavigation) findViewById(R.id.main_bar);
+        if (!UserInfo.isSeller){
+            item1 = new AHBottomNavigationItem("세탁", R.drawable.ic_laundry, R.color.colorPrimary);
+            item2 = new AHBottomNavigationItem("주문상황", R.drawable.ic_list, R.color.colorPrimary);
+            item3 = new AHBottomNavigationItem("더보기", R.drawable.ic_menu, R.color.colorPrimary);
+        }else{
+            item1 = new AHBottomNavigationItem("주문 요청", R.drawable.ic_list, R.color.colorPrimary);
+            item2 = new AHBottomNavigationItem("판매 관리", R.drawable.ic_manage, R.color.colorPrimary);
+            item3 = new AHBottomNavigationItem("더보기", R.drawable.ic_menu, R.color.colorPrimary);
+        }
+
+
+        mainBar.addItem(item1);
+        mainBar.addItem(item2);
+        mainBar.addItem(item3);
+        mainBar.setAccentColor(Color.parseColor("#00C1F9"));
         mLocationService = new ULocationService(MainActivity.this);
 //        getMyLocation();
         fragmentManager = getSupportFragmentManager();
         initUserData();
+
+        if (UserInfo.isSeller){
+            initSellerItems(0);
+        }
     }
 
     private void initMain(){
         initSellerData();
-        mainBar.setOnTabSelectListener(new OnTabSelectListener() {
+        mainBar.setOnTabSelectedListener(new OnTabSelectedListener() {
             @Override
-            public void onTabSelected(@IdRes int tabId) {
-                if (isSeller){
-                    switch (tabId){
-                        case R.id.tab_laundry:
-                            fragmentManager.beginTransaction()
-                                    .replace(R.id.main_content, requestFragment = new SellerOrderRequestFragment())
-                                    .commit();
-                            break;
-                        case R.id.tab_list:
-                            fragmentManager.beginTransaction()
-                                    .replace(R.id.main_content, manageFragment = new SellerManageFragment())
-                                    .commit();
-                            break;
-                        case R.id.tab_menu:
-                            fragmentManager.beginTransaction()
-                                    .replace(R.id.main_content, moreFragment = new MoreFragment())
-                                    .commit();
-                    }
+            public boolean onTabSelected(int position, boolean wasSelected) {
+                if (UserInfo.isSeller){
+                    initSellerItems(position);
                 }else{
-                    switch (tabId){
-                        case R.id.tab_laundry:
+                    switch (position){
+                        case 0:
                             initSellerData();
                             break;
-                        case R.id.tab_list:
+                        case 1:
                             initUserOrders();
                             break;
-                        case R.id.tab_menu:
+                        case 2:
                             fragmentManager.beginTransaction()
                                     .replace(R.id.main_content, moreFragment = new MoreFragment())
                                     .commit();
                     }
                 }
+                return true;
             }
         });
     }
@@ -194,6 +211,79 @@ public class MainActivity extends AppCompatActivity {
         thread.start();
     }
 
+    private void initSellerItems(final int position){
+        final Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                int code;
+                JSONObject res = UHttps.okHttp(UHttps.IP+"/v1/orders/s", UserInfo.apiKey);
+//                JSONObject res = UHttps.okHttp(UHttps.IP+"/v1/orders/s", "f36c48d3357fb2b964cff1532f431693");
+                //{"order_code":"89","order_status":"0","request_date":"2016-10-25 03:07:37","send_date":"2016-11-04 00:00:00","delivery_date":null,"finish_date":null,"total_price":null,"consumer":{"user_id":"23","user_name":"테스터 1","sex":"2","phone":"010-0000-0000","address":"테스트 입니다.","profile_image":null},"items":null}
+                if (res != null){
+                    code = res.optInt("code");
+                    if (code == 200){
+                        JSONArray orders = res.optJSONArray("order");
+                        ArrayList<OrderData> orderDatas = new ArrayList<>();
+                        for (int i = 0; i< orders.length(); i++){
+                            JSONObject order = orders.optJSONObject(i);
+                            JSONObject user = order.optJSONObject("consumer");
+                            JSONArray items = order.optJSONArray("items");
+                            Calendar request = Calendar.getInstance();
+                            Calendar collection = Calendar.getInstance();
+                            Calendar complete = (Calendar) collection.clone();
+                            complete.set(Calendar.DAY_OF_MONTH, complete.get(Calendar.DAY_OF_MONTH) + 4);
+                            try {
+                                request.setTime(UDate.getDate(order.optString("request_date")));
+                                collection.setTime(UDate.getDate(order.optString("send_date")));
+                            } catch (ParseException e) {
+                                e.printStackTrace();
+                            }
+                            ArrayList<ItemData> itemsList = new ArrayList<>();
+                            for (int j = 0; j < items.length(); j++){
+                                JSONObject item = items.optJSONObject(j);
+                                itemsList.add(new ItemData(item.optString("goods_name"), item.optString("goods_image"), item.optInt("unit_amount"), item.optInt("total_price"), item.optInt("item_code"), item.optInt("goods_code")));
+                            }
+                            orderDatas.add(new OrderData(user.optString("profile_image"), user.optString("user_name"), "summary", request, false, order.optInt("order_code"), order.optInt("order_status"), user.optString("phone"), collection, complete, user.optString("address"), itemsList));
+                        }
+                        for (int i = 0;  i < orderDatas.size(); i++){
+                            if (orderDatas.get(i).progress == 0){
+                                requestDatas.add(orderDatas.get(i));
+                            }else if (orderDatas.get(i).progress == 4){
+                                completeDatas.add(orderDatas.get(i));
+                            }else{
+                                ingDatas.add(orderDatas.get(i));
+                            }
+                        }
+//                        JSONArray seller = res.optJSONArray("seller");
+//                        sellers = seller;
+                        Log.d("MA response seller", res.toString());
+                    }
+
+                    switch (position){
+                        case 0:
+                            fragmentManager.beginTransaction()
+                                    .replace(R.id.main_content, requestFragment = SellerOrderRequestFragment.newInstance(requestDatas))
+                                    .commit();
+                            break;
+                        case 1:
+                            fragmentManager.beginTransaction()
+                                    .replace(R.id.main_content, manageFragment = SellerManageFragment.newInstance(ingDatas, completeDatas))
+                                    .commit();
+                            break;
+                        case 2:
+                            fragmentManager.beginTransaction()
+                                    .replace(R.id.main_content, moreFragment = new MoreFragment())
+                                    .commit();
+                    }
+                }else {
+
+                }
+            }
+        });
+
+        thread.setDaemon(true);
+        thread.start();
+    }
     private void refresh(){
         initUserData();
         initSellerData();

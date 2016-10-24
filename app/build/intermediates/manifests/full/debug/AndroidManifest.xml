@@ -90,6 +90,7 @@
         <activity android:name="ga.washmose.mose.seller.SellerOrderManageActivity" />
         <activity android:name="ga.washmose.mose.User.UserOrderRequestActivity" />
         <activity android:name="ga.washmose.mose.pre.SignUpActivity" />
+        <activity android:name="ga.washmose.mose.RegisterSellerActivity" />
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"

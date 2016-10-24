@@ -155,6 +155,14 @@
     <color name="cast_libraries_material_featurehighlight_text_header_color">#FFFFFFFF</color>
     <color name="cast_mini_controller_disabled_button_drawable_tint_color">#7FFFFFFF</color>
     <color name="colorAccent">#FF8B0B</color>
+    <color name="colorBottomNavigationAccent">#FF4081</color>
+    <color name="colorBottomNavigationActiveColored">#FFFFFF</color>
+    <color name="colorBottomNavigationInactive">#747474</color>
+    <color name="colorBottomNavigationInactiveColored">#50FFFFFF</color>
+    <color name="colorBottomNavigationNotification">#F63D2B</color>
+    <color name="colorBottomNavigationPrimary">#3F51B5</color>
+    <color name="colorBottomNavigationPrimaryDark">#303F9F</color>
+    <color name="colorBottomNavigationSelectedBackground">#17000000</color>
     <color name="colorPrimary">#00C1F9</color>
     <color name="colorPrimary005">#0d00c1f9</color>
     <color name="colorPrimaryDark">#00AEE0</color>
@@ -275,6 +283,7 @@
     <color name="wallet_hint_foreground_holo_light">#808080</color>
     <color name="wallet_holo_blue_light">#ff33b5e5</color>
     <color name="wallet_link_text_light">#0000ee</color>
+    <declare-styleable name="AHBottomNavigationBehavior_Params"><attr format="reference" name="tabLayoutId"/><attr format="boolean" name="selectedBackgroundVisible"/></declare-styleable>
     <declare-styleable name="ActionBar"><attr name="navigationMode">
             
             <enum name="normal" value="0"/>
@@ -697,6 +706,39 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="appbar_padding_top">8dp</dimen>
     <dimen name="bb_height">56dp</dimen>
+    <dimen name="bottom_navigation_elevation">8dp</dimen>
+    <dimen name="bottom_navigation_height">56dp</dimen>
+    <dimen name="bottom_navigation_icon">24dp</dimen>
+    <dimen name="bottom_navigation_margin_bottom">7dp</dimen>
+    <dimen name="bottom_navigation_margin_top_active">6dp</dimen>
+    <dimen name="bottom_navigation_margin_top_inactive">8dp</dimen>
+    <dimen name="bottom_navigation_max_width">168dp</dimen>
+    <dimen name="bottom_navigation_min_width">104dp</dimen>
+    <dimen name="bottom_navigation_notification_elevation">1dp</dimen>
+    <dimen name="bottom_navigation_notification_height">16dp</dimen>
+    <dimen name="bottom_navigation_notification_margin_left">16dp</dimen>
+    <dimen name="bottom_navigation_notification_margin_left_active">16dp</dimen>
+    <dimen name="bottom_navigation_notification_margin_top">14dp</dimen>
+    <dimen name="bottom_navigation_notification_margin_top_active">3dp</dimen>
+    <dimen name="bottom_navigation_notification_margin_top_classic">4dp</dimen>
+    <dimen name="bottom_navigation_notification_padding">3dp</dimen>
+    <dimen name="bottom_navigation_notification_radius">8dp</dimen>
+    <dimen name="bottom_navigation_notification_text_size">9sp</dimen>
+    <dimen name="bottom_navigation_notification_width">16dp</dimen>
+    <dimen name="bottom_navigation_padding_left">12dp</dimen>
+    <dimen name="bottom_navigation_padding_right">12dp</dimen>
+    <dimen name="bottom_navigation_small_active_max_width">168dp</dimen>
+    <dimen name="bottom_navigation_small_active_min_width">96dp</dimen>
+    <dimen name="bottom_navigation_small_inactive_max_width">96dp</dimen>
+    <dimen name="bottom_navigation_small_inactive_min_width">64dp</dimen>
+    <dimen name="bottom_navigation_small_margin_bottom">16dp</dimen>
+    <dimen name="bottom_navigation_small_margin_top">16dp</dimen>
+    <dimen name="bottom_navigation_small_margin_top_active">6dp</dimen>
+    <dimen name="bottom_navigation_small_selected_width_difference">10dp</dimen>
+    <dimen name="bottom_navigation_text_size_active">14sp</dimen>
+    <dimen name="bottom_navigation_text_size_forced_active">11sp</dimen>
+    <dimen name="bottom_navigation_text_size_forced_inactive">10sp</dimen>
+    <dimen name="bottom_navigation_text_size_inactive">12sp</dimen>
     <dimen name="button_text_size">15dp</dimen>
     <dimen name="cast_expanded_controller_ad_in_progress_label_layout_height">240dp</dimen>
     <dimen name="cast_expanded_controller_ad_in_progress_label_layout_width">-1px</dimen>

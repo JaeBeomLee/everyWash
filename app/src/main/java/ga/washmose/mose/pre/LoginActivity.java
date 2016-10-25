@@ -156,7 +156,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                                     case 200:   //로그인
                                         UPreferences.setStringPref(LoginActivity.this, UserInfo.PREF_USER, UserInfo.PREF_SUB_USER_APIKEY,response.optString("api_key"));
                                         UserInfo.apiKey = UPreferences.getStringPref(LoginActivity.this, UserInfo.PREF_USER, UserInfo.PREF_SUB_USER_APIKEY,"");
-                                        UserInfo.isSeller = false;
+                                        UserInfo.isSeller = UPreferences.getBooleanPref(LoginActivity.this, UserInfo.PREF_USER, UserInfo.PREF_SUB_IS_SELLER, false);
+
                                         Intent intent2 = new Intent(LoginActivity.this, MainActivity.class);
                                         startActivity(intent2);
                                         finish();

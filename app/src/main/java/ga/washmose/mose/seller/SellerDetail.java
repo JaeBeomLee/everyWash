@@ -105,7 +105,9 @@ public class SellerDetail extends AppCompatActivity implements OnMapReadyCallbac
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == RESULT_OK){
-            setResult(RESULT_OK);
+            Intent intent = new Intent();
+            intent.putExtra("pageNum", -1);
+            setResult(RESULT_OK, intent);
             finish();
         }
     }

@@ -59,7 +59,7 @@ public class SignUpActivity extends AppCompatActivity {
                         if (res.optInt("code") == 201){
                             UPreferences.setStringPref(SignUpActivity.this, UserInfo.PREF_USER, UserInfo.PREF_SUB_USER_APIKEY, res.optString("api_key"));
                             UserInfo.apiKey = UPreferences.getStringPref(SignUpActivity.this, UserInfo.PREF_USER, UserInfo.PREF_SUB_USER_APIKEY,"");
-                            UserInfo.isSeller = false;
+                            UserInfo.isSeller = UPreferences.getBooleanPref(SignUpActivity.this, UserInfo.PREF_USER, UserInfo.PREF_SUB_IS_SELLER, false);
                             Intent intent2 = new Intent(SignUpActivity.this, MainActivity.class);
                             startActivity(intent2);
                         }

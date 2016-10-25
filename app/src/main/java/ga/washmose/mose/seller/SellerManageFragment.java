@@ -38,7 +38,9 @@ public class SellerManageFragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
+            ingDatas = null;
             ingDatas = getArguments().getParcelableArrayList(ARG_ING);
+            completeDatas = null;
             completeDatas = getArguments().getParcelableArrayList(ARG_COMPLETE);
         }
     }
@@ -59,7 +61,7 @@ public class SellerManageFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_seller_manage, container, false);
         tabLayout = (TabLayout)view.findViewById(R.id.seller_manage_tab);
         viewPager = (ViewPager)view.findViewById(R.id.seller_manage_pager);
-        adapter = new ManagePagerAdapter(getFragmentManager(), ingDatas, completeDatas);
+        adapter = new ManagePagerAdapter(getChildFragmentManager(), ingDatas, completeDatas);
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
 
@@ -85,7 +87,7 @@ public class SellerManageFragment extends Fragment {
                 case 1:
                     return ManageCompleteFragment.newInstance(1, "세탁 완료", completeDatas);
                 default:
-                    return ManageProcessFragment.newInstance(0, "세탁 진행중", ingDatas);
+                    return null;
 
             }
         }
@@ -103,7 +105,7 @@ public class SellerManageFragment extends Fragment {
                 case 1:
                     return "세탁 완료";
                 default:
-                    return "세탁 진행중";
+                    return null;
             }
         }
     }

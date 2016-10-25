@@ -48,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
     public final static int REQ_PERMISSION_LOCATION = 44;
     private final static int WAIT_COUNT = 600;  // 1sec * 100
     public final static int UserOrderRequestActivity = 2002;
+    public final static int SellerOrderRequestActivity = 2334;
+    public final static int SellerOrderManageActivity = 3592;
 
     AHBottomNavigation mainBar;
     AHBottomNavigationItem item1;
@@ -95,14 +97,14 @@ public class MainActivity extends AppCompatActivity {
 //        getMyLocation();
         fragmentManager = getSupportFragmentManager();
         initUserData();
-
-        if (UserInfo.isSeller){
-            initSellerItems(0);
-        }
     }
 
     private void initMain(){
-        initSellerData();
+        if (UserInfo.isSeller){
+            initSellerItems(0);
+        }else{
+            initSellerData();
+        }
         mainBar.setOnTabSelectedListener(new OnTabSelectedListener() {
             @Override
             public boolean onTabSelected(int position, boolean wasSelected) {
@@ -245,6 +247,9 @@ public class MainActivity extends AppCompatActivity {
                             }
                             orderDatas.add(new OrderData(user.optString("profile_image"), user.optString("user_name"), "summary", request, false, order.optInt("order_code"), order.optInt("order_status"), user.optString("phone"), collection, complete, user.optString("address"), itemsList));
                         }
+                        requestDatas = new ArrayList<>();
+                        ingDatas = new ArrayList<>();
+                        completeDatas = new ArrayList<>();
                         for (int i = 0;  i < orderDatas.size(); i++){
                             if (orderDatas.get(i).progress == 0){
                                 requestDatas.add(orderDatas.get(i));
@@ -284,10 +289,14 @@ public class MainActivity extends AppCompatActivity {
         thread.setDaemon(true);
         thread.start();
     }
-    private void refresh(){
-        initUserData();
-        initSellerData();
-        initMain();
+    private void refresh(int pageNum){
+        if (UserInfo.isSeller){
+            initSellerItems(pageNum);
+        }else{
+            initUserData();
+            initSellerData();
+        }
+//        initMain();
     }
     @Override
     protected void attachBaseContext(Context newBase) {
@@ -299,7 +308,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == RESULT_OK){
-            refresh();
+            int pageNum = data.getIntExtra("pageNum", 0);
+            refresh(pageNum);
         }
     }
 

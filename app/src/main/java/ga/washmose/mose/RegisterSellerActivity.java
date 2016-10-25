@@ -16,7 +16,9 @@ import java.util.Random;
 
 import ga.washmose.mose.Util.UDialog;
 import ga.washmose.mose.Util.UHttps;
+import ga.washmose.mose.Util.UPreferences;
 import ga.washmose.mose.main.MainActivity;
+import ga.washmose.mose.pre.LoginActivity;
 
 public class RegisterSellerActivity extends AppCompatActivity {
 
@@ -167,6 +169,7 @@ public class RegisterSellerActivity extends AppCompatActivity {
 
                 Intent intent = new Intent(RegisterSellerActivity.this, MainActivity.class);
                 UserInfo.isSeller = !UserInfo.isSeller;
+                UPreferences.setBooleanPref(RegisterSellerActivity.this, UserInfo.PREF_USER, UserInfo.PREF_SUB_IS_SELLER, UserInfo.isSeller);
                 startActivity(intent);
                 finish();
             }

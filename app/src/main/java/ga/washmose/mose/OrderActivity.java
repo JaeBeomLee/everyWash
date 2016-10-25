@@ -194,7 +194,9 @@ public class OrderActivity extends AppCompatActivity {
                             UDialog.setDialog(OrderActivity.this, "주문이 완료되었습니다.", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
-                                    setResult(RESULT_OK);
+                                    Intent intent = new Intent();
+                                    intent.putExtra("pageNum", -1);
+                                    setResult(RESULT_OK, intent);
                                     finish();
                                 }
                             });

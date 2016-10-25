@@ -22,6 +22,7 @@ import ga.washmose.mose.OrderData;
 import ga.washmose.mose.OrderInfo;
 import ga.washmose.mose.R;
 import ga.washmose.mose.Util.UDate;
+import ga.washmose.mose.main.MainActivity;
 
 /**
  * Created by leejaebeom on 2016. 10. 10..
@@ -67,7 +68,7 @@ public class ManageProcessFragment extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(getContext(), SellerOrderManageActivity.class);
                 intent.putExtra("orderData", (Parcelable) items.get(position));
-                startActivity(intent);
+                startActivityForResult(intent, MainActivity.SellerOrderManageActivity);
             }
         });
         return view;
@@ -130,4 +131,6 @@ public class ManageProcessFragment extends Fragment {
             TextView date, code, address, remainDate;
         }
     }
+
+
 }

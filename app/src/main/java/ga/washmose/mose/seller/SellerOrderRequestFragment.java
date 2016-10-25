@@ -24,6 +24,7 @@ import ga.washmose.mose.ItemData;
 import ga.washmose.mose.OrderData;
 import ga.washmose.mose.R;
 import ga.washmose.mose.Util.UDate;
+import ga.washmose.mose.main.MainActivity;
 
 public class SellerOrderRequestFragment extends Fragment {
     private static String ARG_REQUEST = "request";
@@ -53,6 +54,7 @@ public class SellerOrderRequestFragment extends Fragment {
 //        items.add(new SellerRequestItem("http://cfile202.uf.daum.net/image/2429503F5507C4E6203EF1", "최지훈", "분당구 운중동 산운마을판교월든힐스2단지아파트 203동 111호", "10월 5일 세탁 요청", "상의 4, 하의 5", true));
 
         if (getArguments() != null) {
+            items = null;
             items = getArguments().getParcelableArrayList(ARG_REQUEST);
         }
         adapter = new sellerRequestAdapter(items, getContext());
@@ -73,7 +75,7 @@ public class SellerOrderRequestFragment extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(getContext(), SellerOrderRequestActivity.class);
                 intent.putExtra("orderData", (Parcelable) items.get(position));
-                startActivity(intent);
+                startActivityForResult(intent, MainActivity.SellerOrderRequestActivity);
             }
         });
         return rootView;

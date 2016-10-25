@@ -22,6 +22,7 @@ import org.json.JSONObject;
 import de.hdodenhof.circleimageview.CircleImageView;
 import ga.washmose.mose.User.UserLaundryFragment;
 import ga.washmose.mose.Util.UHttps;
+import ga.washmose.mose.Util.UPreferences;
 import ga.washmose.mose.main.MainActivity;
 import ga.washmose.mose.pre.LoginActivity;
 import ga.washmose.mose.seller.SellerOrderRequestFragment;
@@ -95,12 +96,13 @@ public class MoreFragment extends Fragment {
                     if (code == 200){
                         Intent intent = new Intent(getContext(), MainActivity.class);
                         UserInfo.isSeller = !UserInfo.isSeller;
+                        UPreferences.setBooleanPref(getContext(), UserInfo.PREF_USER, UserInfo.PREF_SUB_IS_SELLER, UserInfo.isSeller);
                         startActivity(intent);
                         getActivity().finish();
                     }else{
                         Intent intent = new Intent(getContext(), RegisterSellerActivity.class);
                         startActivity(intent);
-                        getActivity().finish();
+
                     }
 
                 }else {

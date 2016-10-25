@@ -53,6 +53,7 @@ public class UHttps {
     public RequestBody getBody(){
         return builder.build();
     }
+
     public static JSONObject okHttp(String urlString, RequestBody body) {
         int code;
         OkHttpClient client = new OkHttpClient();
@@ -80,6 +81,7 @@ public class UHttps {
         }
         return null;
     }
+
     public static JSONObject okHttp(String urlString, String header, RequestBody body) {
         int code;
         OkHttpClient client = new OkHttpClient();
@@ -108,6 +110,7 @@ public class UHttps {
         }
         return null;
     }
+
     public static JSONObject okHttp(String urlString, String header) {
         int code;
         OkHttpClient client = new OkHttpClient();
@@ -153,6 +156,42 @@ public class UHttps {
                 .url(urlString)
                 .addHeader("api_key", header)
                 .delete()
+                .build();
+
+        Response response = null;
+        try {
+            response = client.newCall(request).execute();
+            JSONObject res = null;
+            try {
+                String responseStr = response.body().string();
+                Log.d("response", responseStr);
+                res = new JSONObject(responseStr);
+                res.put("code", response.code());
+            } catch (JSONException e) {
+                e.printStackTrace();
+                res = new JSONObject();
+                try {
+                    res.put("code", response.code());
+                } catch (JSONException e1) {
+                    e1.printStackTrace();
+                }
+            }
+            return res;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public static JSONObject okHttpPut(String urlString, String header) {
+        int code;
+        OkHttpClient client = new OkHttpClient();
+        RequestBody body = RequestBody.create(X_WWW_FORM_URLENCODED, "");
+
+        Request request = new Request.Builder()
+                .url(urlString)
+                .addHeader("api_key", header)
+                .put(body)
                 .build();
 
         Response response = null;

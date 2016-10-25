@@ -91,7 +91,7 @@ public class UKakaoLogin {
 
                             UPreferences.setStringPref(context, UserInfo.PREF_USER, UserInfo.PREF_SUB_USER_APIKEY, response.optString("api_key"));
                             UserInfo.apiKey = UPreferences.getStringPref(context, UserInfo.PREF_USER, UserInfo.PREF_SUB_USER_APIKEY,"");
-                            UserInfo.isSeller = false;
+                            UserInfo.isSeller = UPreferences.getBooleanPref(context, UserInfo.PREF_USER, UserInfo.PREF_SUB_IS_SELLER, false);
                             isLogin = false;
 
                             Intent intent = new Intent(context, MainActivity.class);
@@ -129,7 +129,7 @@ public class UKakaoLogin {
                                         case 200:   //로그인
                                             UPreferences.setStringPref(context, UserInfo.PREF_USER, UserInfo.PREF_SUB_USER_APIKEY,response.optString("api_key"));
                                             UserInfo.apiKey = UPreferences.getStringPref(context, UserInfo.PREF_USER, UserInfo.PREF_SUB_USER_APIKEY,"");
-                                            UserInfo.isSeller = false;
+                                            UserInfo.isSeller = UPreferences.getBooleanPref(context, UserInfo.PREF_USER, UserInfo.PREF_SUB_IS_SELLER, false);
                                             isLogin = false;
                                             Intent intent2 = new Intent(context, MainActivity.class);
                                             context.startActivity(intent2);

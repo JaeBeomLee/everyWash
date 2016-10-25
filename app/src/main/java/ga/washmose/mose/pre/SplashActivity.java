@@ -126,7 +126,7 @@ public class SplashActivity extends AppCompatActivity {
 
                         UPreferences.setStringPref(SplashActivity.this, UserInfo.PREF_USER, UserInfo.PREF_SUB_USER_APIKEY,response.optString("api_key"));
                         UserInfo.apiKey = UPreferences.getStringPref(SplashActivity.this, UserInfo.PREF_USER, UserInfo.PREF_SUB_USER_APIKEY,"");
-                        UserInfo.isSeller = false;
+                        UserInfo.isSeller = UPreferences.getBooleanPref(SplashActivity.this, UserInfo.PREF_USER, UserInfo.PREF_SUB_IS_SELLER, false);
                         Intent intent2 = new Intent(SplashActivity.this, MainActivity.class);
                         startActivity(intent2);
                         finish();
@@ -229,7 +229,7 @@ public class SplashActivity extends AppCompatActivity {
 
                         UPreferences.setStringPref(SplashActivity.this, UserInfo.PREF_USER, UserInfo.PREF_SUB_USER_APIKEY, response.optString("api_key"));
                         UserInfo.apiKey = UPreferences.getStringPref(SplashActivity.this, UserInfo.PREF_USER, UserInfo.PREF_SUB_USER_APIKEY,"");
-                        UserInfo.isSeller = false;
+                        UserInfo.isSeller = UPreferences.getBooleanPref(SplashActivity.this, UserInfo.PREF_USER, UserInfo.PREF_SUB_IS_SELLER, false);
 
                         Intent intent = new Intent(SplashActivity.this, MainActivity.class);
                         startActivity(intent);

@@ -1,6 +1,7 @@
 package ga.washmose.mose.User;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
@@ -52,7 +53,9 @@ public class UserOrderRequestActivity extends OrderInfo {
                             DialogInterface.OnClickListener positive = new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
-                                    setResult(RESULT_OK);
+                                    Intent intent = new Intent();
+                                    intent.putExtra("pageNum", -1);
+                                    setResult(RESULT_OK, intent);
                                     finish();
                                 }
                             };

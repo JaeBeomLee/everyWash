@@ -140,7 +140,12 @@ public class OrderInfo extends AppCompatActivity {
             @Override
             public void run() {
                 int code;
-                JSONObject res = UHttps.okHttp(UHttps.IP+"/v1/orders/s/"+ orderData.code, UserInfo.apiKey);
+                JSONObject res;
+                if (UserInfo.isSeller){
+                    res = UHttps.okHttp(UHttps.IP+"/v1/orders/s/"+ orderData.code, UserInfo.apiKey);
+                }else{
+                    res = UHttps.okHttp(UHttps.IP+"/v1/orders/"+ orderData.code, UserInfo.apiKey);
+                }
                 code = res.optInt("code");
                 if (code == 200) {
                     JSONArray orders = res.optJSONArray("order");

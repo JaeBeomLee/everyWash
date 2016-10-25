@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "647070982528",
+    "firebase_url": "https://washmose-24b21.firebaseio.com",
+    "project_id": "washmose-24b21",
+    "storage_bucket": "washmose-24b21.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:647070982528:android:a47840d0b44b7366",
+        "android_client_info": {
+          "package_name": "ga.washmose.mose"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "647070982528-lgcjcmtah2s6t01psl63fsnpnpghql66.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ga.washmose.mose",
+            "certificate_hash": "381F7D250BEDA8EC99C50022B92C8DE8E388E76F"
+          }
+        },
+        {
+          "client_id": "647070982528-3u6nd2t3rfj76fhaolr26l8f143gurem.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ga.washmose.mose",
+            "certificate_hash": "5A2A82A2B5F220ED970CD568AD455BDA1A8CB1E4"
+          }
+        },
+        {
+          "client_id": "647070982528-8vkr15ro77i0gi2kjkfgudoih45igngs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC67MaW-zr6iNadJbwyToqabBBEvB7QGsg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "647070982528-8vkr15ro77i0gi2kjkfgudoih45igngs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

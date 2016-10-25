@@ -16,6 +16,8 @@ import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigation.OnTabSelectedListener;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationAdapter;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem;
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.messaging.FirebaseMessaging;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -74,6 +76,9 @@ public class MainActivity extends AppCompatActivity {
     String myLocation;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        FirebaseMessaging.getInstance().subscribeToTopic("news");
+        UserInfo.token = FirebaseInstanceId.getInstance().getToken();
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         toolbar = (Toolbar)findViewById(R.id.toolbar);
@@ -97,6 +102,7 @@ public class MainActivity extends AppCompatActivity {
 //        getMyLocation();
         fragmentManager = getSupportFragmentManager();
         initUserData();
+        sendProfileImage();
     }
 
     private void initMain(){
@@ -142,6 +148,7 @@ public class MainActivity extends AppCompatActivity {
                 UserInfo.phone = res.optString("phone");
 //                UserInfo.profileURL = res.optString("profile_image");
                 initMain();
+                registerToken();
                 Log.d("MA response", res.toString());
             }
         });
@@ -179,13 +186,37 @@ public class MainActivity extends AppCompatActivity {
         thread.start();
     }
 
+    private void sendProfileImage(){
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                int code;
+                UHttps body = new UHttps();
+                body.initBody();
+                body.addParameter("profile_image", UserInfo.profileURL);
+                JSONObject res;
+                res = UHttps.okHttpPut(UHttps.IP+"/v1/register", UserInfo.apiKey, body.getBody());
+                if (res != null){
+                    code = res.optInt("code");
+                    if (code == 200){
+                        Log.d("MA progile", res.toString());
+                    }else {
+                    }
+                }else {
+                }
+            }
+        });
+
+        thread.setDaemon(true);
+        thread.start();
+    }
 
     private void initSellerData(){
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
                 int code;
-                JSONObject res = UHttps.okHttp(UHttps.IP+"/v1/findSeller/37.4578/127.129", UserInfo.apiKey);
+                JSONObject res = UHttps.okHttp(UHttps.IP+"/v1/findSeller/37.457813/127.128931", UserInfo.apiKey);
                 if (res != null){
                     code = res.optInt("code");
                     if (code == 200){
@@ -241,9 +272,11 @@ public class MainActivity extends AppCompatActivity {
                                 e.printStackTrace();
                             }
                             ArrayList<ItemData> itemsList = new ArrayList<>();
-                            for (int j = 0; j < items.length(); j++){
-                                JSONObject item = items.optJSONObject(j);
-                                itemsList.add(new ItemData(item.optString("goods_name"), item.optString("goods_image"), item.optInt("unit_amount"), item.optInt("total_price"), item.optInt("item_code"), item.optInt("goods_code")));
+                            if (items != null){
+                                for (int j = 0; j < items.length(); j++){
+                                    JSONObject item = items.optJSONObject(j);
+                                    itemsList.add(new ItemData(item.optString("goods_name"), item.optString("goods_image"), item.optInt("unit_amount"), item.optInt("total_price"), item.optInt("item_code"), item.optInt("goods_code")));
+                                }
                             }
                             orderDatas.add(new OrderData(user.optString("profile_image"), user.optString("user_name"), "summary", request, false, order.optInt("order_code"), order.optInt("order_status"), user.optString("phone"), collection, complete, user.optString("address"), itemsList));
                         }
@@ -264,24 +297,26 @@ public class MainActivity extends AppCompatActivity {
                         Log.d("MA response seller", res.toString());
                     }
 
-                    switch (position){
-                        case 0:
-                            fragmentManager.beginTransaction()
-                                    .replace(R.id.main_content, requestFragment = SellerOrderRequestFragment.newInstance(requestDatas))
-                                    .commit();
-                            break;
-                        case 1:
-                            fragmentManager.beginTransaction()
-                                    .replace(R.id.main_content, manageFragment = SellerManageFragment.newInstance(ingDatas, completeDatas))
-                                    .commit();
-                            break;
-                        case 2:
-                            fragmentManager.beginTransaction()
-                                    .replace(R.id.main_content, moreFragment = new MoreFragment())
-                                    .commit();
-                    }
+
                 }else {
 
+                }
+
+                switch (position){
+                    case 0:
+                        fragmentManager.beginTransaction()
+                                .replace(R.id.main_content, requestFragment = SellerOrderRequestFragment.newInstance(requestDatas))
+                                .commit();
+                        break;
+                    case 1:
+                        fragmentManager.beginTransaction()
+                                .replace(R.id.main_content, manageFragment = SellerManageFragment.newInstance(ingDatas, completeDatas))
+                                .commit();
+                        break;
+                    case 2:
+                        fragmentManager.beginTransaction()
+                                .replace(R.id.main_content, moreFragment = new MoreFragment())
+                                .commit();
                 }
             }
         });
@@ -319,6 +354,40 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void registerToken(){
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                UHttps body = new UHttps();
+                body.initBody();
+                body.addParameter("device_key", UserInfo.token);
+                body.addParameter("device_type", "0");
+                String url = UHttps.IP + "/v1/register/push";
+                JSONObject res = UHttps.okHttp(url, UserInfo.apiKey, body.getBody());
+                Log.d("token", res.toString());
+            }
+        });
+        thread.setDaemon(true);
+        thread.start();
+    }
+
+
+    public void deleteToken(){
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                UHttps body = new UHttps();
+                body.initBody();
+                body.addParameter("device_key", UserInfo.token);
+                body.addParameter("device_type", "0");
+                String url = UHttps.IP + "/v1/register/push";
+                JSONObject res = UHttps.okHttpDelete(url, UserInfo.apiKey, body.getBody());
+                Log.d("token", res.toString());
+            }
+        });
+        thread.setDaemon(true);
+        thread.start();
+    }
     private class GetLocationDataTask extends AsyncTask<Void, Void, UGeoPoint> {
 
         @Override

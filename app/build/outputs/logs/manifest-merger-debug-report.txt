@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:2:1-83:12
+ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:2:1-98:12
 	package
 		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:4:5-31
 		INJECTED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml
@@ -51,7 +51,7 @@ MERGED from [com.google.android.gms:play-services-maps:9.6.1] /Users/leejaebeom/
 	android:required
 		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:13:9-32
 application
-ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:15:5-81:19
+ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:15:5-96:19
 MERGED from [com.google.android.gms:play-services-gcm:9.6.1] /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.6.1/AndroidManifest.xml:23:5-19
 MERGED from [com.google.android.gms:play-services-base:9.6.1] /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/AndroidManifest.xml:18:5-20:19
 MERGED from [com.google.android.gms:play-services-basement:9.6.1] /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.1/AndroidManifest.xml:19:5-21:19
@@ -111,6 +111,7 @@ MERGED from [com.google.android.gms:play-services-vision:9.6.1] /Users/leejaebeo
 MERGED from [com.google.android.gms:play-services-wearable:9.6.1] /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/9.6.1/AndroidManifest.xml:18:5-19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.0-alpha9] /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support.constraint/constraint-layout/1.0.0-alpha9/AndroidManifest.xml:9:5-20
 MERGED from [com.github.ParkSangGwon:TedPermission:v1.0.11] /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.github.ParkSangGwon/TedPermission/v1.0.11/AndroidManifest.xml:9:5-13:19
+MERGED from [com.google.firebase:firebase-core:9.6.1] /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.firebase/firebase-core/9.6.1/AndroidManifest.xml:5:5-20
 	android:label
 		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:19:9-41
 	android:supportsRtl
@@ -258,6 +259,26 @@ activity#ga.washmose.mose.RegisterSellerActivity
 ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:80:9-69
 	android:name
 		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:80:19-57
+service#ga.washmose.mose.MyFirebaseMessagingService
+ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:82:9-87:19
+	android:name
+		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:83:13-55
+intent-filter#com.google.firebase.MESSAGING_EVENT
+ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:84:13-86:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:85:17-77
+	android:name
+		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:85:25-75
+service#ga.washmose.mose.MyFirebaseInstanceIDService
+ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:89:9-94:19
+	android:name
+		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:90:13-56
+intent-filter#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:91:13-93:29
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:92:17-79
+	android:name
+		ADDED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml:92:25-77
 uses-sdk
 INJECTED from /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.kakao.sdk:kakaolink:1.1.5] /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.kakao.sdk/kakaolink/1.1.5/AndroidManifest.xml:11:5-13:41
@@ -342,6 +363,7 @@ MERGED from [com.google.android.gms:play-services-wearable:9.6.1] /Users/leejaeb
 MERGED from [com.android.support.constraint:constraint-layout:1.0.0-alpha9] /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support.constraint/constraint-layout/1.0.0-alpha9/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:multidex:1.0.1] /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/AndroidManifest.xml:18:5-42
 MERGED from [com.github.ParkSangGwon:TedPermission:v1.0.11] /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.github.ParkSangGwon/TedPermission/v1.0.11/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-core:9.6.1] /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.firebase/firebase-core/9.6.1/AndroidManifest.xml:4:5-42
 	tools:overrideLibrary
 		ADDED from [com.android.support:support-v4:24.2.1] /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
@@ -490,14 +512,6 @@ ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/leejaebeom/Dropbox/De
 		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:44:83-106
 	android:name
 		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:44:18-82
-intent-filter#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:45:13-47:29
-	android:priority
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:45:28-51
-action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:46:17-79
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:46:25-77
 provider#com.google.firebase.provider.FirebaseInitProvider
 ADDED from [com.google.firebase:firebase-common:9.6.1] /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.6.1/AndroidManifest.xml:6:9-175
 	android:authorities
@@ -558,14 +572,6 @@ ADDED from [com.google.firebase:firebase-messaging:9.6.1] /Users/leejaebeom/Drop
 		ADDED from [com.google.firebase:firebase-messaging:9.6.1] /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.6.1/AndroidManifest.xml:23:88-111
 	android:name
 		ADDED from [com.google.firebase:firebase-messaging:9.6.1] /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.6.1/AndroidManifest.xml:23:18-87
-intent-filter#com.google.firebase.MESSAGING_EVENT
-ADDED from [com.google.firebase:firebase-messaging:9.6.1] /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.6.1/AndroidManifest.xml:24:13-26:29
-	android:priority
-		ADDED from [com.google.firebase:firebase-messaging:9.6.1] /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.6.1/AndroidManifest.xml:24:28-51
-action#com.google.firebase.MESSAGING_EVENT
-ADDED from [com.google.firebase:firebase-messaging:9.6.1] /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.6.1/AndroidManifest.xml:25:17-77
-	android:name
-		ADDED from [com.google.firebase:firebase-messaging:9.6.1] /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.6.1/AndroidManifest.xml:25:25-75
 service#com.google.android.gms.tagmanager.TagManagerService
 ADDED from [com.google.android.gms:play-services-tagmanager-api:9.6.1] /Users/leejaebeom/Dropbox/Developer/Every Wash/everywash/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/9.6.1/AndroidManifest.xml:24:9-134
 	android:enabled

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ga.washmose.mose"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionCode="5"
+    android:versionName="1.4" >
 
     <uses-sdk
         android:minSdkVersion="15"
@@ -91,6 +91,18 @@
         <activity android:name="ga.washmose.mose.User.UserOrderRequestActivity" />
         <activity android:name="ga.washmose.mose.pre.SignUpActivity" />
         <activity android:name="ga.washmose.mose.RegisterSellerActivity" />
+
+        <service android:name="ga.washmose.mose.MyFirebaseMessagingService" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="ga.washmose.mose.MyFirebaseInstanceIDService" >
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        [출처] [안드로이드(22)] - GCM보다 더 간편하게  FCM으로 푸시알림 구현하기 Part1|작성자 코스모스
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"

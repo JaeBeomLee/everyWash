@@ -1048,9 +1048,17 @@
     <string name="debug_menu_title">Select a Debug Mode</string>
     <string name="debug_menu_troubleshooting">Troubleshooting</string>
     <string name="decline">Decline</string>
+    <string name="default_web_client_id" translatable="false">647070982528-8vkr15ro77i0gi2kjkfgudoih45igngs.apps.googleusercontent.com</string>
     <string name="facebook_app_id">580843672076295</string>
     <string name="facebook_text">페이스북으로 로그인</string>
+    <string name="fcm_api_key">AIzaSyCcIp2XUzkmU22IlNcPsCBss6iX-dHQnX8</string>
+    <string name="firebase_database_url" translatable="false">https://washmose-24b21.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">647070982528</string>
+    <string name="google_api_key" translatable="false">AIzaSyC67MaW-zr6iNadJbwyToqabBBEvB7QGsg</string>
+    <string name="google_app_id" translatable="false">1:647070982528:android:a47840d0b44b7366</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC67MaW-zr6iNadJbwyToqabBBEvB7QGsg</string>
     <string name="google_map_key">AIzaSyC67MaW-zr6iNadJbwyToqabBBEvB7QGsg</string>
+    <string name="google_storage_bucket" translatable="false">washmose-24b21.appspot.com</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_world">Hello world!</string>
     <string name="kakao_app_key">68eef828831b6e0f88e2b80c92d23735</string>

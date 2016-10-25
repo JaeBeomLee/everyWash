@@ -15,6 +15,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
@@ -87,6 +89,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         facebookLogin = (ViewGroup) findViewById(R.id.facebook_login);
         kakaoLogin = (ViewGroup) findViewById(R.id.kakao_login);
         hideLoginButton = (LoginButton) findViewById(R.id.hide_kakao_login);
+
+
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
         indicator.setViewPager(mViewPager);

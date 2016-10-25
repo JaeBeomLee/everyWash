@@ -167,9 +167,12 @@ public class OrderInfo extends AppCompatActivity {
                         JSONObject user = order.optJSONObject("consumer");
                         JSONArray items = order.optJSONArray("items");
                         ArrayList<ItemData> itemsList = new ArrayList<>();
-                        for (int j = 0; j < items.length(); j++) {
-                            JSONObject item = items.optJSONObject(j);
-                            itemsList.add(new ItemData(item.optString("goods_name"), item.optString("goods_image"), item.optInt("unit_amount"), item.optInt("total_price"), item.optInt("item_code"), item.optInt("goods_code")));
+                        if (items != null){
+                            for (int j = 0; j < items.length(); j++) {
+                                JSONObject item = items.optJSONObject(j);
+                                itemsList.add(new ItemData(item.optString("goods_name"), item.optString("goods_image"), item.optInt("unit_amount"), item.optInt("total_price"), item.optInt("item_code"), item.optInt("goods_code")));
+                            }
+
                         }
 
                         orderData.items = itemsList;

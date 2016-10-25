@@ -7,6 +7,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 import org.json.JSONObject;
 
@@ -20,8 +22,11 @@ import okhttp3.RequestBody;
 
 public class SignUpActivity extends AppCompatActivity {
 
-    EditText name, phone, sex, address, email;
+    EditText name, phone, address, email;
     Button btn;
+    RadioGroup sexGroup;
+    RadioButton man, woman;
+    int sex = 1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,10 +34,26 @@ public class SignUpActivity extends AppCompatActivity {
         Intent intent = getIntent();
         name = (EditText)findViewById(R.id.sign_up_name);
         phone = (EditText)findViewById(R.id.sign_up_phone);
-        sex = (EditText)findViewById(R.id.sign_up_sex);
+//        sex = (EditText)findViewById(R.id.sign_up_sex);
         address = (EditText)findViewById(R.id.sign_up_address);
         email = (EditText)findViewById(R.id.sign_up_email);
         btn = (Button) findViewById(R.id.sign_up_btn);
+        sexGroup = (RadioGroup) findViewById(R.id.sign_up_sex_group);
+        man = (RadioButton)findViewById(R.id.man);
+        woman = (RadioButton)findViewById(R.id.woman);
+        sexGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                switch (checkedId){
+                    case R.id.man:
+                        sex = 1;
+                        break;
+                    case R.id.woman:
+                        sex = 0;
+                        break;
+                }
+            }
+        });
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,7 +67,8 @@ public class SignUpActivity extends AppCompatActivity {
                                 .add("open_id_type", String.valueOf(UserInfo.loginType))
                                 .add("user_name", name.getText().toString())
                                 .add("phone", phone.getText().toString())
-                                .add("sex", sex.getText().toString())
+                                .add("sex", sex +"")
+//                                .add("sex", sex.getText().toString())
                                 .add("email", email.getText().toString());
                         if (!address.getText().toString().equals("")){
                             builder.add("address", address.getText().toString());

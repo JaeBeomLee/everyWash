@@ -129,6 +129,7 @@ public class SellerOrderRequestFragment extends Fragment {
             holder.name.setText(items.get(position).name);
             holder.location.setText(items.get(position).address);
             holder.summary.setText(items.get(position).summary);
+            holder.summary.setVisibility(View.GONE);
             Glide.with(context).load(items.get(position).profileImageUrl).into(holder.profile);
             holder.request.setText(sendStr);
             if (items.get(position).author){

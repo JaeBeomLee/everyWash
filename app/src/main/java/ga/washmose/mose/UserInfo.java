@@ -25,6 +25,7 @@ public class UserInfo implements Serializable{
     public static String profileURL;
     public static String phone;
     public static String address;
+    public static String token;
 
     public static ArrayList<Integer> orders = new ArrayList<>();
     public static boolean isSeller = false;

@@ -35,15 +35,39 @@
             android:paddingLeft="8dp"
             />
 
-        <EditText
-            android:id="@+id/sign_up_sex"
+        <!--<EditText-->
+            <!--android:id="@+id/sign_up_sex"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="성별 (필수)"-->
+            <!--android:inputType="number"-->
+            android:layout_marginTop="8dp"
+            <!--android:paddingLeft="8dp"-->
+            <!--/>-->
+
+        <RadioGroup
+            android:id="@+id/sign_up_sex_group"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="성별 (필수)"
-            android:inputType="number"
             android:layout_marginTop="8dp"
-            android:paddingLeft="8dp"
-            />
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:id="@+id/man"
+                android:checked="true"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="남성"
+                />
+            <RadioButton
+                android:id="@+id/woman"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="여성"
+                />
+        </RadioGroup>
 
         <EditText
             android:id="@+id/sign_up_email"

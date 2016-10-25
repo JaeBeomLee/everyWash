@@ -78,6 +78,21 @@
         <activity android:name=".User.UserOrderRequestActivity" />
         <activity android:name=".pre.SignUpActivity" />
         <activity android:name=".RegisterSellerActivity"></activity>
+
+        <service
+            android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        [출처] [안드로이드(22)] - GCM보다 더 간편하게  FCM으로 푸시알림 구현하기 Part1|작성자 코스모스
     </application>
 
 </manifest>

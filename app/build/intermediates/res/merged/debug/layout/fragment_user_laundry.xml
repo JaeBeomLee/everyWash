@@ -14,7 +14,7 @@
             android:id="@+id/main_loction"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="수내동 세탁"
+            android:text="복정동 세탁"
             android:textSize="@dimen/information_text_size"
             android:textColor="@android:color/black"
             />

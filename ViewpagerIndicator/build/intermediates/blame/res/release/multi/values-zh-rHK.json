@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "/Users/leejaebeom/Dropbox/Developer/모두의 세탁 Every Wash  (20161013 졸작발표)/everywash/ViewpagerIndicator/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-zh-rHK/values-zh-rHK.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 101,
+                    "endOffset": 152
+                },
+                "from": {
+                    "file": "/Users/leejaebeom/Dropbox/Developer/모두의 세탁 Every Wash  (20161013 졸작발표)/everywash/ViewpagerIndicator/build/intermediates/exploded-aar/com.android.support/support-compat/27.0.2/res/values-zh-rHK/values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 101,
+                        "endOffset": 152
+                    }
+                }
+            }
+        ]
+    }
+]
